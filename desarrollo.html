@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es" style="">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 2"><!--Autor-->
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="stylesheet" href="media/css/portada.css" type="text/css">
+
+</head>
+
+<body style="">
+	<br><br><br>
+	<h1>3. Desarrollo</h1> <br>
+	<h3>3.1 Probabilidad discreta</h3>
+	<h5>
+		La probabilidad discreta se refiere a un enfoque de la teoría de la probabilidad que se utiliza cuando estamos tratando con un conjunto finito o 
+		numerable de resultados posibles en un experimento. En este contexto, cada resultado en el conjunto se asocia con una probabilidad específica, y 
+		estas probabilidades deben cumplir ciertos principios fundamentales:
+		<br><br>
+	</h5>
+	<h5 align="justify">
+		&emsp;&emsp;<i>Axioma 1 (No negatividad): Para cualquier resultado individual, la probabilidad asociada denotada como P(wi) debe ser igual o mayor que cero (pi ≥ 0). </i> <br><br>
+		&emsp;&emsp;<i>Axioma 2 (Probabilidad total): La suma de las probabilidades de todos los resultados en el conjunto de resultados posibles debe ser igual a 1 (Σpi = 1). 
+		Esto significa que al considerar todos los resultados posibles, la probabilidad de que uno de ellos ocurra es 100%. </i><br><br>
+		&emsp;&emsp;<i>Axioma 3 (Propiedad de aditividad): Si tenemos eventos mutuamente excluyentes (eventos que no pueden ocurrir simultáneamente), la probabilidad de que al 
+		menos uno de ellos ocurra es igual a la suma de las probabilidades individuales de esos eventos. En otras palabras, si A1, A2, ... son eventos disjuntos, 
+		entonces P(A1 U A2 U ...) = P(A1) + P(A2) + ... </i><br><br>
+	</h5>
+	<h5>
+		Tomemos como ejemplo el lanzamiento de una moneda. En este caso, el espacio muestral discreto Ω se compone de dos resultados posibles: cara (w1) y cruz (w2). 
+		Asociamos una probabilidad a cada resultado:
+	</h5>
+	<h4 align="center"><i>
+		P(w1) = p1: Probabilidad de obtener cara. <br>
+		P(w2) = p2: Probabilidad de obtener cruz. <br>
+	</i></h4>
+	<h5>
+		Si la moneda es regular y simétrica, es razonable suponer que la probabilidad de obtener cara (p1) es igual a la probabilidad de obtener cruz (p2). Por lo tanto, 
+		p1 = p2. Además, debido al Axioma 2, la suma de estas probabilidades debe ser igual a 1: p1 + p2 = 1 <br><br>
+		Resolviendo esta ecuación, encontramos que p1 = p2 = &#189;. Esto significa que en un lanzamiento de una moneda justa y simétrica, la probabilidad de obtener cara o cruz 
+		es del 50% cada una, lo que cumple con los axiomas de la probabilidad. [14] <br>
+		<br><img src="media/img/Monedas01.gif" width="5" height="370" alt="">
+		<br><br><br>
+	</h5>
+	<h3>3.2 Probabilidad condicional</h3>
+	<h5>
+		<i>Definición: </i><br>
+		Cuando tenemos dos eventos, A y B, que están relacionados en un conjunto de posibles resultados, siempre y cuando la probabilidad de que ocurra el evento B no sea 
+		igual a cero, podemos calcular la probabilidad condicional de que el evento A ocurra dado que el evento B ya ha ocurrido. Esta probabilidad condicional se denota 
+		como P(A | B) y se calcula dividiendo la probabilidad de que ambos eventos A y B ocurran juntos por la probabilidad de que ocurra el evento: [13]
+	</h5>
+	<img src="media/img/img1.png" alt="">
+	<h5>
+		<br>
+		Donde: <br>
+		&emsp;&emsp;P(A | B) es la probabilidad condicional de A dado B. <br>
+		&emsp;&emsp;P(A&#8745;B) es la probabilidad de la intersección de A y B. <br>
+		&emsp;&emsp;P(B) es la probabilidad de B. <br>
+		<br>En palabras simples, la probabilidad condicional es la probabilidad de que ocurra A dado que ya sabemos que B ha ocurrido. Se utiliza para entender cómo la 
+		ocurrencia de un evento afecta la probabilidad de otro evento. Por ejemplo, P(lluvia | cielo nublado) sería la probabilidad de lluvia dado que el cielo ya está 
+		nublado. <br>
+
+		<i><br>Teorema: </i><br>
+		La probabilidad condicional del complemento de A es igual a 1 menos la probabilidad condicional de A. [13]
+	</h5>
+	<img src="media/img/img2.png" alt="">
+	<h5>
+		<br>Para una mejor comprensión de la definición de probabilidad condicional, consideremos el siguiente escenario: imaginemos que ha tenido lugar un evento A y 
+		nos preguntamos cuál es la probabilidad de que otro evento B ocurra en las mismas circunstancias. Por ejemplo, si hemos extraído un naipe  rojo de una baraja 
+		estándar de 52 cartas, ¿cuál es la probabilidad de que la carta seleccionada sea el as de corazones? <br>
+		<br><img src="media/img/naipe1.gif" alt="">
+	</h5>
+	<h5 align="justify"><i>
+		“Si afirmamos que el evento A ya ha tenido lugar, podemos considerar que A se convierte en nuestro espacio muestral, ya que sabemos que no ha ocurrido 
+		ningún elemento x ∈ Ā .” <br></i>
+	</h5>
+	<h5>
+		En este contexto, resulta lógico evaluar la probabilidad de que el evento B ocurra también, basándonos en la proporción del tiempo en el que A y B se producen 
+		simultáneamente. De hecho, esto es a lo que se refiere la probabilidad condicional de que B ocurra dado que A ya ha ocurrido. <br><br>
+		Un diagrama de Venn es una herramienta que se emplea para representar visualmente las relaciones entre conjuntos. En el contexto de la probabilidad condicional, 
+		se utiliza para ilustrar la intersección entre dos eventos. Para entender su utilidad, consideremos lo siguiente: tenemos dos eventos, A y B, relacionados con 
+		un experimento E, y estamos interesados en la probabilidad condicional de que el evento B ocurra dado que ya ha ocurrido el evento A, lo cual denotamos como 
+		P(B | A). <br>
+	</h5>
+	<h5 align="justify"><i>
+		“Cuando calculamos P(B | A) estamos calculando la probabilidad de que ocurra B dentro del subconjunto A del espacio muestral original S. En contraste, cuando 
+		calculamos P(B), estamos evaluando cuán probable es que ocurra B en el contexto de todo el espacio muestral S. Al calcular P(B | A), nos enfocamos en la 
+		probabilidad de que B ocurra, sabiendo que estamos en A.” [11] </i><br>
+	</h5>
+	<h5>
+		En otras palabras, el espacio muestral se ha reducido de S a A.
+	</h5>
+	<img src="media/img/img3.PNG" alt="">
+	<h5>
+		<br>Por lo tanto, la probabilidad condicional se utiliza para verificar conjuntos de suposiciones o hipótesis. Además, es importante destacar que una de sus 
+		aplicaciones más significativas consiste en simplificar el cálculo de las intersecciones de eventos en ciertos experimentos. <br><br>
+		Considerando que:
+	</h5>
+	<img src="media/img/img4.png" alt="">
+
+	<!-- Independencia -->
+	<h3><br><br><br>3.3 Independencia</h3>
+	<h5>
+		<i>Definición: </i><br>
+		Decimos que dos eventos, A y B, son independientes cuando la probabilidad de que ocurra el evento A no cambia, independientemente de si el evento B ocurre o  
+		no. En otras palabras, A y B son eventos independientes si la probabilidad condicional de que ocurra A dado que ocurrió B es igual a la probabilidad original 
+		de que ocurra A. Esto se expresa matemáticamente como:
+	</h5>
+	<img src="media/img/img5.png" alt="">
+	<h5>
+		<br> O de manera equivalente, cuando la probabilidad de que ambos eventos A y B ocurran juntos es igual al producto de las probabilidades individuales de A y B es decir:
+	</h5>
+	<img src="media/img/img6.png" alt="">
+	<h4 align="center"><br><br>Independencia de más de dos sucesos</h4>
+	<h5>
+		Sean A1, A2 ... An , sucesos de cierto espacio muestral; diremos que ellos son mutuamente independientes (o simplemente, independientes) cuando para cualquier 
+		grupo de sucesos diferentes Ai, Aj ... Am se cumple que:
+	</h5>
+	<img src="media/img/img7.png" alt="">
+	<h5>
+		<br>Para que n sucesos sean independientes no es suficiente que sean independientes dos a dos, es decir, que dos cualesquiera de ellos sean independientes. [13] <br><br>
+		En muchos problemas prácticos, nos encontramos con pruebas que son mutuamente independientes, lo que significa que el resultado de una prueba no afecta el resultado 
+		de otra. Para comprender mejor este concepto, consideremos un experimento que consiste en <i>n</i> pruebas independientes. <i>“Esto se cumple si y sólo si: el espacio muestral 
+		S es el producto Cartesiano de n conjuntos S1, S2, ..., Sn y la probabilidad de que ocurra un evento de un solo elemento A&#8834;S es el producto de las probabilidades 
+		de ocurrencia de los eventos correspondientes de un solo elemento, Ai&#8834;Si, i = 1, 2, ..., n. En otras palabras, p(A)=p1(A1)p2(A2). . .pn(An), donde A&#8834;S, Ai&#8834;Si, y A, 
+		Ai, ..., An son eventos de un solo elemento.” [10] </i><br><br>
+		De acuerdo con lo anterior, el espacio muestral de un experimento que consiste en n pruebas independientes se compone de n factores. Por lo tanto, las probabilidades 
+		de los eventos de un solo elemento se asignan de una manera particular, lo que facilita el cálculo de diversas posibilidades. Aunque en la mayor parte de las aplicaciones 
+		no necesitamos verificar todas las condiciones, puesto que generalmente suponemos la independencia con base en lo que sabemos acerca del experimento. <br><br>
+		Es importante destacar que si A y B son eventos independientes, se cumple la siguiente relación:
+	</h5>
+	<img src="media/img/img8.png" alt="">
+	<h5>
+		<br>En otras palabras, cuando A y B son independientes, la probabilidad de que ocurra A no se ve afectada por la ocurrencia de B. <i> “Saber que B ha ocurrido no modifica 
+		la probabilidad de que A ocurra. De manera equivalente, podemos afirmar que p(A|B) = p(B) si y sólo si A y B son independientes.”</i> [10] <br><br>
+		Comúnmente las definiciones de independencia y mutua exclusividad se confunden, en gran parte debido a que en la comunicación cotidiana, la palabra "independiente" 
+		a menudo se interpreta como que dos eventos no pueden ocurrir simultáneamente. Esto nos lleva a la conclusión de que dos eventos son mutuamente excluyentes cuando no 
+		pueden suceder al mismo tiempo, tal como se establece en la siguiente definición: <i> "A y B son mutuamente excluyentes si y sólo si A&#8745;B=&#8709;"</i> [10]. <br><br>
+		Al comparar esta definición con la de independencia, resulta evidente que son conceptos completamente diferentes. <br><br>
+		También existe la independencia de tres eventos, la cual señala que A,B,C  son independientes, si sólo si:
+	</h5>
+	<img src="media/img/img9.png" alt="">
+	<h5>
+		<br>Para este caso en el que se presentan tres eventos, cabe la posibilidad de que las tres primeras condiciones anteriores no lleguen a implicar a la cuarta y viceversa.
+		<br><br><br>
+	</h5>
+	<h3>3.4 Teorema de Bayes</h3>
+	<h5>
+		Quizás el teorema más importante de la Teoría de la Probabilidad es el denominado Teorema de Bayes, ya que él constituye la base de toda una ciencia: 
+		la Inferencia Estadística. <br><br>
+		Sea A un suceso y B1, B2 ... Bn una serie de sucesos disyuntos tales la ocurrencia de A va necesariamente acompañada por la ocurrencia de uno de ellos. <br><br>
+		Se conocen las probabilidades de los Bi como también las probabilidades condicionales de A dado cada uno de los Bi. Sabiendo ahora que A ocurrió, se desea 
+		calcular la probabilidad de cada Bi dada esta información. [13] <br><br>
+		Tenemos que:
+	</h5>
+	<img src="media/img/img10.png" alt="">
+	<h5>
+		<br>Lo que resulta en:
+	</h5>
+	<img src="media/img/img11.png" alt="">
+	<h5>
+		<br>Este resultado se conoce como teorema de Bayes. También se le llama fórmula para la probabilidad de las “causas”. <br>
+		<br>Puesto que las Bi son una partición del espacio muestral, uno y sólo uno de los eventos Bi ocurre. (Esto es, uno de lo eventos Bi debe ocurrir y solamente uno). 
+		Por lo tanto, la fórmula anterior nos da la probabilidad de un Bi particular (esto es, una “causa”), dado que el evento A ha ocurrido. Para aplicar este teorema debemos 
+		conocer los valores de las P(Bi). <br>
+		<br>Este teorema expone la reformulación de un conjunto de probabilidades previas (probabilidades a priori) como consecuencia de contar con información adicional 
+		acerca de los eventos del fenómeno estudiado, dando origen a nuevas probabilidades denominadas probabilidades a posteriori. <br>
+		<br>Supongamos que el Sr. K se somete a una prueba médica para determinar si tiene una enfermedad en particular. Esta prueba tiene limitaciones y no es perfecta. 
+		Antes de la prueba, tenemos ciertas creencias iniciales sobre si el Sr. K tiene la enfermedad o no. Estas creencias se expresan como probabilidades a priori, es 
+		decir, la probabilidad inicial de que el Sr. K tenga la enfermedad (P(B1)) y la probabilidad inicial de que no la tenga (P(B2)). <br><br>
+		Luego, el Sr. K se somete a la prueba, y el resultado de la prueba es positivo (A = la prueba es positiva). Queremos calcular la probabilidad de que realmente 
+		tenga la enfermedad, dada esta nueva evidencia, es decir, P(B1|A). <br><br>
+		El Teorema de Bayes nos permite hacerlo. Para calcular P(B1|A), utilizamos la siguiente fórmula:
+	</h5>
+	<img src="media/img/img12.png" alt="">
+	<h5>
+		<br>Donde: <br>
+		&emsp;&emsp;P(A|B1): Probabilidad de que la prueba sea positiva si el Sr. K tiene la enfermedad. <br>
+		&emsp;&emsp;P(B1): Probabilidad a priori de que el Sr. K tenga la enfermedad. <br>
+		&emsp;&emsp;P(A|B2): Probabilidad de que la prueba sea positiva si el Sr. K no tiene la enfermedad. <br>
+		&emsp;&emsp;P(B2): Probabilidad a priori de que el Sr. K no tenga la enfermedad. <br>
+		<br>El resultado P(B1|A) nos da la probabilidad de que el Sr. K realmente tenga la enfermedad, dado que la prueba fue positiva. Esto nos permite ajustar nuestras 
+		creencias iniciales en función de la nueva evidencia. <br>
+		<br><img src="media/img/doc3.gif" alt="">
+		<br>De esta forma el teorema de Bayes establece cómo calcular la probabilidad de un evento, dada la probabilidad condicional de ese evento en relación con otros 
+		eventos. El teorema se utiliza para invertir el orden de causa y efecto al calcular la probabilidad de un evento dado su efecto observado. [14] <br><br>
+	</h5>			
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+/***************************
+* Autor: Equipo 2
+* Estructuras Discretas
+* 2024-1
+****************************/
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.menu-container {
+    text-align: center;
+    background-color: #3d5a80;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #fff;
+}
+
+h2{
+    font-weight: bold;
+    color: #fefae0;
+    background-color: #bc4749;
+    border: 2px solid #fefae0; /* Añade un contorno de 2px de ancho con color rojo (#ff0000) */
+    border-radius: 7px;
+    text-align: center;
+    padding: auto 10px;
+    width: 150px; /* Ajusta el ancho */
+    height: 20px; /* Ajusta la altura */
+}
+
+p {
+    font-size: 1.4em;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    background-color: #212F3D;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo adicional para ocultar secciones */
+.oculto {
+    display: none;
+}
+
+/* Estilo para el contenido de la calculadora */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container h1 {
+    color:#f4f4f4;
+}
+
+.container label {
+    font-size: 1.4em;
+    display: block;
+    margin-top: 10px;
+}
+
+.container input {
+    margin-top: 5px;
+    width: 220px; /* Ajusta el ancho */
+    height: 25px; /* Ajusta la altura */
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.container select {
+    margin-top: 10px;
+    background-color: #212F3D;
+    color: #fff;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    height: 50px; /* Ajusta la altura */
+    width: 320px; /* Ajusta el ancho */
+}
+
+.container select:hover {
+    background-color: #2980b9;
+}
+
+.container button, select {
+    margin-top: 10px;
+    background-color: #212F3D;
+    color: #fff;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    width: 210px; /* Ajusta el ancho */
+}
+
+.container button:hover {
+    background-color: #2980b9;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}

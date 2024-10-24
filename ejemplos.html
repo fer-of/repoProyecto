@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Equipo 2"/><!--Autor-->
+	 
+	<meta name="Description" content="Estudio General del Sistema"/><!--Descripción del tutorial-->
+	<meta name="Keywords" content="Factores, Estudio, General, Sistema"/><!--Palabras clave-->
+	<meta name="robots" content="noindex, nofollow"/>
+	
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css" />
+	
+	<!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
+	<link rel="stylesheet" href="media/css/ejemplos.css" type="text/css" />
+
+</head>
+	<section class="main clearfix">
+		<section class="top">	
+			<img src="img\ejemBK.jpg" class="media" alt=""/>
+            <div class="wrapper content_header clearfix">
+                <center><h1 class="title"><br>4. Ejemplos </h1></center>
+			</div>
+        </section>
+
+		<section class="wrapper">
+			<div class="content"> 
+                <ul>
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <h2><v>4.1 Probabilidad discreta</v></h2>
+                    <li><h3>4.1.1 Ejemplo 1</h3></li>
+                    <h4 align="justify">
+                        El 65 % de los hogares de una zona urbana hay alguien en casa en una noche terminada. Un investigador que está 
+                        haciendo una encuesta por teléfono selecciona al azar 15 hogares. Hallar las probabilidades siguientes: <br><br>
+                        &emsp;&emsp;a) Exactamente 8 hogares hay alguien en casa. <br>
+                        &emsp;&emsp;b) En ningún hogar hay alguien en casa.<br>
+                        &emsp;&emsp;c) En todos los hogares hay alguien en casa.<br><br>
+                        
+                        <a href="#" onclick="document.getElementById('hiddenText010').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText010">
+                            <br><br><o>Paso 1:</o> Recordemos que la fórmula de distribución binomial para este problema es:<br>
+                            <br><img src="media/img/binimial.png" alt="">
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText011').style.display='block'; return false;">SIGUIENTE</a>
+                            
+				        <div style="display: none;" id="hiddenText011">
+                            <br><br><o>Paso 2:</o> Ahora vamos a identificar los datos de acuerdo a las especificaciones del problema.<br><br>
+                            &emsp;&emsp;a) Exactamente 8 hogares hay alguien en casa.
+                            <img src="media/img/paso2.Binomial.png" alt=""><br>
+
+                            &emsp;&emsp;b) En ningún hogar hay alguien en casa.
+                            <img src="media/img/paso2_ej12.png" alt=""><br>
+
+                            &emsp;&emsp;c) En todos los hogares hay alguien en casa.
+                            <img src="media/img/paso2_ej13.png" alt="">
+                            
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText012').style.display='block'; return false;">SIGUIENTE</a>
+        
+				        <div style="display: none;" id="hiddenText012"> 
+                            <br><br><o>Paso 3:</o> Sustituyendo los valores en la fórmula y resolviendo: <br><br>
+                            &emsp;&emsp;a) Exactamente 8 hogares hay alguien en casa.
+                            <img src="media/img/paso3_ej1.png" alt=""><br>
+                            Desarrollando el coeficiente binomial (sacando el factorial):
+                            <img src="media/img/paso3_ej12.png" alt=""><br>
+                            Multiplicado:
+                            <img src="media/img/paso3_ej13.png" alt=""><br>
+                            <p><br><b>Resultado a)</b> La probabilidad de que exactamente 8 de los 15 hogares seleccionados al azar tengan a alguien en 
+                                casa en una noche determinada es aproximadamente 0.1319, o alrededor del 13.19%.</p><br>
+
+                            &emsp;&emsp;b) En ningún hogar hay alguien en casa.
+                            <img src="media/img/paso3_ej14.png" alt="">
+                            <p><br><b>Resultado b)</b> La probabilidad de que ningún hogar de los 15 seleccionados tenga a alguien en casa en una noche 
+                                determinada es aproximadamente 0.00000014488, o alrededor de 0.000014488% Esto indica que es extremadamente poco 
+                                probable que ningún hogar tenga a alguien presente.</p><br>
+
+                            &emsp;&emsp;c) En todos los hogares hay alguien en casa.
+                            <img src="media/img/paso3_ej15.png" alt="">
+                            <p><br><b>Resultado c)</b> La probabilidad de que todos los 15 hogares seleccionados tengan a alguien en casa en una noche 
+                                determinada es aproximadamente 0.0015620, o alrededor de 0.1562%. Esto sugiere que hay una posibilidad limitada de que 
+                                todos los hogares tengan a alguien presente.</p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+                
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>4.1.2 Ejemplo 2</h3></li>
+                    <h4 align="justify">
+                        Un comerciante de verduras tiene conocimiento de que el 10 % de las cajas están descompuestas, si un comprador elige
+                        4 verduras al azar, encuentre la probabilidad de que: <br><br>
+                        &emsp; a) Todas están descompuestas.
+                        <br><br>
+                                    
+                        <a href="#" onclick="document.getElementById('hiddenText020').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText020">
+                        <p>
+                            <br><br><o>Paso 1:</o> Recordemos que la fórmula de distribución binomial para este problema es:<br>
+                            <br><img src="media/img/binimial.png" alt="">
+                            
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText021').style.display='block'; return false;">SIGUIENTE</a>
+                        </p>
+				        <div style="display: none;" id="hiddenText021">
+                        <p>
+                            <br><br><o>Paso 2:</o> Ahora vamos a identificar los datos de acuerdo a las especificaciones del problema.<br>
+                            <br><img src="media/img/paso2_ej2.png" alt="">
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText022').style.display='block'; return false;">SIGUIENTE</a>
+                        </p>
+				        <div style="display: none;" id="hiddenText022">
+                        <p>
+                            <br><br><o>Paso 3:</o> Sustituyendo los valores en la fórmula y resolviendo: <br>
+                            <br><img src="media/img/paso3_ej2.png" alt=""><br>
+                        </p>
+                        <p><br><b>Resultado.</b> La probabilidad de que las cuatro cajas elegidas al azar estén todas descompuestas es de 0.0001, o 
+                            0.01%. Esto sugiere que es una ocurrencia extremadamente rara, dada la probabilidad relativamente baja de que una caja 
+                            esté descompuesta.</p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <h2><v>4.2 Probabilidad condicional</v></h2>
+                    <li><h3>4.2.1 Ejemplo 3</h3></li>            
+                    <h4 align="justify">
+                        Se lanza un par de dados no cargados una vez, y queremos calcular la probabilidad de que la suma de los números en ambos dados 
+                        sea 7 o que la suma sea 4 o que la suma sea 12. con la condición de que los dos números que aparecen deben ser diferentes. <br><br>
+                        
+                        <a href="#" onclick="document.getElementById('hiddenText030').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText030">
+                            
+                                <br><br><o>Paso 1:</o>Definimos los siguientes eventos con los datos especificados en el problema:<br>
+                                <br><img src="media/img/paso1_ej3.png" alt="">
+
+                                <br><br> <a href="#" onclick="document.getElementById('hiddenText031').style.display='block'; return false;">SIGUIENTE</a>
+                            
+				        <div style="display: none;" id="hiddenText031">
+                        
+                            <br><br><o>Paso 2:</o> Se enumeran todas las posibles combinaciones de lanzamientos de dados.<br><br>
+                            Cada dado tiene 6 caras y si estamos lanzando dos dados, hay un total de 6x6=36 posibles resultados. Representado en una tabla: <br>
+                            <img src="media/img/paso2_ej3.png" alt="">
+                            
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
+                        
+				        <div style="display: none;" id="hiddenText032"> 
+                        
+                            <br><br><o>Paso 3:</o> De acuerdo con el evento A, que es "los dos números que ocurren son diferentes". Calculamos el número de resultados 
+                            que cumplen con el evento A. <br>
+                            <br><img src="media/img/paso3_ej3.png" alt=""><br>
+                            Si nos fijamos en la tabla de combinaciones, las que no cumplen son: (1,1), (2,2), (3,3), (4,4), (5,5), (6,6). 
+                            Formando una diagonal en estas combinaciones.
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText033').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText033">
+                            <br><br><o>Paso 4:</o> Buscamos combinaciones que cumplan las condiciones de acuerdo a la suma de cada evento:<br><br>
+                            <img src="media/img/paso4_ej3.png" alt="">
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText034').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText034">
+                            <br><br><o>Paso 5:</o> Usaremos la fórmula de probabilidad.<br><br>
+                            Calculando para cada evento y factorizando:
+                            <img src="media/img/paso5_ej3.png" height="250" width="100" alt="">
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText035').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText035">
+                            <br><br><o>Paso 6:</o> Calculando la intersección de cada evento independiente.<br><br>
+                            Evento B: Los pares posibles para B que cumplen con A son (1,3) y (3,1), hay dos de ellos (puesto que los pares deben de 
+                            ser diferentes por el evento A).
+                            <img src="media/img/paso6_ej3.png" alt=""><br>
+
+                            Evento C: Los pares posibles para C que cumplen con A son (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). y hay seis de ellos 
+                            (puesto que los pares deben de ser diferentes por el evento A).
+                            <img src="media/img/paso6_ej32.png" alt=""><br>
+
+                            Evento D: No hay pares que cumplan con ambos A y D, ya que la suma 12 implica tener dos dados iguales, y A requiere que 
+                            sean diferentes. Por lo tanto:
+                            <img src="media/img/paso6_ej33.png" alt="">
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText036').style.display='block'; return false;">SIGUIENTE</a>
+
+                        <div style="display: none;" id="hiddenText036">
+                            <br><br><o>Paso 7:</o> Calculando la intersección de cada evento independiente con la fórmula de probabilidad condicional.<br><br>
+                            Evento B:
+                            <img src="media/img/paso7_ej3.png" alt="">
+                            <p><br><b>Resultado Evento B.</b> La probabilidad de que la suma sea 4 dado que los dos números son diferentes es de 1/15, lo que
+                                 implica que hay una probabilidad del 6.66% de obtener una suma de 4 en los dados bajo esta condición.
+                            </p><br>
+
+                            Evento C:
+                            <img src="media/img/paso7_ej32.png" alt="">
+                            <p><br><b>Resultado Evento C.</b> La probabilidad de que la suma sea 7 dado que los dos números son diferentes es de 1/5, lo que 
+                                significa que hay una probabilidad del 20% de obtener una suma de 7 en los dados bajo esta condición.
+                            </p><br>
+
+                            Evento D:
+                            <img src="media/img/paso7_ej33.png" alt="">
+                            <p><br><b>Resultado Evento D.</b> Dado que los dos números son diferentes, la probabilidad de obtener una suma de 12 en los dados es 0, 
+                                lo que indica que es imposible obtener una suma de 12 en los dados bajo esta condición.
+                            </p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                                
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>4.2.2 Ejemplo 4</h3></li>
+                    <h4 align="justify">
+                        Con base en su experiencia un médico ha recabado la siguiente información, relativa a las enfermedades de sus pacientes: 5% creen tener cáncer y 
+                        lo tienen, 45% creen tener cáncer y no lo tienen, 10% no creen tener cáncer pero si lo tienen; y finalmente 40% creen no tenerlo, lo cual es cierto. 
+                        De entre los pacientes del doctor estas cifras de porcentaje implican las siguientes probabilidades para un paciente seleccionado al azar. Calcula:<br>
+                        &emsp;&emsp;a) Tenga cáncer si no cree tenerlo. <br>
+                        &emsp;&emsp;b) Cree tener cáncer cuando no lo tiene. <br>
+                        &emsp;&emsp;c) Crea tener cáncer cuando sí lo tiene. <br>
+                        
+                        <br><a href="#" onclick="document.getElementById('hiddenText040').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText040">
+                            <br><br><o>Paso 1:</o>Definimos los siguientes eventos con los datos especificados en el problema:<br>
+                            <br><img src="media/img/paso1_ej4.png" alt="">
+                    
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText041').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText041">
+                            <br><br><o>Paso 2:</o> Vamos a definir el complemento para cada situación del paciente.<br>
+                            <br><img src="media/img/paso2_ej4.png" alt="">
+                                                    
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText042').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText042">
+                            <br><br><o>Paso 3:</o> Haciendo la intersección de cada evento. <br>
+                            <br><img src="media/img/paso3_ej4.png" alt=""><br>
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText043').style.display='block'; return false;">SIGUIENTE</a>
+
+                        <div style="display: none;" id="hiddenText043">
+                            <br><br><o>Paso 4:</o> Calcularemos las probabilidades marginales, en este caso será: <br>
+                            <br><img src="media/img/paso4_ej4.png" alt=""><br>
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText044').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText044">
+                            <br><br><o>Paso 5:</o> Usaremos la fórmula de probabilidad condicional. <br><br>
+                            a) Tenga cáncer si no cree tenerlo.
+                            <img src="media/img/paso5_ej4.png" alt="">
+                            <p><br><b>Resultado a)</b> La probabilidad de que un paciente tenga cáncer dado que no cree tenerlo es de 0.2 o 20%. Esto 
+                                sugiere que incluso si un paciente no cree tener cáncer, todavía hay una probabilidad no despreciable de tener la enfermedad.
+                            </p><br>
+
+                            b) Cree tener cáncer cuando no lo tiene.
+                            <img src="media/img/paso5_ej41.png" alt="">
+                            <p><br><b>Resultado b)</b> La probabilidad de que un paciente crea tener cáncer cuando en realidad no lo tiene es aproximadamente 
+                                de 0.5294 o del 52.94%. Esto sugiere que la creencia de tener cáncer podría no ser muy indicativa de la presencia real de la enfermedad.
+                            </p><br>
+
+                            c) Crea tener cáncer cuando sí lo tiene.
+                            <img src="media/img/paso5_ej42.png" alt="">
+                            <p><br><b>Resultado c)</b> La probabilidad de que un paciente crea tener cáncer cuando realmente lo tiene es de 0.3333, 
+                                aproximadamente 33%. Esto indica que la creencia de tener cáncer no siempre coincide con la presencia real de la enfermedad.
+                            </p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <h2><v>4.3 Independencia</v></h2>
+                    <li><h3>4.3.1 Ejemplo 5</h3></li>
+                    <h4 align="justify">
+                        Consideremos un lote grande de artículos, digamos 10000. Supongamos que el 10% de estos artículos es defectuoso y el 90% no. 
+                        Se escogen dos artículos. ¿Cuál es la probabilidad de que ambos no sean defectuosos?<br><br>
+                                    
+                        <a href="#" onclick="document.getElementById('hiddenText050').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText050">
+                            <br><br><o>Paso 1:</o> Primero definimos los eventos. <br>
+                            <br><img src="media/img/paso1_ej5.png" alt="">
+                            
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText051').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText051">
+                            <br><br><o>Paso 2:</o> Usando la fórmula de intersección de dos eventos independientes.<br>
+                            <br>Si suponemos que el primer artículo se sustituye antes de elegir el segundo, entonces se puede suponer que los eventos 
+                            A y B son independientes y, por lo tanto tenemos la probabilidad de seleccionar dos artículos no defectuosos:
+                            <img src="media/img/paso2_ej5.png" alt="">
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText052').style.display='block'; return false;">SIGUIENTE</a>
+                            
+                        <div style="display: none;" id="hiddenText052">
+                            <p><br><b>Resultado.</b> Podemos concluir que la probabilidad de seleccionar dos artículos no defectuosos de un lote grande, 
+                                donde el 10% de los artículos son defectuosos y el 90% son no defectuosos, es del 81%. Esto significa que hay una alta 
+                                probabilidad de que ambos artículos seleccionados al azar no sean defectuosos. <br><br>
+                                La independencia de los eventos es crucial en este caso. Dado que se asume que los eventos (la no defectuosidad de los 
+                                artículos) son independientes, la probabilidad conjunta de que ambos eventos ocurran es simplemente el producto de las 
+                                probabilidades individuales. Este resultado refleja la intuición de que si la selección de un artículo no afecta la selección 
+                                del siguiente, entonces la probabilidad de ambas ocurrencias es simplemente el producto de las probabilidades individuales.
+                            </p>
+                    </h4>
+                    </div>
+                    </div> 
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>4.3.2 Ejemplo 6</h3></li>
+                    <h4 align="justify">
+                        Supongamos que un dado normal se lanza dos veces. Calcula para:<br>
+                        &emsp;&emsp;a) El primer dado muestra un número par.  <br>
+                        &emsp;&emsp;b) El segundo dado muestra un 5 o un 6. <br>
+                        
+                        <br><a href="#" onclick="document.getElementById('hiddenText060').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText060">
+                            
+                                <br><br><o>Paso 1:</o> Vamos a definir los siguientes eventos:<br>
+                                <br><img src="media/img/paso1_ej6.png" alt="">
+
+                                <br><br> <a href="#" onclick="document.getElementById('hiddenText061').style.display='block'; return false;">SIGUIENTE</a>
+                            
+				        <div style="display: none;" id="hiddenText061">
+                        
+                            <br><br><o>Paso 2:</o> Analizando el problema…<br><br>
+                            Hay un total de 36 resultados posibles al lanzar dos dados, ya que hay 6 posibilidades para el primer dado y 6 
+                            posibilidades para el segundo dado, lo que resulta en 6&#215;6=36 resultados posibles en total. <br><br>
+                            * Para el evento A: "el primer dado muestra un número par", hay 18 resultados favorables, ya que hay 3 números 
+                            pares (2, 4 y 6) en un dado de 6 caras, y 3 posibilidades para el segundo dado. <br>
+                            * Para el evento B: "el segundo dado muestra un 5 o un 6", hay 12 resultados favorables, ya que hay 2 posibilidades 
+                            (5 y 6) en un dado de 6 caras, y 6 posibilidades para el primer dado. <br><br>
+                            La siguiente tabla muestra las combinaciones posibles:
+                            <img src="media/img/paso2_ej3.png" alt="">
+                            
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText062').style.display='block'; return false;">SIGUIENTE</a>
+                        
+				        <div style="display: none;" id="hiddenText062"> 
+                        
+                            <br><br><o>Paso 3:</o> Usando la fórmula de probabilidad. <br>
+                            <br><img src="media/img/paso3_ej6.png" alt="">
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText063').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText063">
+                            <br><br><o>Paso 4:</o> Usaremos la fórmula de intersección de dos eventos.<br><br>
+                            <img src="media/img/paso4_ej6.png" alt="">
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText064').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText064">
+                            <br><br><o>Paso 5:</o> Usaremos la fórmula de probabilidad condicional.<br>
+                            <br><img src="media/img/paso5_ej6.png" height="250" width="100" alt=""><br>
+                            Así encontramos, como era de suponer, que la probabilidad no condicional es igual a la probabilidad condicional P(A/B). 
+                            De modo semejante: <br><br>
+                            <img src="media/img/paso5_ej62.png" alt=""><br>
+                            Por lo tanto, podríamos inclinarnos a decir que A y B son independientes si y sólo si P(B|A)=P(A) y P(A|B)=P(B). Aunque 
+                            esto sería esencialmente apropiado, hay otro método que evita la dificultad encontrada aquí, a saber, que ambos P(A) y P(B), 
+                            deben ser diferentes de cero antes de que las igualdades anteriores sean significativas.
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText065').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText065">
+                            <br><br><o>Paso 6:</o> Aplicando la fórmula de independencia de dos eventos.<br>
+                            <br><img src="media/img/paso6_ej6.png" alt=""><br>
+                            Así encontramos que, como ni P(A) ni P(B) son iguales a cero, las probabilidades no condicionales son iguales a las probabilidades 
+                            condicionales si y sólo si P(A&#8745;B)=P(A)P(B).
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText066').style.display='block'; return false;">SIGUIENTE</a>
+
+                        <div style="display: none;" id="hiddenText066">
+                            <p><br><br><b>Resultado.</b> En estos eventos A y B definidos como "el primer dado muestra un número par" y "el segundo dado muestra 
+                                un 5 o un 6" respectivamente, hemos demostrado que estos eventos son independientes. Esto se evidencia en los cálculos de las 
+                                probabilidades condicionales y no condicionales, así como en la verificación de la igualdad de independencia. Además, hemos 
+                                establecido que la independencia de dos eventos implica que la probabilidad de la intersección de ambos eventos es igual al 
+                                producto de sus probabilidades individuales, siempre y cuando ambas probabilidades no sean cero.
+                            </p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>4.3.3 Ejemplo 7</h3></li>
+                    <h4 align="justify">
+                        La probabilidad de Carlos de aprobar en la materia de Estructuras Discretas es del 40%, y la probabilidad de Ana de 
+                        aprobar el mismo curso es de 70%. Si los eventos son independientes, encuentra las siguientes probabilidades:<br>
+                        &emsp;&emsp;a) La probabilidad de que ambos aprueben el curso.<br>
+                        &emsp;&emsp;b) La probabilidad de que ninguno apruebe el curso.<br>
+                        &emsp;&emsp;c) La probabilidad de que al menos uno apruebe el curso.<br>
+                        
+                        <br><a href="#" onclick="document.getElementById('hiddenText070').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText070">
+                            <br><br><o>Paso 1:</o> Primero definimos los eventos.<br>
+                            <br><img src="media/img/paso1_ej7.png" alt="">
+                    
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText071').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText071">
+                            <br><br><o>Paso 2:</o> Vamos a definir el complemento para cada situación.<br>
+                            <br><img src="media/img/paso2_ej7.png" alt="">
+                                                    
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText072').style.display='block'; return false;">SIGUIENTE</a>
+                        
+                        <div style="display: none;" id="hiddenText072">
+                            <br><br><o>Paso 3:</o> Haciendo la intersección de cada evento y aplicando la fórmula de independencia. Resolvemos para cada 
+                            inciso: <br><br>
+                            
+                            a) Ambos aprueben.
+                            <img src="media/img/paso3_ej7.png" alt="">
+                            <p><br><b>Resultado a)</b> La probabilidad de que ambos aprueben el curso es del 28%. Esta es la multiplicación de las 
+                                probabilidades individuales de que Carlos y Ana aprueben.
+                            </p><br>
+
+                            b) Ninguno apruebe. <br>
+                            Usaremos la propiedad del complemento:
+                            <img src="media/img/paso3_ej72.png" alt=""><br>
+                            Ahora aplicaremos fórmula de independencia:
+                            <img src="media/img/paso3_ej73.png" alt="">
+                            <p><br><b>Resultado b)</b> La probabilidad de que ninguno de ellos apruebe el curso es del 18%. Esto se obtiene utilizando 
+                                la independencia de los eventos.
+                            </p><br>
+
+                            c) Al menos uno apruebe. <br>
+                            Con los cálculos del inciso anterior:
+                            <img src="media/img/paso3_ej74.png" alt="">
+                            <p><br><b>Resultado c)</b> La probabilidad de que al menos uno de ellos apruebe el curso es del 82%. Esto se obtiene 
+                                utilizando la propiedad complementaria de la probabilidad.
+                            </p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <h2><v>4.4 Teorema de Bayes</v></h2>
+                    <li><h3>4.4.1 Ejemplo 8</h3></li>
+                    <h4 align="justify">
+                        Una planta productora de gelatinas cuenta con tres máquinas empacadoras. Así, la distribución del volumen de empaque se realiza de 
+                        la siguiente manera:<br>
+                        &emsp;<lu>Máquina 1: 38%</lu> <br>
+                        &emsp;<lu>Máquina 2: 32%</lu> <br>
+                        &emsp;<lu>Máquina 3: 30%</lu> <br>
+                        De esta manera, la probabilidad de que el empaque salga defectuoso es de 11%, 15% y 14%, respectivamente por cada máquina. <br>
+                        La gerencia de producción de la planta está interesada en conocer cuál es la probabilidad de que, si se selecciona una unidad al 
+                        azar y es defectuosa, esta se haya empacado en la máquina 2. <br><br>
+                                    
+                        <a href="#" onclick="document.getElementById('hiddenText080').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText080">
+                            <br><br><o>Paso 1:</o> Primero se precisa definir los eventos.<br>
+                            <br><img src="media/img/paso1_ej8.png" alt="">
+                
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText081').style.display='block'; return false;">SIGUIENTE</a>
+
+                        <div style="display: none;" id="hiddenText081">
+                            <br><br><o>Paso 2:</o> Para ejemplificar de manera gráfica lo anterior, se sugiere desarrollar el diagrama de árbol correspondiente.<br>
+                            <br><img src="media/img/paso2_ej8.png" alt="">
+                                                
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText082').style.display='block'; return false;">SIGUIENTE</a>
+                            
+                        <div style="display: none;" id="hiddenText082"> 
+                            <br><br><o>Paso 3:</o> Luego, debe considerarse que las unidades defectuosas pueden provenir de M1, M2 o M3, por lo que a estas se les 
+                            considera eventos mutuamente exclusivos; esto es que el que una unidad haya sido producida en una máquina en específico no afecta 
+                            el hecho de que provenga de otras máquinas. Entonces: <br>
+                            <br><img src="media/img/paso3_ej8.png" alt=""><br>
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText083').style.display='block'; return false;">SIGUIENTE</a>
+                            
+                        <div style="display: none;" id="hiddenText083">
+                            <br><br><o>Paso 4:</o> Aplicando el teorema de Bayes: <br>
+                            <br><img src="media/img/paso4_ej8.png" alt=""><br>
+                            
+                            <p><br><b>Resultado.</b> Por lo tanto, la probabilidad de que si se selecciona una unidad al azar y es defectuosa, esta se 
+                                haya empacado en la máquina 2 es de 36.42%.
+                            </p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>4.4.2 Ejemplo 9</h3></li>
+                    <h4 align="justify">
+                        Se tiene tres urnas con el siguiente contenido: la primera contiene 3 bolas blancas y 1 negra, la segunda 2 blancas y 2 negras y 
+                        la tercera 3 blancas. Se escoge una de las tres urnas al azar y se extrae de ella, también al azar, una bola que resulta ser blanca. 
+                        Dada esta información ¿cuál es la probabilidad de que la urna escogida haya sido la primera? ¿La tercera?<br><br>
+                                    
+                        <a href="#" onclick="document.getElementById('hiddenText090').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText090">
+                            <br><br><o>Paso 1:</o> Primero se precisa definir los eventos.<br>
+                            <br><img src="media/img/paso1_ej9.png" alt="">
+                
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText091').style.display='block'; return false;">SIGUIENTE</a>
+
+                        <div style="display: none;" id="hiddenText091">
+                            <br><br><o>Paso 2:</o> Para ejemplificar de manera gráfica lo anterior, se sugiere desarrollar el diagrama de árbol correspondiente.<br>
+                            <br><img src="media/img/paso2_ej9.png" alt="">
+                                                
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText092').style.display='block'; return false;">SIGUIENTE</a>
+                            
+                        <div style="display: none;" id="hiddenText092"> 
+                            <br><br><o>Paso 3:</o> Luego, debe considerarse que las bolas blancas pueden provenir de U1, U2 o U3, por lo que a estas se 
+                            les considera eventos mutuamente exclusivos. Entonces: <br>
+                            <br><img src="media/img/paso3_ej9.png" alt=""><br>
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText093').style.display='block'; return false;">SIGUIENTE</a>
+                            
+                        <div style="display: none;" id="hiddenText093">
+                            <br><br><o>Paso 4:</o> Aplicando el teorema de Bayes: <br>
+                            <br><img src="media/img/paso4_ej9.png" alt=""><br>
+                            
+                            <p><br><b>Resultado.</b> Por lo tanto, la probabilidad de que la bola blanca se haya elegido de la urna 1 es de 33.33%. 
+                                Y, de que se haya elegido de la urna 3 es de 44.44%.
+                            </p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>4.4.3 Ejemplo 10</h3></li>
+                    <h4 align="justify">
+                        Durante los últimos años se ha escrito mucho sobre la posible relación entre el fumar y el cáncer pulmonar. Supóngase que en 
+                        un centro médico, de todos los fumadores de quienes se sospecha que tenían cáncer pulmonar, el 90% lo tenía mientras que únicamente 
+                        el 5% de los no fumadores lo padecía. Si la proporción de fumadores es de 0.45, ¿cuál es la probabilidad de que un paciente con 
+                        cáncer pulmonar, seleccionado al azar, sea fumador?<br><br>
+                                    
+                        <a href="#" onclick="document.getElementById('hiddenText000').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText000">
+                            <br><br><o>Paso 1:</o> Primero se precisa definir los eventos.<br>
+                            <br><img src="media/img/paso1_ej10.png" alt="">
+                
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText001').style.display='block'; return false;">SIGUIENTE</a>
+
+                        <div style="display: none;" id="hiddenText001">
+                            <br><br><o>Paso 2:</o> Para ejemplificar de manera gráfica lo anterior, se sugiere desarrollar el diagrama de árbol correspondiente.<br>
+                            <br><img src="media/img/paso2_ej10.png" alt="">
+                                                
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText002').style.display='block'; return false;">SIGUIENTE</a>
+                            
+                        <div style="display: none;" id="hiddenText002"> 
+                            <br><br><o>Paso 3:</o> Luego, debe considerarse que un paciente con cáncer pulmonar puede provenir de A1 o A2, por lo que a 
+                            estas se les considera eventos mutuamente exclusivos. Entonces: <br>
+                            <br><img src="media/img/paso3_ej10.png" alt=""><br>
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText003').style.display='block'; return false;">SIGUIENTE</a>
+                            
+                        <div style="display: none;" id="hiddenText003">
+                            <br><br><o>Paso 4:</o> Aplicando el teorema de Bayes: <br>
+                            <br><img src="media/img/paso4_ej10.png" alt=""><br>
+                            
+                            <p><br><b>Resultado.</b> Por lo tanto, la probabilidad de que un paciente fumador tenga cáncer pulmonar es de 93.64%.
+                            </p>
+                    </h4>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                </ul>
+			</div>
+		</section>
+	</section>
+</html>
