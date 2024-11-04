@@ -103,5 +103,34 @@ $(document).ready(function() {
 	$theme9.click( function() {
 		$theme.removeClass().addClass('theme9');
 	});
+
+	function dfs(graph, start) {
+		const stack = [start];
+		const visited = new Set();
+		const result = [];
+	  
+		while (stack.length) {
+		  const vertex = stack.pop();
+	  
+		  if (!visited.has(vertex)) {
+			visited.add(vertex);
+			result.push(vertex);
+	  
+			for (const neighbor of graph[vertex]) {
+			  stack.push(neighbor);
+			}
+		  }
+		}
+	  
+		return result;
+	  }
+	  // ui.js
+    
+	  function seleccionarOpcion(opcion) {
+        const secciones = document.querySelectorAll('.container');
+        secciones.forEach(seccion => seccion.parentElement.classList.add('oculto'));
+    
+        document.getElementById(opcion).classList.remove('oculto');
+    } 
 		
 });

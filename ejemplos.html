@@ -27,185 +27,191 @@
                 <center><h1 class="title"><br>4. Ejemplos </h1></center>
 			</div>
         </section>
-
-		<section class="wrapper">
-			<div class="content"> 
+        <section class="wrapper">
+            <div class="content"> 
                 <ul>
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.1 Probabilidad discreta</v></h2>
-                    <li><h3>4.1.1 Ejemplo 1</h3></li>
+                    <h2><v>4.1 Lista de Adyacencia</v></h2>
                     <h4 align="justify">
-                        El 65 % de los hogares de una zona urbana hay alguien en casa en una noche terminada. Un investigador que está 
-                        haciendo una encuesta por teléfono selecciona al azar 15 hogares. Hallar las probabilidades siguientes: <br><br>
-                        &emsp;&emsp;a) Exactamente 8 hogares hay alguien en casa. <br>
-                        &emsp;&emsp;b) En ningún hogar hay alguien en casa.<br>
-                        &emsp;&emsp;c) En todos los hogares hay alguien en casa.<br><br>
-                        
+                        Vamos a ver el ejemplo de cómo obtener la matriz y lista de adyacencia del siguiente grafo no dirigido:
+                        <figure>
+                            <img src="media/img/13.png" style="width: 200px; height: auto;" alt="">
+                            <figcaption style="font-size: smaller;" align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.2: Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</figcaption>
+                        </figure>
                         <a href="#" onclick="document.getElementById('hiddenText010').style.display='block'; return false;">SOLUCIÓN.</a>
                         <div style="display: none;" id="hiddenText010">
-                            <br><br><o>Paso 1:</o> Recordemos que la fórmula de distribución binomial para este problema es:<br>
+                            <br><br><o>Paso 1:</o> debemos identificar los vértices y las aristas que los unen dentro del grafo. En este caso, observamos que:
+                            <ul>
+                                <li>El vértice 1 está conectado a los vértices 2 y 4.</li>
+                                <li>El vértice 2 está conectado a los vértices 1 y 5.</li>
+                                <li>El vértice 3 está conectado al vértice 5.</li>
+                                <li>El vértice 4 está conectado a los vértices 1 y 5.</li>
+                                <li>El vértice 5 está conectado a los vértices 2, 3 y 4.</li>
+                            </ul>
+                            <br>
                             <br><img src="media/img/binimial.png" alt="">
+                        </div>
 
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText011').style.display='block'; return false;">SIGUIENTE</a>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText011').style.display='block'; return false;">SIGUIENTE</a>
                             
-				        <div style="display: none;" id="hiddenText011">
-                            <br><br><o>Paso 2:</o> Ahora vamos a identificar los datos de acuerdo a las especificaciones del problema.<br><br>
-                            &emsp;&emsp;a) Exactamente 8 hogares hay alguien en casa.
-                            <img src="media/img/paso2.Binomial.png" alt=""><br>
-
-                            &emsp;&emsp;b) En ningún hogar hay alguien en casa.
-                            <img src="media/img/paso2_ej12.png" alt=""><br>
-
-                            &emsp;&emsp;c) En todos los hogares hay alguien en casa.
-                            <img src="media/img/paso2_ej13.png" alt="">
-                            
+                        <div style="display: none;" id="hiddenText011">
+                            <br><br><o>Paso 2:</o> El siguiente paso es crear la lista de adyacencia. Para ello, simplemente mediante una lista ordenaremos a cada vértice con sus respectivos nodos vecinos:
+                            Entonces, la Lista de Adyacencia es:
+                            <ul>
+                                <li>1: 2, 4</li>
+                                <li>2: 1, 5</li>
+                                <li>3: 5</li>
+                                <li>4: 1, 5</li>
+                                <li>5: 2, 3, 4</li>
+                            </ul>                        
                             <br><br> <a href="#" onclick="document.getElementById('hiddenText012').style.display='block'; return false;">SIGUIENTE</a>
-        
-				        <div style="display: none;" id="hiddenText012"> 
-                            <br><br><o>Paso 3:</o> Sustituyendo los valores en la fórmula y resolviendo: <br><br>
-                            &emsp;&emsp;a) Exactamente 8 hogares hay alguien en casa.
+
+                        <div style="display: none;" id="hiddenText012"> 
+                            <br><br><o>Paso 3:</o> Ahora procedemos a crear la matriz de adyacencia de nuestro grafo. 
+                            Primero, tenemos que identificar la cantidad de nodos que hay, ya que si el grafo tiene n vértices, la matriz de adyacencia será de tamaño n×n.
+                            En este caso usaremos una matriz 5×5 (ya que hay 5 vértices) y la inicializamos con valores en cero.
                             <img src="media/img/paso3_ej1.png" alt=""><br>
-                            Desarrollando el coeficiente binomial (sacando el factorial):
+                            Finalmente, llenaremos la matriz de forma que cada posición (i, j) tendrá un 1 si hay una conexión entre el vértice i(filas)  y el vértice j(columnas), y un 0 si no la hay.
                             <img src="media/img/paso3_ej12.png" alt=""><br>
-                            Multiplicado:
-                            <img src="media/img/paso3_ej13.png" alt=""><br>
-                            <p><br><b>Resultado a)</b> La probabilidad de que exactamente 8 de los 15 hogares seleccionados al azar tengan a alguien en 
-                                casa en una noche determinada es aproximadamente 0.1319, o alrededor del 13.19%.</p><br>
-
-                            &emsp;&emsp;b) En ningún hogar hay alguien en casa.
-                            <img src="media/img/paso3_ej14.png" alt="">
-                            <p><br><b>Resultado b)</b> La probabilidad de que ningún hogar de los 15 seleccionados tenga a alguien en casa en una noche 
-                                determinada es aproximadamente 0.00000014488, o alrededor de 0.000014488% Esto indica que es extremadamente poco 
-                                probable que ningún hogar tenga a alguien presente.</p><br>
-
-                            &emsp;&emsp;c) En todos los hogares hay alguien en casa.
-                            <img src="media/img/paso3_ej15.png" alt="">
-                            <p><br><b>Resultado c)</b> La probabilidad de que todos los 15 hogares seleccionados tengan a alguien en casa en una noche 
-                                determinada es aproximadamente 0.0015620, o alrededor de 0.1562%. Esto sugiere que hay una posibilidad limitada de que 
-                                todos los hogares tengan a alguien presente.</p>
+                            Así finalizamos el proceso para obtener la matriz y lista de adyacencia del grafo.
+                            
                     </h4>
                     </div>
                     </div>
                     </div>
                 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>4.1.2 Ejemplo 2</h3></li>
+                    <h2><v>4.2 Matrizz y Lista de Adyacencia</v></h2>
                     <h4 align="justify">
-                        Un comerciante de verduras tiene conocimiento de que el 10 % de las cajas están descompuestas, si un comprador elige
-                        4 verduras al azar, encuentre la probabilidad de que: <br><br>
-                        &emsp; a) Todas están descompuestas.
+                        Ahora, haremos un ejemplo sobre cómo obtener la matriz y lista de adyacencia de un grafo dirigido. 
                         <br><br>
-                                    
+                        <br><img src="media/img/binimial.png" alt="">
+  
                         <a href="#" onclick="document.getElementById('hiddenText020').style.display='block'; return false;">SOLUCIÓN.</a>
                         <div style="display: none;" id="hiddenText020">
                         <p>
-                            <br><br><o>Paso 1:</o> Recordemos que la fórmula de distribución binomial para este problema es:<br>
-                            <br><img src="media/img/binimial.png" alt="">
-                            
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText021').style.display='block'; return false;">SIGUIENTE</a>
+                            <br><br><o>Paso 1:</o> El proceso será muy similar al anterior. Primero tenemos que observar cómo está constituido el grafo: en este caso tenemos los vértices numerados del 1 al 6 y las aristas están dirigidas entre ellos. Observemos las conexiones:
+                            <br>
+                            <ul>
+                                <li>El vértice 1 tiene una arista dirigida hacia el vértice 6.</li>
+                                <li>El vértice 2 tiene una arista dirigida hacia el vértice 1 y 4.</li>
+                                <li>El vértice 3 tiene una arista dirigida hacia el vértice 2.</li>
+                                <li>El vértice 4 tiene una arista dirigida hacia el vértice 5 y un lazo (una arista que regresa al mismo vértice).</li>
+                                <li>El vértice 5 no tiene aristas salientes.</li>
+                                <li>El vértice 6 tiene una arista dirigida hacia el vértice 4.</li>
+                            </ul>
+                            <br>
                         </p>
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText021').style.display='block'; return false;">SIGUIENTE</a>
+                        
 				        <div style="display: none;" id="hiddenText021">
                         <p>
-                            <br><br><o>Paso 2:</o> Ahora vamos a identificar los datos de acuerdo a las especificaciones del problema.<br>
-                            <br><img src="media/img/paso2_ej2.png" alt="">
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText022').style.display='block'; return false;">SIGUIENTE</a>
+                            <br><br><o>Paso 2:</o>En un grafo dirigido, la lista de adyacencia refleja las conexiones en una dirección específica. Esto significa que cada arista tiene un vértice de origen y un vértice de destino, y solo el vértice de origen incluirá al vértice de destino en su lista de adyacencia. Por lo tanto, en este caso la lista de adyacencia que obtenemos es:
+                            <br>
+                            <ul>
+                                <li>1: 6</li>
+                                <li>2: 1, 4</li>
+                                <li>3: 2</li>
+                                <li>4: 5, 4</li>
+                                <li>5: </li>
+                                <li>6: 4</li>
+                            </ul>
+                            <br>
                         </p>
-				        <div style="display: none;" id="hiddenText022">
+
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText022').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText022">
                         <p>
-                            <br><br><o>Paso 3:</o> Sustituyendo los valores en la fórmula y resolviendo: <br>
+                            <br><br><o>Paso 3:</o> 
+                            Ahora, para elaborar la matriz de adyacencia, primero identificamos el número de vértices que este contiene, ya que la matriz de adyacencia será de tamaño nxn (siendo n la cantidad de vértices). Inicialmente, le damos valores de cero, en este caso, la matriz será de 6x6. 
+                             <br>
                             <br><img src="media/img/paso3_ej2.png" alt=""><br>
                         </p>
-                        <p><br><b>Resultado.</b> La probabilidad de que las cuatro cajas elegidas al azar estén todas descompuestas es de 0.0001, o 
-                            0.01%. Esto sugiere que es una ocurrencia extremadamente rara, dada la probabilidad relativamente baja de que una caja 
-                            esté descompuesta.</p>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText023').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText023">
+                        <p>
+                            <br><br><o>Paso 4:</o> 
+                            Posteriormente, comenzamos con el llenado de la matriz. Para ello, por cada arista dirigida del grafo, coloca un 1 en la posición (i,j) de la matriz si hay una arista dirigida desde el vértice i al vértice j. Si no existe una arista, deja un 0 en esa posición.
+                            <br>
+                            Si algún vértice tiene un lazo (una arista que apunta a sí mismo), coloca un 1 en la posición diagonal correspondiente, es decir, en (i,i).
+                            <br>
+                            De esta forma obtenemos la siguiente matriz: 
+                            <br>
+                            <br><img src="media/img/paso3_ej22.png" alt=""><br>
+                            Así finalizamos el proceso para obtener la matriz y lista de adyacencia del grafo dirigido.
+                        </p>
+
                     </h4>
                     </div>
                     </div>
                     </div>
-
+                    </div>
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.2 Probabilidad condicional</v></h2>
-                    <li><h3>4.2.1 Ejemplo 3</h3></li>            
+                    <h2><v>4.3 Recorrido DFS</v></h2>
                     <h4 align="justify">
-                        Se lanza un par de dados no cargados una vez, y queremos calcular la probabilidad de que la suma de los números en ambos dados 
-                        sea 7 o que la suma sea 4 o que la suma sea 12. con la condición de que los dos números que aparecen deben ser diferentes. <br><br>
-                        
+                        A continuación veremos un ejemplo de cómo se realiza la búsqueda a profundidad (DFS) con el siguiente grafo:
+                        <br><img src="media/img/paso1_ej3.png" alt="">
+                        <br>
                         <a href="#" onclick="document.getElementById('hiddenText030').style.display='block'; return false;">SOLUCIÓN.</a>
                         <div style="display: none;" id="hiddenText030">
                             
-                                <br><br><o>Paso 1:</o>Definimos los siguientes eventos con los datos especificados en el problema:<br>
-                                <br><img src="media/img/paso1_ej3.png" alt="">
-
-                                <br><br> <a href="#" onclick="document.getElementById('hiddenText031').style.display='block'; return false;">SIGUIENTE</a>
+                                <br><br><o>Paso 1:</o> Iniciamos el recorrido en el nodo "a".
+                                <ul>
+                                    <li>Partimos en el nodo "a" y lo marcamos como visitado.</li>
+                                    <li>Lista de visitados: a</li>
+                                    <li>Desde aquí, tenemos dos opciones de vecinos a visitar: b y d. En DFS, seguimos el camino en profundidad, así que elijamos el primer vecino en orden alfabético, que en este caso es "b".</li>
+                                </ul>
+                                
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText031').style.display='block'; return false;">SIGUIENTE</a>
                             
 				        <div style="display: none;" id="hiddenText031">
                         
-                            <br><br><o>Paso 2:</o> Se enumeran todas las posibles combinaciones de lanzamientos de dados.<br><br>
-                            Cada dado tiene 6 caras y si estamos lanzando dos dados, hay un total de 6x6=36 posibles resultados. Representado en una tabla: <br>
-                            <img src="media/img/paso2_ej3.png" alt="">
-                            
+                            <br><br><o>Paso 2:</o> Moverse al nodo "b".
+
+                            <ul>
+                                <li>Ahora estamos en "b" y lo marcamos como visitado.</li>
+                                <li>Lista de visitados: a → b</li>
+                                <li>En "b", tenemos tres vecinos: a, c, y d.</li>
+                                <li>Como "a" ya ha sido visitado, lo omitimos y nos movemos al siguiente vecino no visitado, que es "c".</li>
+                            </ul>
                             <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
                         
 				        <div style="display: none;" id="hiddenText032"> 
                         
-                            <br><br><o>Paso 3:</o> De acuerdo con el evento A, que es "los dos números que ocurren son diferentes". Calculamos el número de resultados 
-                            que cumplen con el evento A. <br>
-                            <br><img src="media/img/paso3_ej3.png" alt=""><br>
-                            Si nos fijamos en la tabla de combinaciones, las que no cumplen son: (1,1), (2,2), (3,3), (4,4), (5,5), (6,6). 
-                            Formando una diagonal en estas combinaciones.
+                            <br><br><o>Paso 3:</o> Moverse al nodo "c".
+                            -Llegamos a "c" y lo marcamos como visitado.
+-Lista de visitados: a → b → c
+-En "c", encontramos dos vecinos: b y d.
+-Como "b" ya ha sido visitado, omitimos esa opción y nos movemos al siguiente vecino no visitado, que es "d".
+
 
                             <br><br> <a href="#" onclick="document.getElementById('hiddenText033').style.display='block'; return false;">SIGUIENTE</a>
                         
                         <div style="display: none;" id="hiddenText033">
-                            <br><br><o>Paso 4:</o> Buscamos combinaciones que cumplan las condiciones de acuerdo a la suma de cada evento:<br><br>
-                            <img src="media/img/paso4_ej3.png" alt="">
+                            <br><br><o>Paso 4:</o> Moverse al nodo "d".
+                            -Llegamos a "d" y lo marcamos como visitado.
+                            -Lista de visitados: a → b → c → d
+                            -En "d", tenemos tres vecinos: a, b, y c.
+                            -Sin embargo, todos estos vecinos ya han sido visitados. Por lo tanto, no hay más nodos que explorar desde "d".
+                            
 
                             <br><br> <a href="#" onclick="document.getElementById('hiddenText034').style.display='block'; return false;">SIGUIENTE</a>
                         
                         <div style="display: none;" id="hiddenText034">
-                            <br><br><o>Paso 5:</o> Usaremos la fórmula de probabilidad.<br><br>
-                            Calculando para cada evento y factorizando:
-                            <img src="media/img/paso5_ej3.png" height="250" width="100" alt="">
-
+                            <br><br><o>Paso 5:</o>  Retroceso.
+                            -Dado que ya no hay vecinos no visitados desde "d", retrocedemos al nodo anterior, que es "c".
+                            -En "c", tampoco quedan vecinos no visitados, por lo que retrocedemos nuevamente a "b".
+                            -En "b", tampoco hay vecinos no visitados, así que retrocedemos finalmente a "a".
+                            En "a", todos los vecinos han sido explorados, lo que indica que el recorrido DFS está completo.
+                            
                             <br><br> <a href="#" onclick="document.getElementById('hiddenText035').style.display='block'; return false;">SIGUIENTE</a>
                         
                         <div style="display: none;" id="hiddenText035">
-                            <br><br><o>Paso 6:</o> Calculando la intersección de cada evento independiente.<br><br>
-                            Evento B: Los pares posibles para B que cumplen con A son (1,3) y (3,1), hay dos de ellos (puesto que los pares deben de 
-                            ser diferentes por el evento A).
-                            <img src="media/img/paso6_ej3.png" alt=""><br>
-
-                            Evento C: Los pares posibles para C que cumplen con A son (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). y hay seis de ellos 
-                            (puesto que los pares deben de ser diferentes por el evento A).
-                            <img src="media/img/paso6_ej32.png" alt=""><br>
-
-                            Evento D: No hay pares que cumplan con ambos A y D, ya que la suma 12 implica tener dos dados iguales, y A requiere que 
-                            sean diferentes. Por lo tanto:
-                            <img src="media/img/paso6_ej33.png" alt="">
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText036').style.display='block'; return false;">SIGUIENTE</a>
-
-                        <div style="display: none;" id="hiddenText036">
-                            <br><br><o>Paso 7:</o> Calculando la intersección de cada evento independiente con la fórmula de probabilidad condicional.<br><br>
-                            Evento B:
+                            <br><br><o>Paso 6:</o> Finalmente, podemos concluir que el recorrido DFS encontró y visitó todos los nodos del grafo en el orden a → b → c → d , asegurándose de que cada rama ó “camino” se agotara completamente antes de pasar a otra.
                             <img src="media/img/paso7_ej3.png" alt="">
-                            <p><br><b>Resultado Evento B.</b> La probabilidad de que la suma sea 4 dado que los dos números son diferentes es de 1/15, lo que
-                                 implica que hay una probabilidad del 6.66% de obtener una suma de 4 en los dados bajo esta condición.
-                            </p><br>
 
-                            Evento C:
-                            <img src="media/img/paso7_ej32.png" alt="">
-                            <p><br><b>Resultado Evento C.</b> La probabilidad de que la suma sea 7 dado que los dos números son diferentes es de 1/5, lo que 
-                                significa que hay una probabilidad del 20% de obtener una suma de 7 en los dados bajo esta condición.
-                            </p><br>
-
-                            Evento D:
-                            <img src="media/img/paso7_ej33.png" alt="">
-                            <p><br><b>Resultado Evento D.</b> Dado que los dos números son diferentes, la probabilidad de obtener una suma de 12 en los dados es 0, 
-                                lo que indica que es imposible obtener una suma de 12 en los dados bajo esta condición.
-                            </p>
+                            
                     </h4>
-                    </div>
                     </div>
                     </div>
                     </div>
@@ -214,7 +220,7 @@
                     </div>
                                 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>4.2.2 Ejemplo 4</h3></li>
+
                     <h4 align="justify">
                         Con base en su experiencia un médico ha recabado la siguiente información, relativa a las enfermedades de sus pacientes: 5% creen tener cáncer y 
                         lo tienen, 45% creen tener cáncer y no lo tienen, 10% no creen tener cáncer pero si lo tienen; y finalmente 40% creen no tenerlo, lo cual es cierto. 
