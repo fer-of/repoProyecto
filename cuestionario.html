@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="Author" content="Equipo	2"/><!--Autor-->
+	<meta name="Author" content="Equipo 2"/><!--Autor-->
 
 	<meta name="Description" content="DOO"/><!--Descripción del tutorial-->
 	<meta name="Keywords" content="DOO"/><!--Palabras clave-->
@@ -21,14 +21,13 @@
 	<link rel="stylesheet" href="media/css/cuestionario.css" type="text/css" />
 	
 	<script type="text/javascript">
-		var total=3;
+		var total=10;
 		var correctas=0;
 		var promedio=0;
 		var entrar=new Array;
 		var examen=[];
 		
 		function examenAleatorio(){
-			total=10;
 			var cont=0;
 			var indice=0;
 			
@@ -43,17 +42,17 @@
 		}
 		
 		function valua(indice,resp){
-			if (examen[indice].correcta== resp){ 
+			if (examen[indice].correcta == resp){ 
 				if(!entrar[indice]){
 					entrar[indice]=1;	
 					correctas++;
 				}
-				document.getElementById('resp' + (indice)).innerHTML = ''/*'<span class="bien">Respuestas Correctas&nbsp;'+correctas+'  </span>'*/;	
+				document.getElementById('resp' + (indice)).innerHTML = '<span class="bien">Respuesta Correcta</span>';	
 			}else{
 				if(!entrar[indice]){
 					entrar[indice]=1;	
 				}
-				document.getElementById('resp' + (indice)).innerHTML = '' /*'<span class="mal">Respuesta Incorrecta&nbsp; </span>'*/;	
+				document.getElementById('resp' + (indice)).innerHTML = '<span class="mal">Respuesta Incorrecta</span>';	
 			}
 		}
 
@@ -62,46 +61,39 @@
 			promedio*=10;	
 			document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr>';
 			if(promedio<1)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Contesta algo</center>';
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Contesta algo</center>';
 			if(promedio>=1 && promedio<2)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Repite el tutorial</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Repite el tutorial</center>';	
 			if(promedio>=2 && promedio<3)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Consulta al autor</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Consulta al autor</center>';	
 			if(promedio>=3 && promedio<4)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Más atención</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Más atención</center>';	
 			if(promedio>=4 && promedio<5)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Casi</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Casi</center>';	
 			if(promedio>=5 && promedio<6)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Tú puedes</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Tú puedes</center>';	
 			if(promedio>=6 && promedio<7)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Buen intento</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Buen intento</center>';	
 			if(promedio>=7 && promedio<8)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Bien hecho</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Bien hecho</center>';	
 			if(promedio>=8 && promedio<9)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Muy bien</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Muy bien</center>';	
 			if(promedio>=9 && promedio<10)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Felicidades</center>';	
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Felicidades</center>';	
 			if(promedio==10)	
-				document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><br/><br/><center>Calificación: &nbsp;'+promedio+'</center></span><hr><center>Experto!</center>';	
-		
+				document.getElementById('puntuacionfinal').innerHTML += '<center>Experto!</center>';	
 		}
-		
 	</script>
 	
 	<script language="javascript" type="text/javascript">
 		function unoOn(){
 			document.getElementById("Uno").style.visibility="visible";		
-			//$("#Uno").hide().css({visibility: "visible"}).fadeIn("slow");	
-			// $('#Uno').css('visibility','visible').hide().fadeIn('slow');
 		}
 		function unoOut(){
 			document.getElementById("Uno").style.visibility="hidden";
-			//$("#navigationcontainer").fadeTo("slow",0.6);
-			//$('#Uno').css('visibility','hidden').hide().fadeIn('slow');
 		}
 		function dosOn(){
 			document.getElementById("Dos").style.visibility="visible";
-			//$("#Dos").delay(500).fadeTo("slow", 0.6);
 		}
 		function dosOut(){
 			document.getElementById("Dos").style.visibility="hidden";
@@ -128,12 +120,11 @@
 		<br><br><br>
 		<h1>7. Cuestionario</h1><br>
 		<h5 align="justify">
-			A continuación se presenta una serie de 10 preguntas de un total de 50 disponibles. Las preguntas se escogerán aleatoriamente. Una vez contestadas, 
-			podrás obtener una calificación basada en el número de respuestas que hayas contestado correctamente. <br>
-			Puedes generar nuevas preguntas haciendo click en el boton "Reintentar" al final del cuestionario o haciendo click en el apartado "Cuestionario" en 
-			la barra de navegación izquierda. <br><br>
+			A continuación se presenta una serie de 10 preguntas de un total de 50 disponibles. 
+			Las preguntas se escogerán aleatoriamente. Una vez  que selecciones la respuesta de una pregunta, apareceran un mensaje donde te inidacara si es correcta o no <br>
+			Puedes generar nuevas preguntas haciendo click en el apartado "Cuestionario" en la barra de navegación izquierda o en el boton que dice reiniciar en la parte final del cuestionario<br><br>
 			Para consultar las respuestas, puedes acceder al documento PDF "Cuestionario Respuestas" en la barra de navegación derecha, que contiene cada una 
-			de las preguntas posibles del cuestionario.<br><br>
+			de las preguntas posibles del cuestionario. c<br><br>
 			Responde en función de lo comprendido en el Desarrollo del tema.<br><br>
 		</h5>
 		
@@ -153,12 +144,16 @@
 		</script>
 
 		<div id="borrarimprimir">
-			<center><input type="button" id="revisar" value="" onClick="notaFinal()" /></center>
+			<center>
+				<input type="button" id="revisar" value="Revisar" onClick="notaFinal()" style="border-radius: 12px; background-color: #E6E6FA; color: #800080; padding: 10px 20px; font-size: 16px; border: none; cursor: pointer;" />
+			</center>
 			
 			<div id="puntuacionfinal"><center>&nbsp;</center></div>
 			
-			<center><input type="button" id="reintentar" value="" onClick="location.reload()"/></center>
-		</div>
+			<center>
+				<input type="button" id="reiniciar" value="Reiniciar Cuestionario" onClick="location.reload()" style="border-radius: 12px; background-color: #E6E6FA; color: #800080; padding: 10px 20px; font-size: 16px; border: none; cursor: pointer;" />
+			</center>		</div>
+		
 		
 	</section>
 	

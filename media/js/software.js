@@ -3,155 +3,105 @@
 * Estructuras Discretas
 * 2024-1
 ****************************/
+// Representación del grafo como un objeto (lista de adyacencia)
+const graph = {
+  0: [1, 2],
+  1: [0, 3, 4],
+  2: [0, 5],
+  3: [1],
+  4: [1],
+  5: [2]
+};
 
-document.addEventListener('DOMContentLoaded', () => {
-    const opciones = ['DFS', 'BFS', 'MatrizAdyacencia'];
-
-    opciones.forEach(opcion => {
-        const elemento = document.getElementById(opcion);
-        if (elemento) {
-            elemento.addEventListener('click', () => seleccionarOpcion(opcion));
-        }
-    });
-});
-
-function seleccionarOpcion(opcion) {
-    // Oculta todas las secciones
-    ocultarTodasLasOpciones();
-    // Muestra la sección correspondiente a la opción seleccionada
-    const elemento = document.getElementById(opcion);
-    if (elemento) {
-        elemento.classList.remove('oculto');
-    }
+// Función para resetear la visualización
+function resetVisualization() {
+  const nodes = document.querySelectorAll('.node');
+  nodes.forEach(node => {
+      node.style.backgroundColor = 'white';
+  });
 }
 
-function ocultarTodasLasOpciones() {
-    const opciones = ['DFS', 'BFS', 'MatrizAdyacencia'];
+// Algoritmo BFS
+function bfs() {
+  resetVisualization();
+  const startNode = parseInt(document.getElementById("startNode").value);
+  const queue = [startNode];
+  const visited = new Set();
 
-    opciones.forEach(opcion => {
-        const elemento = document.getElementById(opcion);
-        if (elemento) {
-            elemento.classList.add('oculto');
-        }
-    });
+  let i = 0;
+  function step() {
+      if (queue.length > 0) {
+          const node = queue.shift();
+          if (!visited.has(node)) {
+              visited.add(node);
+              highlightNode(node, 'purple'); // Visualización
+              graph[node].forEach(neighbor => {
+                  if (!visited.has(neighbor)) {
+                      queue.push(neighbor);
+                  }
+              });
+              setTimeout(step, 500); // Intervalo para la visualización paso a paso
+          }
+      }
+  }
+  step();
 }
 
-function bfs(graph, start) {
-    const queue = [start];
-    const visited = new Set();
-    const result = [];
-  
-    while (queue.length) {
-        const vertex = queue.shift();
-  
-        if (!visited.has(vertex)) {
-            visited.add(vertex);
-            result.push(vertex);
-  
-            for (const neighbor of graph[vertex]) {
-                if (!visited.has(neighbor)) {
-                    queue.push(neighbor);
-                }
-            }
-        }
-    }
-  
-    return result;
+// Algoritmo DFS
+function dfs() {
+  resetVisualization();
+  const startNode = parseInt(document.getElementById("startNode").value);
+  const stack = [startNode];
+  const visited = new Set();
+
+  let i = 0;
+  function step() {
+      if (stack.length > 0) {
+          const node = stack.pop();
+          if (!visited.has(node)) {
+              visited.add(node);
+              highlightNode(node, 'blue'); // Visualización
+              graph[node].forEach(neighbor => {
+                  if (!visited.has(neighbor)) {
+                      stack.push(neighbor);
+                  }
+              });
+              setTimeout(step, 500); // Intervalo para la visualización paso a paso
+          }
+      }
+  }
+  step();
 }
 
-function dfs(graph, start) {
-    const stack = [start];
-    const visited = new Set();
-    const result = [];
-  
-    while (stack.length) {
-        const vertex = stack.pop();
-  
-        if (!visited.has(vertex)) {
-            visited.add(vertex);
-            result.push(vertex);
-  
-            for (const neighbor of graph[vertex]) {
-                if (!visited.has(neighbor)) {
-                    stack.push(neighbor);
-                }
-            }
-        }
-    }
-  
-    return result;
+// Función para visualizar un nodo
+function highlightNode(node, color) {
+  const nodeElement = document.getElementById(`node-${node}`);
+  if (nodeElement) {
+      nodeElement.style.backgroundColor = color;
+  }
 }
 
-// software.js
-    
-function iniciarBFS() {
-    const startNode = document.getElementById('startNodeBFS').value;
-    // Implementación del algoritmo BFS
-    // ...
-    document.getElementById('outputBFS').innerText = `Resultado del BFS desde el nodo ${startNode}`;
+// Dibuja los nodos en el contenedor de gráfico
+function drawGraph() {
+  const container = document.getElementById('graph-container');
+  const positions = [
+      { left: '50%', top: '10%' }, // Nodo 0
+      { left: '20%', top: '40%' }, // Nodo 1
+      { left: '80%', top: '40%' }, // Nodo 2
+      { left: '10%', top: '80%' }, // Nodo 3
+      { left: '35%', top: '80%' }, // Nodo 4
+      { left: '70%', top: '80%' }  // Nodo 5
+  ];
+
+  for (const node in graph) {
+      const nodeDiv = document.createElement('div');
+      nodeDiv.classList.add('node');
+      nodeDiv.id = `node-${node}`;
+      nodeDiv.innerText = node;
+      nodeDiv.style.left = positions[node].left;
+      nodeDiv.style.top = positions[node].top;
+      container.appendChild(nodeDiv);
+  }
 }
 
-function reiniciarBFS() {
-    document.getElementById('startNodeBFS').value = '';
-    document.getElementById('outputBFS').innerText = '';
-}
-
-function iniciarDFS() {
-    const startNode = document.getElementById('startNodeDFS').value;
-    // Implementación del algoritmo DFS
-    // ...
-    document.getElementById('outputDFS').innerText = `Resultado del DFS desde el nodo ${startNode}`;
-}
-
-function reiniciarDFS() {
-    document.getElementById('startNodeDFS').value = '';
-    document.getElementById('outputDFS').innerText = '';
-}
-
-function generarMatrizAdyacencia() {
-    const numNodos = document.getElementById('numNodos').value;
-    // Implementación para generar la matriz de adyacencia
-    // ...
-    document.getElementById('outputMatrizAdyacencia').innerText = `Matriz de adyacencia generada para ${numNodos} nodos`;
-}
-
-function reiniciarMatrizAdyacencia() {
-    document.getElementById('numNodos').value = '';
-    document.getElementById('outputMatrizAdyacencia').innerText = '';
-}// software.js
-    
-function iniciarBFS() {
-    const startNode = document.getElementById('startNodeBFS').value;
-    // Implementación del algoritmo BFS
-    // ...
-    document.getElementById('outputBFS').innerText = `Resultado del BFS desde el nodo ${startNode}`;
-}
-
-function reiniciarBFS() {
-    document.getElementById('startNodeBFS').value = '';
-    document.getElementById('outputBFS').innerText = '';
-}
-
-function iniciarDFS() {
-    const startNode = document.getElementById('startNodeDFS').value;
-    // Implementación del algoritmo DFS
-    // ...
-    document.getElementById('outputDFS').innerText = `Resultado del DFS desde el nodo ${startNode}`;
-}
-
-function reiniciarDFS() {
-    document.getElementById('startNodeDFS').value = '';
-    document.getElementById('outputDFS').innerText = '';
-}
-
-function generarMatrizAdyacencia() {
-    const numNodos = document.getElementById('numNodos').value;
-    // Implementación para generar la matriz de adyacencia
-    // ...
-    document.getElementById('outputMatrizAdyacencia').innerText = `Matriz de adyacencia generada para ${numNodos} nodos`;
-}
-
-function reiniciarMatrizAdyacencia() {
-    document.getElementById('numNodos').value = '';
-    document.getElementById('outputMatrizAdyacencia').innerText = '';
-}
+drawGraph();

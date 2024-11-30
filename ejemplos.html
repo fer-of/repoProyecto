@@ -18,9 +18,23 @@
 	
 	<!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
 	<link rel="stylesheet" href="media/css/ejemplos.css" type="text/css" />
-
+    <style>
+		h1 {
+			color: blue;
+		}
+		h2{
+			color: palevioletred;
+		}
+		h3{
+			color: plum;
+		}
+		h4 {
+			color: papayawhip;
+		}
+	</style>
 </head>
-	<section class="main clearfix">
+<body>
+    <section class="main clearfix">
 		<section class="top">	
 			<img src="img\ejemBK.jpg" class="media" alt=""/>
             <div class="wrapper content_header clearfix">
@@ -34,13 +48,17 @@
                     <h2><v>4.1 Lista de Adyacencia</v></h2>
                     <h4 align="justify">
                         Vamos a ver el ejemplo de cómo obtener la matriz y lista de adyacencia del siguiente grafo no dirigido:
+                        <br><br>
                         <figure>
-                            <img src="media/img/13.png" style="width: 200px; height: auto;" alt="">
-                            <figcaption style="font-size: smaller;" align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.2: Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</figcaption>
+                            <img src="media/img/ejem_1.png" style="width: 200px; height: auto;" alt="">
                         </figure>
+                        <br><br>
                         <a href="#" onclick="document.getElementById('hiddenText010').style.display='block'; return false;">SOLUCIÓN.</a>
                         <div style="display: none;" id="hiddenText010">
-                            <br><br><o>Paso 1:</o> debemos identificar los vértices y las aristas que los unen dentro del grafo. En este caso, observamos que:
+                            <br><br><o>Paso 1:</o> Debemos identificar los vértices y las aristas que los unen dentro del grafo. 
+                            <br><br>
+                            En este caso, observamos que:
+                            <br><br>
                             <ul>
                                 <li>El vértice 1 está conectado a los vértices 2 y 4.</li>
                                 <li>El vértice 2 está conectado a los vértices 1 y 5.</li>
@@ -48,15 +66,17 @@
                                 <li>El vértice 4 está conectado a los vértices 1 y 5.</li>
                                 <li>El vértice 5 está conectado a los vértices 2, 3 y 4.</li>
                             </ul>
-                            <br>
-                            <br><img src="media/img/binimial.png" alt="">
-                        </div>
+                            <br><br>
 
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText011').style.display='block'; return false;">SIGUIENTE</a>
-                            
+                        <br><br> 
+                        <a href="#" onclick="document.getElementById('hiddenText011').style.display='block'; return false;">SIGUIENTE</a>    
                         <div style="display: none;" id="hiddenText011">
-                            <br><br><o>Paso 2:</o> El siguiente paso es crear la lista de adyacencia. Para ello, simplemente mediante una lista ordenaremos a cada vértice con sus respectivos nodos vecinos:
+                            <br><br><o>Paso 2:</o> El siguiente paso es crear la lista de adyacencia. 
+                            <br><br>
+                            Para ello, simplemente mediante una lista ordenaremos a cada vértice con sus respectivos nodos vecinos:
+                            <br><br>
                             Entonces, la Lista de Adyacencia es:
+                            <br><br>
                             <ul>
                                 <li>1: 2, 4</li>
                                 <li>2: 1, 5</li>
@@ -64,15 +84,21 @@
                                 <li>4: 1, 5</li>
                                 <li>5: 2, 3, 4</li>
                             </ul>                        
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText012').style.display='block'; return false;">SIGUIENTE</a>
-
+                        <br><br> 
+                        <a href="#" onclick="document.getElementById('hiddenText012').style.display='block'; return false;">SIGUIENTE</a>
                         <div style="display: none;" id="hiddenText012"> 
                             <br><br><o>Paso 3:</o> Ahora procedemos a crear la matriz de adyacencia de nuestro grafo. 
+                            <br><br>
                             Primero, tenemos que identificar la cantidad de nodos que hay, ya que si el grafo tiene n vértices, la matriz de adyacencia será de tamaño n×n.
+                            <br><br>
                             En este caso usaremos una matriz 5×5 (ya que hay 5 vértices) y la inicializamos con valores en cero.
-                            <img src="media/img/paso3_ej1.png" alt=""><br>
+                            <br><br>
+                            <img src="media/img/ejem_2.png" style="width: 200px; height: auto;" alt=""><br>
+                            <br><br>
                             Finalmente, llenaremos la matriz de forma que cada posición (i, j) tendrá un 1 si hay una conexión entre el vértice i(filas)  y el vértice j(columnas), y un 0 si no la hay.
-                            <img src="media/img/paso3_ej12.png" alt=""><br>
+                            <br><br>
+                            <img src="media/img/ejem_3.png" style="width: 200px; height: auto;" alt=""><br>
+                            <br><br>
                             Así finalizamos el proceso para obtener la matriz y lista de adyacencia del grafo.
                             
                     </h4>
@@ -85,13 +111,15 @@
                     <h4 align="justify">
                         Ahora, haremos un ejemplo sobre cómo obtener la matriz y lista de adyacencia de un grafo dirigido. 
                         <br><br>
-                        <br><img src="media/img/binimial.png" alt="">
+                        <br><img src="media/img/ejem_4.png" style="width: 200px; height: auto;" alt="">
   
                         <a href="#" onclick="document.getElementById('hiddenText020').style.display='block'; return false;">SOLUCIÓN.</a>
                         <div style="display: none;" id="hiddenText020">
                         <p>
-                            <br><br><o>Paso 1:</o> El proceso será muy similar al anterior. Primero tenemos que observar cómo está constituido el grafo: en este caso tenemos los vértices numerados del 1 al 6 y las aristas están dirigidas entre ellos. Observemos las conexiones:
-                            <br>
+                            <br><br><o>Paso 1:</o> El proceso será muy similar al anterior. 
+                            <br><br>
+                            Primero tenemos que observar cómo está constituido el grafo: en este caso tenemos los vértices numerados del 1 al 6 y las aristas están dirigidas entre ellos. Observemos las conexiones:
+                            <br><br>
                             <ul>
                                 <li>El vértice 1 tiene una arista dirigida hacia el vértice 6.</li>
                                 <li>El vértice 2 tiene una arista dirigida hacia el vértice 1 y 4.</li>
@@ -100,14 +128,17 @@
                                 <li>El vértice 5 no tiene aristas salientes.</li>
                                 <li>El vértice 6 tiene una arista dirigida hacia el vértice 4.</li>
                             </ul>
-                            <br>
+                            <br><br>
                         </p>
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText021').style.display='block'; return false;">SIGUIENTE</a>
                         
-				        <div style="display: none;" id="hiddenText021">
+                        <br><br> 
+                        <a href="#" onclick="document.getElementById('hiddenText021').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText021">
                         <p>
-                            <br><br><o>Paso 2:</o>En un grafo dirigido, la lista de adyacencia refleja las conexiones en una dirección específica. Esto significa que cada arista tiene un vértice de origen y un vértice de destino, y solo el vértice de origen incluirá al vértice de destino en su lista de adyacencia. Por lo tanto, en este caso la lista de adyacencia que obtenemos es:
-                            <br>
+                            <br><br><o>Paso 2:</o>En un grafo dirigido, la lista de adyacencia refleja las conexiones en una dirección específica.
+                            <br><br>
+                            Esto significa que cada arista tiene un vértice de origen y un vértice de destino, y solo el vértice de origen incluirá al vértice de destino en su lista de adyacencia. Por lo tanto, en este caso la lista de adyacencia que obtenemos es:
+                            <br><br>
                             <ul>
                                 <li>1: 6</li>
                                 <li>2: 1, 4</li>
@@ -116,28 +147,30 @@
                                 <li>5: </li>
                                 <li>6: 4</li>
                             </ul>
-                            <br>
+                            <br><br>
                         </p>
 
                             <br><br> <a href="#" onclick="document.getElementById('hiddenText022').style.display='block'; return false;">SIGUIENTE</a>
                         <div style="display: none;" id="hiddenText022">
                         <p>
                             <br><br><o>Paso 3:</o> 
+                            <br><br>
                             Ahora, para elaborar la matriz de adyacencia, primero identificamos el número de vértices que este contiene, ya que la matriz de adyacencia será de tamaño nxn (siendo n la cantidad de vértices). Inicialmente, le damos valores de cero, en este caso, la matriz será de 6x6. 
-                             <br>
-                            <br><img src="media/img/paso3_ej2.png" alt=""><br>
+                             <br><br>
+                            <br><img src="media/img/ejem_5.png" style="width: 200px; height: auto;" alt=""><br>
                         </p>
                         <br><br> <a href="#" onclick="document.getElementById('hiddenText023').style.display='block'; return false;">SIGUIENTE</a>
                         <div style="display: none;" id="hiddenText023">
                         <p>
-                            <br><br><o>Paso 4:</o> 
+                            <br><br><o>Paso 4:</o> <br><br>
                             Posteriormente, comenzamos con el llenado de la matriz. Para ello, por cada arista dirigida del grafo, coloca un 1 en la posición (i,j) de la matriz si hay una arista dirigida desde el vértice i al vértice j. Si no existe una arista, deja un 0 en esa posición.
-                            <br>
+                            <br><br>
                             Si algún vértice tiene un lazo (una arista que apunta a sí mismo), coloca un 1 en la posición diagonal correspondiente, es decir, en (i,i).
-                            <br>
+                            <br><br>
                             De esta forma obtenemos la siguiente matriz: 
-                            <br>
-                            <br><img src="media/img/paso3_ej22.png" alt=""><br>
+                            <br><br>
+                            <br><img src="media/img/ejem_6.png" style="width: 200px; height: auto;" alt=""><br>
+                            <br><br>
                             Así finalizamos el proceso para obtener la matriz y lista de adyacencia del grafo dirigido.
                         </p>
 
@@ -150,12 +183,14 @@
                     <h2><v>4.3 Recorrido DFS</v></h2>
                     <h4 align="justify">
                         A continuación veremos un ejemplo de cómo se realiza la búsqueda a profundidad (DFS) con el siguiente grafo:
-                        <br><img src="media/img/paso1_ej3.png" alt="">
-                        <br>
+                        <br><br>
+                        <br><img src="media/img/ejem_7.png" style="width: 200px; height: auto;" alt="">
+                        <br><br>
                         <a href="#" onclick="document.getElementById('hiddenText030').style.display='block'; return false;">SOLUCIÓN.</a>
                         <div style="display: none;" id="hiddenText030">
                             
                                 <br><br><o>Paso 1:</o> Iniciamos el recorrido en el nodo "a".
+                                <br><br>
                                 <ul>
                                     <li>Partimos en el nodo "a" y lo marcamos como visitado.</li>
                                     <li>Lista de visitados: a</li>
@@ -163,54 +198,55 @@
                                 </ul>
                                 
                         <br><br> <a href="#" onclick="document.getElementById('hiddenText031').style.display='block'; return false;">SIGUIENTE</a>
-                            
 				        <div style="display: none;" id="hiddenText031">
                         
                             <br><br><o>Paso 2:</o> Moverse al nodo "b".
-
+                            <br><br>
                             <ul>
                                 <li>Ahora estamos en "b" y lo marcamos como visitado.</li>
                                 <li>Lista de visitados: a → b</li>
                                 <li>En "b", tenemos tres vecinos: a, c, y d.</li>
                                 <li>Como "a" ya ha sido visitado, lo omitimos y nos movemos al siguiente vecino no visitado, que es "c".</li>
                             </ul>
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
-                        
+
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
 				        <div style="display: none;" id="hiddenText032"> 
-                        
+                
                             <br><br><o>Paso 3:</o> Moverse al nodo "c".
-                            -Llegamos a "c" y lo marcamos como visitado.
--Lista de visitados: a → b → c
--En "c", encontramos dos vecinos: b y d.
--Como "b" ya ha sido visitado, omitimos esa opción y nos movemos al siguiente vecino no visitado, que es "d".
+                            <br><br>
+                            <ul>
+                                <li> Llegamos a "c" y lo marcamos como visitado.</li>
+                                <li> Lista de visitados: a → b → c</li>
+                                <li> En "c", encontramos dos vecinos: b y d.</li>
+                                <li> Como "b" ya ha sido visitado, omitimos esa opción y nos movemos al siguiente vecino no visitado, que es "d".</li>
+                            </ul>
 
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText033').style.display='block'; return false;">SIGUIENTE</a>
-                        
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText033').style.display='block'; return false;">SIGUIENTE</a>
                         <div style="display: none;" id="hiddenText033">
                             <br><br><o>Paso 4:</o> Moverse al nodo "d".
-                            -Llegamos a "d" y lo marcamos como visitado.
-                            -Lista de visitados: a → b → c → d
-                            -En "d", tenemos tres vecinos: a, b, y c.
-                            -Sin embargo, todos estos vecinos ya han sido visitados. Por lo tanto, no hay más nodos que explorar desde "d".
-                            
+                            <br><br>
+                            <ul>
+                                <li>Llegamos a "d" y lo marcamos como visitado.</li>
+                                <li>Lista de visitados: a → b → c → d</li>
+                                <li>En "d", tenemos tres vecinos: a, b, y c.</li>
+                                <li>Sin embargo, todos estos vecinos ya han sido visitados. Por lo tanto, no hay más nodos que explorar desde "d".</li>
+                            </ul>
 
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText034').style.display='block'; return false;">SIGUIENTE</a>
-                        
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText034').style.display='block'; return false;">SIGUIENTE</a>
                         <div style="display: none;" id="hiddenText034">
                             <br><br><o>Paso 5:</o>  Retroceso.
-                            -Dado que ya no hay vecinos no visitados desde "d", retrocedemos al nodo anterior, que es "c".
-                            -En "c", tampoco quedan vecinos no visitados, por lo que retrocedemos nuevamente a "b".
-                            -En "b", tampoco hay vecinos no visitados, así que retrocedemos finalmente a "a".
-                            En "a", todos los vecinos han sido explorados, lo que indica que el recorrido DFS está completo.
-                            
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText035').style.display='block'; return false;">SIGUIENTE</a>
-                        
+                            <br><br>
+                            <ul>
+                                <li>Dado que ya no hay vecinos no visitados desde "d", retrocedemos al nodo anterior, que es "c".</li>
+                                <li>En "c", tampoco quedan vecinos no visitados, por lo que retrocedemos nuevamente a "b".</li>
+                                <li>En "b", tampoco hay vecinos no visitados, así que retrocedemos finalmente a "a".</li>
+                                <li>En "a", todos los vecinos han sido explorados, lo que indica que el recorrido DFS está completo.</li>
+                            </ul>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText035').style.display='block'; return false;">SIGUIENTE</a>
                         <div style="display: none;" id="hiddenText035">
-                            <br><br><o>Paso 6:</o> Finalmente, podemos concluir que el recorrido DFS encontró y visitó todos los nodos del grafo en el orden a → b → c → d , asegurándose de que cada rama ó “camino” se agotara completamente antes de pasar a otra.
-                            <img src="media/img/paso7_ej3.png" alt="">
-
-                            
+                            <br><br><o>Paso 6:</o> Finalmente
+                            <br><br>
+                            Podemos concluir que el recorrido DFS encontró y visitó todos los nodos del grafo en el orden a → b → c → d , asegurándose de que cada rama ó “camino” se agotara completamente antes de pasar a otra.
                     </h4>
                     </div>
                     </div>
@@ -220,361 +256,183 @@
                     </div>
                                 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-
+                    <h2><v>4.4 Isomorfismo de grafos</v></h2>
                     <h4 align="justify">
-                        Con base en su experiencia un médico ha recabado la siguiente información, relativa a las enfermedades de sus pacientes: 5% creen tener cáncer y 
-                        lo tienen, 45% creen tener cáncer y no lo tienen, 10% no creen tener cáncer pero si lo tienen; y finalmente 40% creen no tenerlo, lo cual es cierto. 
-                        De entre los pacientes del doctor estas cifras de porcentaje implican las siguientes probabilidades para un paciente seleccionado al azar. Calcula:<br>
-                        &emsp;&emsp;a) Tenga cáncer si no cree tenerlo. <br>
-                        &emsp;&emsp;b) Cree tener cáncer cuando no lo tiene. <br>
-                        &emsp;&emsp;c) Crea tener cáncer cuando sí lo tiene. <br>
+                        Para verificar si los dos grafos en la imagen son isomorfos, seguimos estos pasos:
+                        <br><br>
+                        <img src="media/img/ejem_8.png" style="width: 400px; height: auto;" alt="">
+                        <br><br>
+                        <a href="#" onclick="document.getElementById('hiddenText030').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText030">
+                            
+                                <br><br><o>Paso 1:</o> Contar el número de vértices y aristas
+                                <br><br>
+                                Observamos ambos grafos y verificamos que tengan el mismo número de vértices y aristas.
+                                <br><br>
+                                <ul>
+                                    <li>Ambos grafos tienen 4 vértices</li>
+                                    <li>Ambos grafos tienen 4 aristas</li>
+                                </ul>
+                                <br><br>
+                                Esto es un primer indicio de que podrían ser isomorfos, pero aun necesitamos revisar que también tienen la misma estructura.
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText031').style.display='block'; return false;">SIGUIENTE</a>
+				        <div style="display: none;" id="hiddenText031">
                         
-                        <br><a href="#" onclick="document.getElementById('hiddenText040').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText040">
-                            <br><br><o>Paso 1:</o>Definimos los siguientes eventos con los datos especificados en el problema:<br>
-                            <br><img src="media/img/paso1_ej4.png" alt="">
-                    
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText041').style.display='block'; return false;">SIGUIENTE</a>
-                        
-                        <div style="display: none;" id="hiddenText041">
-                            <br><br><o>Paso 2:</o> Vamos a definir el complemento para cada situación del paciente.<br>
-                            <br><img src="media/img/paso2_ej4.png" alt="">
-                                                    
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText042').style.display='block'; return false;">SIGUIENTE</a>
-                        
-                        <div style="display: none;" id="hiddenText042">
-                            <br><br><o>Paso 3:</o> Haciendo la intersección de cada evento. <br>
-                            <br><img src="media/img/paso3_ej4.png" alt=""><br>
+                            <br><br><o>Paso 2:</o> Revisar los grados de los vértices
+                            <br><br>
 
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText043').style.display='block'; return false;">SIGUIENTE</a>
+                            Comprobamos que los grados (número de aristas que inciden en cada vértice) de los vértices correspondientes sean iguales.
+                            <br><br>
+                            En el grafo de la izquierda, el grado de cada vértice es:
+                            <br><br>
+                            <ul>
+                                <li>Vértice 1: grado 2</li>
+                                <li>Vértice 2: grado 2</li>
+                                <li>Vértice 3: grado 2</li>
+                                <li>Vértice 4: grado 2</li>
+                            </ul>
+                            <br><br>
+                            En el grafo derecha, el grado de cada vértice es:
+                            <br><br>
+                            <ul>
+                                <li>Vértice v1: grado 2</li>
+                                <li>Vértice v2: grado 2</li>
+                                <li>Vértice v3: grado 2</li>
+                                <li>Vértice v4: grado 2</li>
+                            </ul>
 
-                        <div style="display: none;" id="hiddenText043">
-                            <br><br><o>Paso 4:</o> Calcularemos las probabilidades marginales, en este caso será: <br>
-                            <br><img src="media/img/paso4_ej4.png" alt=""><br>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
+				        <div style="display: none;" id="hiddenText032"> 
+                
+                            <br><br><o>Paso 3:</o> Comprobar la adyacencia entre los vértices
+                            <br><br>
+                            Para que dos grafos sean isomorfos, debe existir una correspondencia entre los vértices de ambos grafos que conserve la adyacencia(conexiones).
+                            <br><br>
+                            Primero observemos las conexiones (adyacencias) en el primer grafo( el que está en la izquierda):
+                            <br><br>
+                            <ul>
+                                <li>Vértice 1 está conectado con los vértices 2 y 3.</li>
+                                <li>Vértice 2 está conectado con los vértices 1 y 4.</li>
+                                <li>Vértice 3 está conectado con los vértices 1 y 4.</li>
+                                <li>Vértice 4 está conectado con los vértices 2 y 3.</li>
+                            </ul>
+                            <br><br>
+                            Ahora hay que buscar una correspondencia entre los vértices del primer grafo y el segundo que conserve la adyacencia:
+                            <br><br>
+                            <ul>
+                                <li>Vértice 1 en el primer grafo se corresponde con v1 en el segundo grafo.</li>
+                                <li>Vértice 2 en el primer grafo se corresponde con v2 en el segundo grafo.</li>
+                                <li>Vértice 3 en el primer grafo se corresponde con v3 en el segundo grafo.</li>
+                                <li>Vértice 4 en el primer grafo se corresponde con v4 en el segundo grafo.</li>
+                            </ul>
+                            <br><br>
+                            Ahora se comprueba la adyacencia en el segundo grafo(el de la derecha) para esta correspondencia:
+                            <br><br>
+                            <ul>
+                                <li>v1 está conectado con v2 y v3, que corresponde a las conexiones de 1 en el primer grafo.</li>
+                                <li>v2 está conectado con v1 y v4, que corresponde a las conexiones de 2 en el primer grafo.</li>
+                                <li>v3 está conectado con v1 y v4, que corresponde a las conexiones de 3 en el primer grafo.</li>
+                                <li>v4 está conectado con v2 y v3, que corresponde a las conexiones de 4 en el primer grafo.</li>
+                            </ul>
+                            <br><br>
+                            En conclusión, es un isomorfismo de grafos
 
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText044').style.display='block'; return false;">SIGUIENTE</a>
-                        
-                        <div style="display: none;" id="hiddenText044">
-                            <br><br><o>Paso 5:</o> Usaremos la fórmula de probabilidad condicional. <br><br>
-                            a) Tenga cáncer si no cree tenerlo.
-                            <img src="media/img/paso5_ej4.png" alt="">
-                            <p><br><b>Resultado a)</b> La probabilidad de que un paciente tenga cáncer dado que no cree tenerlo es de 0.2 o 20%. Esto 
-                                sugiere que incluso si un paciente no cree tener cáncer, todavía hay una probabilidad no despreciable de tener la enfermedad.
-                            </p><br>
-
-                            b) Cree tener cáncer cuando no lo tiene.
-                            <img src="media/img/paso5_ej41.png" alt="">
-                            <p><br><b>Resultado b)</b> La probabilidad de que un paciente crea tener cáncer cuando en realidad no lo tiene es aproximadamente 
-                                de 0.5294 o del 52.94%. Esto sugiere que la creencia de tener cáncer podría no ser muy indicativa de la presencia real de la enfermedad.
-                            </p><br>
-
-                            c) Crea tener cáncer cuando sí lo tiene.
-                            <img src="media/img/paso5_ej42.png" alt="">
-                            <p><br><b>Resultado c)</b> La probabilidad de que un paciente crea tener cáncer cuando realmente lo tiene es de 0.3333, 
-                                aproximadamente 33%. Esto indica que la creencia de tener cáncer no siempre coincide con la presencia real de la enfermedad.
-                            </p>
                     </h4>
                     </div>
                     </div>
                     </div>
-                    </div>
-                    </div>
-
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.3 Independencia</v></h2>
-                    <li><h3>4.3.1 Ejemplo 5</h3></li>
+                    <h2><v>4.5 Isomorfismos II</v></h2>
                     <h4 align="justify">
-                        Consideremos un lote grande de artículos, digamos 10000. Supongamos que el 10% de estos artículos es defectuoso y el 90% no. 
-                        Se escogen dos artículos. ¿Cuál es la probabilidad de que ambos no sean defectuosos?<br><br>
-                                    
+                        <br><img src="media/img/ejem_9.png" style="width: 400px; height: auto;" alt=""><br>
+                        <br><br>
+                        Para verificar si los dos grafos en la imagen son isomorfos, seguimos estos pasos:
+                        <br><br>          
                         <a href="#" onclick="document.getElementById('hiddenText050').style.display='block'; return false;">SOLUCIÓN.</a>
                         <div style="display: none;" id="hiddenText050">
-                            <br><br><o>Paso 1:</o> Primero definimos los eventos. <br>
-                            <br><img src="media/img/paso1_ej5.png" alt="">
-                            
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText051').style.display='block'; return false;">SIGUIENTE</a>
-                        
+                            <br><br><o>Paso 1:</o> Contar el número de vértices y aristas.
+                            <br><br>
+                            Observamos ambos grafos y verificamos que tengan el mismo número de vértices y aristas.
+                            <br><br>
+                            <ul>
+                                <li>Ambos grafos tienen 5 vértices.</li>
+                                <li>Ambos grafos tienen 4 aristas.</li>
+                            </ul>
+                            <br><br>
+                            Esto es un primer indicio de que podrían ser isomorfos, pero aún necesitamos revisar que también tienen la misma estructura.
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText051').style.display='block'; return false;">SIGUIENTE</a>                       
                         <div style="display: none;" id="hiddenText051">
-                            <br><br><o>Paso 2:</o> Usando la fórmula de intersección de dos eventos independientes.<br>
-                            <br>Si suponemos que el primer artículo se sustituye antes de elegir el segundo, entonces se puede suponer que los eventos 
-                            A y B son independientes y, por lo tanto tenemos la probabilidad de seleccionar dos artículos no defectuosos:
-                            <img src="media/img/paso2_ej5.png" alt="">
+                            <br><br><o>Paso 2:</o> Revisar los grados de los vértices
+                            <br><br>
+                            Comprobamos que los grados (número de aristas que inciden en cada vértice) de los vértices correspondientes sean iguales.
+                            <br><br>
+                            En el grafo de la izquierda, el grado de cada vértice es:
+                            <br><br>
+                            <ul>
+                                <li>Vértice a: grado 1</li>
+                                <li>Vértice b: grado 2</li>
+                                <li>Vértice c: grado 2</li>
+                                <li>Vértice d: grado 2</li>
+                                <li>Vértice e: grado 1</li>
+                            </ul>
+                            <br><br>
+                            En el grafo derecha, el grado de cada vértice es:
+                            <ul>
+                                <li>Vértice s: grado 1</li>
+                                <li>Vértice t: grado 2</li>
+                                <li>Vértice u: grado 2</li>
+                                <li>Vértice r: grado 2</li>
+                                <li>Vértice m: grado 1</li>
+                            </ul>
+                            <br><br>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText032"> 
+                                <br><br><o>Paso 3:</o> Comprobar la adyacencia entre los vértices
+                                <br><br>
 
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText052').style.display='block'; return false;">SIGUIENTE</a>
-                            
-                        <div style="display: none;" id="hiddenText052">
-                            <p><br><b>Resultado.</b> Podemos concluir que la probabilidad de seleccionar dos artículos no defectuosos de un lote grande, 
-                                donde el 10% de los artículos son defectuosos y el 90% son no defectuosos, es del 81%. Esto significa que hay una alta 
-                                probabilidad de que ambos artículos seleccionados al azar no sean defectuosos. <br><br>
-                                La independencia de los eventos es crucial en este caso. Dado que se asume que los eventos (la no defectuosidad de los 
-                                artículos) son independientes, la probabilidad conjunta de que ambos eventos ocurran es simplemente el producto de las 
-                                probabilidades individuales. Este resultado refleja la intuición de que si la selección de un artículo no afecta la selección 
-                                del siguiente, entonces la probabilidad de ambas ocurrencias es simplemente el producto de las probabilidades individuales.
-                            </p>
+                                Para que dos grafos sean isomorfos, debe existir una correspondencia entre los vértices de ambos grafos que conserve la adyacencia (conexiones).
+                                <br><br>
+                                Primero observemos las conexiones (adyacencias) en el primer grafo (el que está en la izquierda):
+                                <br><br>
+                                <ul>
+                                    <li>Vértice a está conectado con el vértice b.</li>
+                                    <li>Vértice b está conectado con los vértices a y c.</li>
+                                    <li>Vértice c está conectado con los vértices b y d.</li>
+                                    <li>Vértice d está conectado con el vértice c y e.</li>
+                                    <li>Vértice e está conectado con el vértice d.</li>
+                                </ul>
+                                <br><br>
+                                Ahora hay que buscar una correspondencia entre los vértices del primer grafo y el segundo que conserve la adyacencia:
+                                <br><br>
+                                <ul>
+                                    <li>Vértice a en el primer grafo se corresponde con s en el segundo grafo.</li>
+                                    <li>Vértice b en el primer grafo se corresponde con t en el segundo grafo.</li>
+                                    <li>Vértice c en el primer grafo se corresponde con u en el segundo grafo.</li>
+                                    <li>Vértice d en el primer grafo se corresponde con r en el segundo grafo.</li>
+                                    <li>Vértice e en el primer grafo se corresponde con m en el segundo grafo.</li>
+                                </ul>
+                                <br><br>
+                                Ahora se comprueba la adyacencia en el segundo grafo (el de la derecha) para esta correspondencia:
+                                <br><br>
+                                <ul>
+                                    <li>s está conectado con t, que corresponde a la conexión de a en el primer grafo.</li>
+                                    <li>t está conectado con s y u, que corresponde a las conexiones de b en el primer grafo.</li>
+                                    <li>u está conectado con t y r, que corresponde a las conexiones de c en el primer grafo.</li>
+                                    <li>r está conectado con u y m, que corresponde a las conexiones de d en el primer grafo.</li>
+                                    <li>m está conectado con r, que corresponde a la conexión de e en el primer grafo.</li>
+                                </ul>
+                                <br><br>
+
+                                En conclusión, es un isomorfismo de grafos.
                     </h4>
                     </div>
                     </div> 
                     </div>
 
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>4.3.2 Ejemplo 6</h3></li>
-                    <h4 align="justify">
-                        Supongamos que un dado normal se lanza dos veces. Calcula para:<br>
-                        &emsp;&emsp;a) El primer dado muestra un número par.  <br>
-                        &emsp;&emsp;b) El segundo dado muestra un 5 o un 6. <br>
-                        
-                        <br><a href="#" onclick="document.getElementById('hiddenText060').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText060">
-                            
-                                <br><br><o>Paso 1:</o> Vamos a definir los siguientes eventos:<br>
-                                <br><img src="media/img/paso1_ej6.png" alt="">
-
-                                <br><br> <a href="#" onclick="document.getElementById('hiddenText061').style.display='block'; return false;">SIGUIENTE</a>
-                            
-				        <div style="display: none;" id="hiddenText061">
-                        
-                            <br><br><o>Paso 2:</o> Analizando el problema…<br><br>
-                            Hay un total de 36 resultados posibles al lanzar dos dados, ya que hay 6 posibilidades para el primer dado y 6 
-                            posibilidades para el segundo dado, lo que resulta en 6&#215;6=36 resultados posibles en total. <br><br>
-                            * Para el evento A: "el primer dado muestra un número par", hay 18 resultados favorables, ya que hay 3 números 
-                            pares (2, 4 y 6) en un dado de 6 caras, y 3 posibilidades para el segundo dado. <br>
-                            * Para el evento B: "el segundo dado muestra un 5 o un 6", hay 12 resultados favorables, ya que hay 2 posibilidades 
-                            (5 y 6) en un dado de 6 caras, y 6 posibilidades para el primer dado. <br><br>
-                            La siguiente tabla muestra las combinaciones posibles:
-                            <img src="media/img/paso2_ej3.png" alt="">
-                            
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText062').style.display='block'; return false;">SIGUIENTE</a>
-                        
-				        <div style="display: none;" id="hiddenText062"> 
-                        
-                            <br><br><o>Paso 3:</o> Usando la fórmula de probabilidad. <br>
-                            <br><img src="media/img/paso3_ej6.png" alt="">
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText063').style.display='block'; return false;">SIGUIENTE</a>
-                        
-                        <div style="display: none;" id="hiddenText063">
-                            <br><br><o>Paso 4:</o> Usaremos la fórmula de intersección de dos eventos.<br><br>
-                            <img src="media/img/paso4_ej6.png" alt="">
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText064').style.display='block'; return false;">SIGUIENTE</a>
-                        
-                        <div style="display: none;" id="hiddenText064">
-                            <br><br><o>Paso 5:</o> Usaremos la fórmula de probabilidad condicional.<br>
-                            <br><img src="media/img/paso5_ej6.png" height="250" width="100" alt=""><br>
-                            Así encontramos, como era de suponer, que la probabilidad no condicional es igual a la probabilidad condicional P(A/B). 
-                            De modo semejante: <br><br>
-                            <img src="media/img/paso5_ej62.png" alt=""><br>
-                            Por lo tanto, podríamos inclinarnos a decir que A y B son independientes si y sólo si P(B|A)=P(A) y P(A|B)=P(B). Aunque 
-                            esto sería esencialmente apropiado, hay otro método que evita la dificultad encontrada aquí, a saber, que ambos P(A) y P(B), 
-                            deben ser diferentes de cero antes de que las igualdades anteriores sean significativas.
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText065').style.display='block'; return false;">SIGUIENTE</a>
-                        
-                        <div style="display: none;" id="hiddenText065">
-                            <br><br><o>Paso 6:</o> Aplicando la fórmula de independencia de dos eventos.<br>
-                            <br><img src="media/img/paso6_ej6.png" alt=""><br>
-                            Así encontramos que, como ni P(A) ni P(B) son iguales a cero, las probabilidades no condicionales son iguales a las probabilidades 
-                            condicionales si y sólo si P(A&#8745;B)=P(A)P(B).
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText066').style.display='block'; return false;">SIGUIENTE</a>
-
-                        <div style="display: none;" id="hiddenText066">
-                            <p><br><br><b>Resultado.</b> En estos eventos A y B definidos como "el primer dado muestra un número par" y "el segundo dado muestra 
-                                un 5 o un 6" respectivamente, hemos demostrado que estos eventos son independientes. Esto se evidencia en los cálculos de las 
-                                probabilidades condicionales y no condicionales, así como en la verificación de la igualdad de independencia. Además, hemos 
-                                establecido que la independencia de dos eventos implica que la probabilidad de la intersección de ambos eventos es igual al 
-                                producto de sus probabilidades individuales, siempre y cuando ambas probabilidades no sean cero.
-                            </p>
-                    </h4>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>4.3.3 Ejemplo 7</h3></li>
-                    <h4 align="justify">
-                        La probabilidad de Carlos de aprobar en la materia de Estructuras Discretas es del 40%, y la probabilidad de Ana de 
-                        aprobar el mismo curso es de 70%. Si los eventos son independientes, encuentra las siguientes probabilidades:<br>
-                        &emsp;&emsp;a) La probabilidad de que ambos aprueben el curso.<br>
-                        &emsp;&emsp;b) La probabilidad de que ninguno apruebe el curso.<br>
-                        &emsp;&emsp;c) La probabilidad de que al menos uno apruebe el curso.<br>
-                        
-                        <br><a href="#" onclick="document.getElementById('hiddenText070').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText070">
-                            <br><br><o>Paso 1:</o> Primero definimos los eventos.<br>
-                            <br><img src="media/img/paso1_ej7.png" alt="">
-                    
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText071').style.display='block'; return false;">SIGUIENTE</a>
-                        
-                        <div style="display: none;" id="hiddenText071">
-                            <br><br><o>Paso 2:</o> Vamos a definir el complemento para cada situación.<br>
-                            <br><img src="media/img/paso2_ej7.png" alt="">
-                                                    
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText072').style.display='block'; return false;">SIGUIENTE</a>
-                        
-                        <div style="display: none;" id="hiddenText072">
-                            <br><br><o>Paso 3:</o> Haciendo la intersección de cada evento y aplicando la fórmula de independencia. Resolvemos para cada 
-                            inciso: <br><br>
-                            
-                            a) Ambos aprueben.
-                            <img src="media/img/paso3_ej7.png" alt="">
-                            <p><br><b>Resultado a)</b> La probabilidad de que ambos aprueben el curso es del 28%. Esta es la multiplicación de las 
-                                probabilidades individuales de que Carlos y Ana aprueben.
-                            </p><br>
-
-                            b) Ninguno apruebe. <br>
-                            Usaremos la propiedad del complemento:
-                            <img src="media/img/paso3_ej72.png" alt=""><br>
-                            Ahora aplicaremos fórmula de independencia:
-                            <img src="media/img/paso3_ej73.png" alt="">
-                            <p><br><b>Resultado b)</b> La probabilidad de que ninguno de ellos apruebe el curso es del 18%. Esto se obtiene utilizando 
-                                la independencia de los eventos.
-                            </p><br>
-
-                            c) Al menos uno apruebe. <br>
-                            Con los cálculos del inciso anterior:
-                            <img src="media/img/paso3_ej74.png" alt="">
-                            <p><br><b>Resultado c)</b> La probabilidad de que al menos uno de ellos apruebe el curso es del 82%. Esto se obtiene 
-                                utilizando la propiedad complementaria de la probabilidad.
-                            </p>
-                    </h4>
-                    </div>
-                    </div>
-                    </div>
-                    
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.4 Teorema de Bayes</v></h2>
-                    <li><h3>4.4.1 Ejemplo 8</h3></li>
-                    <h4 align="justify">
-                        Una planta productora de gelatinas cuenta con tres máquinas empacadoras. Así, la distribución del volumen de empaque se realiza de 
-                        la siguiente manera:<br>
-                        &emsp;<lu>Máquina 1: 38%</lu> <br>
-                        &emsp;<lu>Máquina 2: 32%</lu> <br>
-                        &emsp;<lu>Máquina 3: 30%</lu> <br>
-                        De esta manera, la probabilidad de que el empaque salga defectuoso es de 11%, 15% y 14%, respectivamente por cada máquina. <br>
-                        La gerencia de producción de la planta está interesada en conocer cuál es la probabilidad de que, si se selecciona una unidad al 
-                        azar y es defectuosa, esta se haya empacado en la máquina 2. <br><br>
-                                    
-                        <a href="#" onclick="document.getElementById('hiddenText080').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText080">
-                            <br><br><o>Paso 1:</o> Primero se precisa definir los eventos.<br>
-                            <br><img src="media/img/paso1_ej8.png" alt="">
-                
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText081').style.display='block'; return false;">SIGUIENTE</a>
-
-                        <div style="display: none;" id="hiddenText081">
-                            <br><br><o>Paso 2:</o> Para ejemplificar de manera gráfica lo anterior, se sugiere desarrollar el diagrama de árbol correspondiente.<br>
-                            <br><img src="media/img/paso2_ej8.png" alt="">
-                                                
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText082').style.display='block'; return false;">SIGUIENTE</a>
-                            
-                        <div style="display: none;" id="hiddenText082"> 
-                            <br><br><o>Paso 3:</o> Luego, debe considerarse que las unidades defectuosas pueden provenir de M1, M2 o M3, por lo que a estas se les 
-                            considera eventos mutuamente exclusivos; esto es que el que una unidad haya sido producida en una máquina en específico no afecta 
-                            el hecho de que provenga de otras máquinas. Entonces: <br>
-                            <br><img src="media/img/paso3_ej8.png" alt=""><br>
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText083').style.display='block'; return false;">SIGUIENTE</a>
-                            
-                        <div style="display: none;" id="hiddenText083">
-                            <br><br><o>Paso 4:</o> Aplicando el teorema de Bayes: <br>
-                            <br><img src="media/img/paso4_ej8.png" alt=""><br>
-                            
-                            <p><br><b>Resultado.</b> Por lo tanto, la probabilidad de que si se selecciona una unidad al azar y es defectuosa, esta se 
-                                haya empacado en la máquina 2 es de 36.42%.
-                            </p>
-                    </h4>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>4.4.2 Ejemplo 9</h3></li>
-                    <h4 align="justify">
-                        Se tiene tres urnas con el siguiente contenido: la primera contiene 3 bolas blancas y 1 negra, la segunda 2 blancas y 2 negras y 
-                        la tercera 3 blancas. Se escoge una de las tres urnas al azar y se extrae de ella, también al azar, una bola que resulta ser blanca. 
-                        Dada esta información ¿cuál es la probabilidad de que la urna escogida haya sido la primera? ¿La tercera?<br><br>
-                                    
-                        <a href="#" onclick="document.getElementById('hiddenText090').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText090">
-                            <br><br><o>Paso 1:</o> Primero se precisa definir los eventos.<br>
-                            <br><img src="media/img/paso1_ej9.png" alt="">
-                
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText091').style.display='block'; return false;">SIGUIENTE</a>
-
-                        <div style="display: none;" id="hiddenText091">
-                            <br><br><o>Paso 2:</o> Para ejemplificar de manera gráfica lo anterior, se sugiere desarrollar el diagrama de árbol correspondiente.<br>
-                            <br><img src="media/img/paso2_ej9.png" alt="">
-                                                
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText092').style.display='block'; return false;">SIGUIENTE</a>
-                            
-                        <div style="display: none;" id="hiddenText092"> 
-                            <br><br><o>Paso 3:</o> Luego, debe considerarse que las bolas blancas pueden provenir de U1, U2 o U3, por lo que a estas se 
-                            les considera eventos mutuamente exclusivos. Entonces: <br>
-                            <br><img src="media/img/paso3_ej9.png" alt=""><br>
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText093').style.display='block'; return false;">SIGUIENTE</a>
-                            
-                        <div style="display: none;" id="hiddenText093">
-                            <br><br><o>Paso 4:</o> Aplicando el teorema de Bayes: <br>
-                            <br><img src="media/img/paso4_ej9.png" alt=""><br>
-                            
-                            <p><br><b>Resultado.</b> Por lo tanto, la probabilidad de que la bola blanca se haya elegido de la urna 1 es de 33.33%. 
-                                Y, de que se haya elegido de la urna 3 es de 44.44%.
-                            </p>
-                    </h4>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>4.4.3 Ejemplo 10</h3></li>
-                    <h4 align="justify">
-                        Durante los últimos años se ha escrito mucho sobre la posible relación entre el fumar y el cáncer pulmonar. Supóngase que en 
-                        un centro médico, de todos los fumadores de quienes se sospecha que tenían cáncer pulmonar, el 90% lo tenía mientras que únicamente 
-                        el 5% de los no fumadores lo padecía. Si la proporción de fumadores es de 0.45, ¿cuál es la probabilidad de que un paciente con 
-                        cáncer pulmonar, seleccionado al azar, sea fumador?<br><br>
-                                    
-                        <a href="#" onclick="document.getElementById('hiddenText000').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText000">
-                            <br><br><o>Paso 1:</o> Primero se precisa definir los eventos.<br>
-                            <br><img src="media/img/paso1_ej10.png" alt="">
-                
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText001').style.display='block'; return false;">SIGUIENTE</a>
-
-                        <div style="display: none;" id="hiddenText001">
-                            <br><br><o>Paso 2:</o> Para ejemplificar de manera gráfica lo anterior, se sugiere desarrollar el diagrama de árbol correspondiente.<br>
-                            <br><img src="media/img/paso2_ej10.png" alt="">
-                                                
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText002').style.display='block'; return false;">SIGUIENTE</a>
-                            
-                        <div style="display: none;" id="hiddenText002"> 
-                            <br><br><o>Paso 3:</o> Luego, debe considerarse que un paciente con cáncer pulmonar puede provenir de A1 o A2, por lo que a 
-                            estas se les considera eventos mutuamente exclusivos. Entonces: <br>
-                            <br><img src="media/img/paso3_ej10.png" alt=""><br>
-
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText003').style.display='block'; return false;">SIGUIENTE</a>
-                            
-                        <div style="display: none;" id="hiddenText003">
-                            <br><br><o>Paso 4:</o> Aplicando el teorema de Bayes: <br>
-                            <br><img src="media/img/paso4_ej10.png" alt=""><br>
-                            
-                            <p><br><b>Resultado.</b> Por lo tanto, la probabilidad de que un paciente fumador tenga cáncer pulmonar es de 93.64%.
-                            </p>
-                    </h4>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                   <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
                 </ul>
 			</div>
-		</section>
-	</section>
+    </section>
+</body>
+</html>
 </html>

@@ -37,9 +37,8 @@ select,button{
   border-radius: 4px;
   border: none;
 }
-radio{
+/* Removed empty ruleset for radio */
 
-}
 html,
 body {
   width: 100%;
@@ -61,7 +60,7 @@ body {
   background: #000000 url(../temas/tema0.html) center center fixed no-repeat;
 }
 html body {
-  background: #000000 url(../temas/tema0.html) center center fixed no-repeat\0/;
+  background: #000000 url(../temas/tema0.html) center center fixed no-repeat;
 }
 @media all and (min-width:0) {
   html body { background: none; }  /* IE9-IE10pp4 */
@@ -286,10 +285,10 @@ LEFT & RIGHT BARS
   display: none;
 }
 #nav-left ul#themes {
-  display: none\0/;
+  display: none;
 }
 @media all and (min-width:0) {
-  html #nav-left ul#themes { display: block\0/; }  /* IE9-IE10pp4 */
+  html #nav-left ul#themes { display: block; }  /* IE9-IE10pp4 */
 }
 #nav-left ul#themes h2 {
   background: url(../img/ui_nl-themes.png) no-repeat 15px center;
@@ -312,7 +311,7 @@ LEFT & RIGHT BARS
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important;
-  background-repeat: no-repeat:
+  background-repeat: no-repeat;
 }
 #nav-left ul#themes li:hover {
   border: solid 1px #ffffff;
@@ -421,7 +420,7 @@ div#theme.theme9 {
   background-image: none;
 }
 #nav-left div#theme {
-  background-image: none\0/;
+  background-image: none;
 }
 
 /* 
@@ -446,7 +445,7 @@ iframe {
   background: none;
 }
 html iframe {
-  background: none\0/;
+  background: none;
 }
 @media all and (min-width:0) {
   html iframe { background: url(../img/iframe_bg.png); }
