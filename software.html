@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="">
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -7,49 +7,88 @@
   <link rel="stylesheet" href="media/css/ui.css" type="text/css">
   <link rel="stylesheet" href="media/css/software.css" type="text/css">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    p, h1, h6 {
+      color: rgba(255, 255, 255, 0.712);
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      margin: 10px 0;
+    }
+    h2 {
+      color: rgba(177, 213, 255, 0.781);
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      margin: 10px 0;
+    }
+    h3 {
+      color: rgba(188, 244, 252, 0.808);
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      margin: 10px 0;
+    }
+    h4 {
+      color: rgba(160, 187, 202, 0.712);
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      margin: 10px 0;
+    }
+    h5 {
+      color: rgba(202, 183, 253, 0.712);
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin: 10px 0;
+    }
+  </style>
 </head>
-
 <body>
-  
   <section>
-    <h1>6. Software</h1>
-    <h1>Descripción del Software</h1>
-    <h5>Este software permite la visualización de algoritmos de búsqueda en grafos, específicamente BFS (Breadth-First Search) y DFS (Depth-First Search). Los usuarios pueden seleccionar un nodo de inicio y ejecutar cualquiera de los algoritmos para ver cómo se exploran los nodos del grafo.</h5>
-    
+    <br><br><br>
+    <h1>6. Software</h1><br>
+    <h4>Descripcion del Software.</h4>
   </section>
-
-  <div class="menu-container">
-    <h1>Bienvenido</h1>
-    <p>Elige una de las siguientes opciones:</p>
-    <h4 style="color: deeppink;">Instrucciones para el Usuario</h4>
-    <h5 style="color: peachpuff;">
-      Seleccionar el Nodo de Inicio:<br>
-      <br>
-      Utiliza el menú desplegable para seleccionar el nodo desde el cual deseas iniciar la búsqueda.<br>
-      Ejecutar un Algoritmo:<br>
-      <br>
-      Haz clic en el botón "Ejecutar BFS" para ver cómo el algoritmo BFS explora los nodos del grafo.<br>
-      Haz clic en el botón "Ejecutar DFS" para ver cómo el algoritmo DFS explora los nodos del grafo.<br>
-      Visualización del Grafo:<br>
-      <br>
-      Observa el contenedor del grafo (graph-container) para ver la visualización de la exploración de los nodos según el algoritmo seleccionado.<br>
-    </h5>
-    <h1>Visualización de BFS y DFS</h1>
-    <div class="controls">
-        <label for="startNode">Nodo de inicio:</label>
-        <select id="startNode">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-        <button onclick="bfs()">Ejecutar BFS</button>
-        <button onclick="dfs()">Ejecutar DFS</button>
-    </div>
-    <div id="graph-container"></div>
+  <h5>
+    Este software permite la visualización de algoritmos de búsqueda en grafos, específicamente BFS (Breadth-First Search) y DFS (Depth-First Search). 
+    <br>
+    Los usuarios pueden seleccionar un nodo de inicio y ejecutar cualquiera de los algoritmos para ver cómo se exploran los nodos del grafo.
+  </h5>
+  <br>
+  <h4>Instrucciones para el Usuario</h4>
+  <h5>
+    Seleccionar el Nodo de Inicio:<br><br>
+    Utiliza el menú desplegable para seleccionar el nodo desde el cual deseas iniciar la búsqueda.<br>
+    Ejecutar un Algoritmo:<br><br>
+    Haz clic en el botón "Ejecutar BFS" para ver cómo el algoritmo BFS explora los nodos del grafo.<br>
+    Haz clic en el botón "Ejecutar DFS" para ver cómo el algoritmo DFS explora los nodos del grafo.<br>
+    Visualización del Grafo:<br><br>
+    Observa el contenedor del grafo (graph-container) para ver la visualización de la exploración de los nodos según el algoritmo seleccionado.<br>
+  </h5>
+  <h1 style="color: #4c90af; font-family: 'Playfair Display', serif; font-size: 2.5em; margin-bottom: 20px;">Visualización de BFS y DFS</h1>
+  <div class="controls" style="text-align: center; margin-bottom: 20px;">
+    <label for="startNode" style="font-family: 'Roboto', sans-serif; font-size: 1.2em; color: rgba(202, 183, 253, 0.712);">Nodo de inicio:</label>
+    <select id="startNode" style="padding: 5px; font-size: 1.5em; margin: 0 10px">
+      <option value="0" style="text-align: center;">0</option>
+      <option value="1" style="text-align: center;">1</option>
+      <option value="2" style="text-align: center;">2</option>
+      <option value="3" style="text-align: center;">3</option>
+      <option value="4" style="text-align: center;">4</option>
+      <option value="5" style="text-align: center;">5</option>
+    </select>
+    <button onclick="bfs()" style="padding: 10px 20px; font-size: 1em; margin: 0 10px; background-color: rgba(255, 182, 193, 0.5); color: white; border: none; border-radius: 5px; cursor: pointer;">Ejecutar BFS</button>
+    <button onclick="dfs()" style="padding: 10px 20px; font-size: 1em; margin: 0 10px; background-color: rgba(65, 74, 211, 0.5); color: white; border: none; border-radius: 5px; cursor: pointer;">Ejecutar DFS</button>
   </div>
+  <div id="graph-container" style="width: 50%; height: 800px; margin: 0 auto; border: 1px solid #30d4ab5b; border-radius: 10px; background-color: #4c7aaf;"></div>
 
   <script src="media/js/m.js"></script>
   <script src="media/js/ui.js"></script>

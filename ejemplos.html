@@ -19,19 +19,57 @@
 	<!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
 	<link rel="stylesheet" href="media/css/ejemplos.css" type="text/css" />
     <style>
-		h1 {
-			color: blue;
+       
+		p {
+            color: rgba(255, 255, 255, 0.712);
+			font-family: "Playfair Display", serif;
+			font-optical-sizing: auto;
+			font-weight: normal;
+			font-style: normal;
+			text-align: center;
+        }
+        h1 {
+			color: rgba(255, 255, 255, 0.712);
+			font-family: "Playfair Display", serif;
+			font-optical-sizing: auto;
+			font-weight: normal;
+			font-style: normal;
+			text-align: center;
 		}
 		h2{
-			color: palevioletred;
+			color: rgba(177, 213, 255, 0.781);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 900;
+	  font-style: normal;
 		}
 		h3{
-			color: plum;
+			color: rgba(188, 244, 252, 0.808);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 600;
+	  font-style: normal;
+			
 		}
-		h4 {
-			color: papayawhip;
+		h4{
+			color: rgba(160, 187, 202, 0.712);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 500;
+	  font-style: normal;
 		}
-	</style>
+		h5{
+			color: rgba(202, 183, 253, 0.712);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 400;
+	  font-style: normal;
+		}
+		h6{
+			color: rgba(255,255,255, 0.712);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 300;
+	  font-style: normal;   
+		}
+	   
+	
+		</style>
 </head>
 <body>
     <section class="main clearfix">
@@ -45,7 +83,7 @@
             <div class="content"> 
                 <ul>
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.1 Lista de Adyacencia</v></h2>
+                    <h2>4.1 Lista de Adyacencia</h2>
                     <h4 align="justify">
                         Vamos a ver el ejemplo de cómo obtener la matriz y lista de adyacencia del siguiente grafo no dirigido:
                         <br><br>
@@ -53,8 +91,8 @@
                             <img src="media/img/ejem_1.png" style="width: 200px; height: auto;" alt="">
                         </figure>
                         <br><br>
-                        <a href="#" onclick="document.getElementById('hiddenText010').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText010">
+                        <a href="#" onclick="document.getElementById('hiddenText01').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText01">
                             <br><br><o>Paso 1:</o> Debemos identificar los vértices y las aristas que los unen dentro del grafo. 
                             <br><br>
                             En este caso, observamos que:
@@ -67,10 +105,8 @@
                                 <li>El vértice 5 está conectado a los vértices 2, 3 y 4.</li>
                             </ul>
                             <br><br>
-
-                        <br><br> 
-                        <a href="#" onclick="document.getElementById('hiddenText011').style.display='block'; return false;">SIGUIENTE</a>    
-                        <div style="display: none;" id="hiddenText011">
+                        <a href="#" onclick="document.getElementById('hiddenText02').style.display='block'; return false;">SIGUIENTE</a>    
+                        <div style="display: none;" id="hiddenText02">
                             <br><br><o>Paso 2:</o> El siguiente paso es crear la lista de adyacencia. 
                             <br><br>
                             Para ello, simplemente mediante una lista ordenaremos a cada vértice con sus respectivos nodos vecinos:
@@ -85,36 +121,36 @@
                                 <li>5: 2, 3, 4</li>
                             </ul>                        
                         <br><br> 
-                        <a href="#" onclick="document.getElementById('hiddenText012').style.display='block'; return false;">SIGUIENTE</a>
-                        <div style="display: none;" id="hiddenText012"> 
+                        <a href="#" onclick="document.getElementById('hiddenText03').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText03"> 
                             <br><br><o>Paso 3:</o> Ahora procedemos a crear la matriz de adyacencia de nuestro grafo. 
                             <br><br>
                             Primero, tenemos que identificar la cantidad de nodos que hay, ya que si el grafo tiene n vértices, la matriz de adyacencia será de tamaño n×n.
                             <br><br>
                             En este caso usaremos una matriz 5×5 (ya que hay 5 vértices) y la inicializamos con valores en cero.
                             <br><br>
-                            <img src="media/img/ejem_2.png" style="width: 200px; height: auto;" alt=""><br>
+                            <img src="media/img/ejem_2.png" style="width: 400px; height: auto;" alt=""><br>
                             <br><br>
-                            Finalmente, llenaremos la matriz de forma que cada posición (i, j) tendrá un 1 si hay una conexión entre el vértice i(filas)  y el vértice j(columnas), y un 0 si no la hay.
+                            <a href="#" onclick="document.getElementById('hiddenText04').style.display='block'; return false;">SIGUIENTE</a>
+                            <div style="display: none;" id="hiddenText04">  
+                            <br><br><o>Paso 4:</o> Finalmente, llenaremos la matriz de forma que cada posición (i, j) tendrá un 1 si hay una conexión entre el vértice i (filas) y el vértice j (columnas), y un 0 si no la hay.
                             <br><br>
-                            <img src="media/img/ejem_3.png" style="width: 200px; height: auto;" alt=""><br>
+                            <img src="media/img/ejem_3.png" style="width: 400px; height: auto;" alt=""><br>
                             <br><br>
                             Así finalizamos el proceso para obtener la matriz y lista de adyacencia del grafo.
-                            
                     </h4>
                     </div>
                     </div>
                     </div>
-                
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.2 Matrizz y Lista de Adyacencia</v></h2>
+                    <h2>4.2 Matrizz y Lista de Adyacencia</h2>
                     <h4 align="justify">
                         Ahora, haremos un ejemplo sobre cómo obtener la matriz y lista de adyacencia de un grafo dirigido. 
                         <br><br>
                         <br><img src="media/img/ejem_4.png" style="width: 200px; height: auto;" alt="">
   
-                        <a href="#" onclick="document.getElementById('hiddenText020').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText020">
+                        <a href="#" onclick="document.getElementById('hiddenText05').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText05">
                         <p>
                             <br><br><o>Paso 1:</o> El proceso será muy similar al anterior. 
                             <br><br>
@@ -132,8 +168,8 @@
                         </p>
                         
                         <br><br> 
-                        <a href="#" onclick="document.getElementById('hiddenText021').style.display='block'; return false;">SIGUIENTE</a>
-                        <div style="display: none;" id="hiddenText021">
+                        <a href="#" onclick="document.getElementById('hiddenText06').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText06">
                         <p>
                             <br><br><o>Paso 2:</o>En un grafo dirigido, la lista de adyacencia refleja las conexiones en una dirección específica.
                             <br><br>
@@ -150,17 +186,17 @@
                             <br><br>
                         </p>
 
-                            <br><br> <a href="#" onclick="document.getElementById('hiddenText022').style.display='block'; return false;">SIGUIENTE</a>
-                        <div style="display: none;" id="hiddenText022">
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText07').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText07">
                         <p>
                             <br><br><o>Paso 3:</o> 
                             <br><br>
                             Ahora, para elaborar la matriz de adyacencia, primero identificamos el número de vértices que este contiene, ya que la matriz de adyacencia será de tamaño nxn (siendo n la cantidad de vértices). Inicialmente, le damos valores de cero, en este caso, la matriz será de 6x6. 
                              <br><br>
-                            <br><img src="media/img/ejem_5.png" style="width: 200px; height: auto;" alt=""><br>
+                            <br><img src="media/img/ejem_5.png" style="width: 400px; height: auto;" alt=""><br>
                         </p>
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText023').style.display='block'; return false;">SIGUIENTE</a>
-                        <div style="display: none;" id="hiddenText023">
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText08').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText08">
                         <p>
                             <br><br><o>Paso 4:</o> <br><br>
                             Posteriormente, comenzamos con el llenado de la matriz. Para ello, por cada arista dirigida del grafo, coloca un 1 en la posición (i,j) de la matriz si hay una arista dirigida desde el vértice i al vértice j. Si no existe una arista, deja un 0 en esa posición.
@@ -169,7 +205,7 @@
                             <br><br>
                             De esta forma obtenemos la siguiente matriz: 
                             <br><br>
-                            <br><img src="media/img/ejem_6.png" style="width: 200px; height: auto;" alt=""><br>
+                            <br><img src="media/img/ejem_6.png" style="width: 400px; height: auto;" alt=""><br>
                             <br><br>
                             Así finalizamos el proceso para obtener la matriz y lista de adyacencia del grafo dirigido.
                         </p>
@@ -180,14 +216,14 @@
                     </div>
                     </div>
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.3 Recorrido DFS</v></h2>
+                    <h2>4.3 Recorrido DFS</h2>
                     <h4 align="justify">
                         A continuación veremos un ejemplo de cómo se realiza la búsqueda a profundidad (DFS) con el siguiente grafo:
                         <br><br>
                         <br><img src="media/img/ejem_7.png" style="width: 200px; height: auto;" alt="">
                         <br><br>
-                        <a href="#" onclick="document.getElementById('hiddenText030').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText030">
+                        <a href="#" onclick="document.getElementById('hiddenText09').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText09">
                             
                                 <br><br><o>Paso 1:</o> Iniciamos el recorrido en el nodo "a".
                                 <br><br>
@@ -197,8 +233,8 @@
                                     <li>Desde aquí, tenemos dos opciones de vecinos a visitar: b y d. En DFS, seguimos el camino en profundidad, así que elijamos el primer vecino en orden alfabético, que en este caso es "b".</li>
                                 </ul>
                                 
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText031').style.display='block'; return false;">SIGUIENTE</a>
-				        <div style="display: none;" id="hiddenText031">
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText010').style.display='block'; return false;">SIGUIENTE</a>
+				        <div style="display: none;" id="hiddenText010">
                         
                             <br><br><o>Paso 2:</o> Moverse al nodo "b".
                             <br><br>
@@ -209,8 +245,8 @@
                                 <li>Como "a" ya ha sido visitado, lo omitimos y nos movemos al siguiente vecino no visitado, que es "c".</li>
                             </ul>
 
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
-				        <div style="display: none;" id="hiddenText032"> 
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText011').style.display='block'; return false;">SIGUIENTE</a>
+				        <div style="display: none;" id="hiddenText011"> 
                 
                             <br><br><o>Paso 3:</o> Moverse al nodo "c".
                             <br><br>
@@ -221,8 +257,8 @@
                                 <li> Como "b" ya ha sido visitado, omitimos esa opción y nos movemos al siguiente vecino no visitado, que es "d".</li>
                             </ul>
 
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText033').style.display='block'; return false;">SIGUIENTE</a>
-                        <div style="display: none;" id="hiddenText033">
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText012').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText012">
                             <br><br><o>Paso 4:</o> Moverse al nodo "d".
                             <br><br>
                             <ul>
@@ -232,8 +268,8 @@
                                 <li>Sin embargo, todos estos vecinos ya han sido visitados. Por lo tanto, no hay más nodos que explorar desde "d".</li>
                             </ul>
 
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText034').style.display='block'; return false;">SIGUIENTE</a>
-                        <div style="display: none;" id="hiddenText034">
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText013').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText013">
                             <br><br><o>Paso 5:</o>  Retroceso.
                             <br><br>
                             <ul>
@@ -242,8 +278,8 @@
                                 <li>En "b", tampoco hay vecinos no visitados, así que retrocedemos finalmente a "a".</li>
                                 <li>En "a", todos los vecinos han sido explorados, lo que indica que el recorrido DFS está completo.</li>
                             </ul>
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText035').style.display='block'; return false;">SIGUIENTE</a>
-                        <div style="display: none;" id="hiddenText035">
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText014').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText014">
                             <br><br><o>Paso 6:</o> Finalmente
                             <br><br>
                             Podemos concluir que el recorrido DFS encontró y visitó todos los nodos del grafo en el orden a → b → c → d , asegurándose de que cada rama ó “camino” se agotara completamente antes de pasar a otra.
@@ -256,14 +292,17 @@
                     </div>
                                 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.4 Isomorfismo de grafos</v></h2>
+                    <h2>4.4 Isomorfismo de grafos</h2>
                     <h4 align="justify">
                         Para verificar si los dos grafos en la imagen son isomorfos, seguimos estos pasos:
                         <br><br>
-                        <img src="media/img/ejem_8.png" style="width: 400px; height: auto;" alt="">
+                        <div style="display: flex; justify-content: center;">
+                            <img src="media/img/ejem_8a.png" style="width: 200px; height: auto; margin-right: 20px;" alt="">
+                            <img src="media/img/ejem_8b.png" style="width: 200px; height: auto;" alt="">
+                        </div>
                         <br><br>
-                        <a href="#" onclick="document.getElementById('hiddenText030').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText030">
+                        <a href="#" onclick="document.getElementById('hiddenText015').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText015">
                             
                                 <br><br><o>Paso 1:</o> Contar el número de vértices y aristas
                                 <br><br>
@@ -275,8 +314,8 @@
                                 </ul>
                                 <br><br>
                                 Esto es un primer indicio de que podrían ser isomorfos, pero aun necesitamos revisar que también tienen la misma estructura.
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText031').style.display='block'; return false;">SIGUIENTE</a>
-				        <div style="display: none;" id="hiddenText031">
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText016').style.display='block'; return false;">SIGUIENTE</a>
+				        <div style="display: none;" id="hiddenText016">
                         
                             <br><br><o>Paso 2:</o> Revisar los grados de los vértices
                             <br><br>
@@ -301,8 +340,8 @@
                                 <li>Vértice v4: grado 2</li>
                             </ul>
 
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
-				        <div style="display: none;" id="hiddenText032"> 
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText017').style.display='block'; return false;">SIGUIENTE</a>
+				        <div style="display: none;" id="hiddenText017"> 
                 
                             <br><br><o>Paso 3:</o> Comprobar la adyacencia entre los vértices
                             <br><br>
@@ -317,7 +356,10 @@
                                 <li>Vértice 4 está conectado con los vértices 2 y 3.</li>
                             </ul>
                             <br><br>
-                            Ahora hay que buscar una correspondencia entre los vértices del primer grafo y el segundo que conserve la adyacencia:
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText018').style.display='block'; return false;">SIGUIENTE</a>
+				        <div style="display: none;" id="hiddenText018"> 
+                
+                            <br><br><o>Paso 4:</o>Ahora hay que buscar una correspondencia entre los vértices del primer grafo y el segundo que conserve la adyacencia:
                             <br><br>
                             <ul>
                                 <li>Vértice 1 en el primer grafo se corresponde con v1 en el segundo grafo.</li>
@@ -326,6 +368,10 @@
                                 <li>Vértice 4 en el primer grafo se corresponde con v4 en el segundo grafo.</li>
                             </ul>
                             <br><br>
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText019').style.display='block'; return false;">SIGUIENTE</a>
+				        <div style="display: none;" id="hiddenText019"> 
+                
+                            <br><br><o>Paso 5:</o> 
                             Ahora se comprueba la adyacencia en el segundo grafo(el de la derecha) para esta correspondencia:
                             <br><br>
                             <ul>
@@ -342,14 +388,19 @@
                     </div>
                     </div>
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <h2><v>4.5 Isomorfismos II</v></h2>
+                    <h2>4.5 Isomorfismos II</h2>
                     <h4 align="justify">
-                        <br><img src="media/img/ejem_9.png" style="width: 400px; height: auto;" alt=""><br>
-                        <br><br>
+                        <br>
                         Para verificar si los dos grafos en la imagen son isomorfos, seguimos estos pasos:
-                        <br><br>          
-                        <a href="#" onclick="document.getElementById('hiddenText050').style.display='block'; return false;">SOLUCIÓN.</a>
-                        <div style="display: none;" id="hiddenText050">
+                        <br><br>
+                        <div style="display: flex; justify-content: center;">
+                            <img src="media/img/ejem_9a.png" style="width: 200px; height: auto; margin-right: 20px;" alt="">
+                            <img src="media/img/ejem_9b.png" style="width: 200px; height: auto;" alt="">
+                        </div>
+                        <br>
+                              
+                        <a href="#" onclick="document.getElementById('hiddenText020').style.display='block'; return false;">SOLUCIÓN.</a>
+                        <div style="display: none;" id="hiddenText020">
                             <br><br><o>Paso 1:</o> Contar el número de vértices y aristas.
                             <br><br>
                             Observamos ambos grafos y verificamos que tengan el mismo número de vértices y aristas.
@@ -360,8 +411,8 @@
                             </ul>
                             <br><br>
                             Esto es un primer indicio de que podrían ser isomorfos, pero aún necesitamos revisar que también tienen la misma estructura.
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText051').style.display='block'; return false;">SIGUIENTE</a>                       
-                        <div style="display: none;" id="hiddenText051">
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText021').style.display='block'; return false;">SIGUIENTE</a>                       
+                        <div style="display: none;" id="hiddenText021">
                             <br><br><o>Paso 2:</o> Revisar los grados de los vértices
                             <br><br>
                             Comprobamos que los grados (número de aristas que inciden en cada vértice) de los vértices correspondientes sean iguales.
@@ -385,8 +436,8 @@
                                 <li>Vértice m: grado 1</li>
                             </ul>
                             <br><br>
-                        <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
-                        <div style="display: none;" id="hiddenText032"> 
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText022').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText022"> 
                                 <br><br><o>Paso 3:</o> Comprobar la adyacencia entre los vértices
                                 <br><br>
 
@@ -402,7 +453,9 @@
                                     <li>Vértice e está conectado con el vértice d.</li>
                                 </ul>
                                 <br><br>
-                                Ahora hay que buscar una correspondencia entre los vértices del primer grafo y el segundo que conserve la adyacencia:
+                                <br><br> <a href="#" onclick="document.getElementById('hiddenText023').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText023"> 
+                                <br><br><o>Paso 4:</o>Ahora hay que buscar una correspondencia entre los vértices del primer grafo y el segundo que conserve la adyacencia:
                                 <br><br>
                                 <ul>
                                     <li>Vértice a en el primer grafo se corresponde con s en el segundo grafo.</li>
@@ -412,7 +465,9 @@
                                     <li>Vértice e en el primer grafo se corresponde con m en el segundo grafo.</li>
                                 </ul>
                                 <br><br>
-                                Ahora se comprueba la adyacencia en el segundo grafo (el de la derecha) para esta correspondencia:
+                                <br><br> <a href="#" onclick="document.getElementById('hiddenText024').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText024"> 
+                                <br><br><o>Paso 5:</o>Ahora se comprueba la adyacencia en el segundo grafo (el de la derecha) para esta correspondencia:
                                 <br><br>
                                 <ul>
                                     <li>s está conectado con t, que corresponde a la conexión de a en el primer grafo.</li>
@@ -429,7 +484,258 @@
                     </div> 
                     </div>
 
-                   <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                <h2>4.6 Recorrido BFS</h2>
+                <h4 align="justify">
+                    A continuación veremos un ejemplo de cómo se realiza la búsqueda en anchura (BFS) con el siguiente grafo:
+                    <br><br>
+                    <br><img src="media/img/ejem_10.png" style="width: 300px; height: auto;" alt="">
+                    <br><br>
+                    <a href="#" onclick="document.getElementById('hiddenText025').style.display='block'; return false;">SOLUCIÓN.</a>
+                    <div style="display: none;" id="hiddenText025">
+                        <br><br><o>Paso 1:</o> Iniciamos el recorrido en el nodo "a".
+                        <br><br>
+                        <ul>
+                            <li>Partimos en el nodo "a" y lo marcamos como visitado.</li>
+                            <li>Lista de visitados: a</li>
+                            <li>Colocamos "a" en una cola.</li>
+                        </ul>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText026').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText026">
+                            <br><br><o>Paso 2:</o> Moverse al nodo "b".
+                            <br><br>
+                            <ul>
+                                <li>Extraemos "a" de la cola y visitamos sus vecinos: b y d.</li>
+                                <li>Marcamos "b" y "d" como visitados y los añadimos a la cola.</li>
+                                <li>Lista de visitados: a → b → d</li>
+                            </ul>
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText027').style.display='block'; return false;">SIGUIENTE</a>
+                            <div style="display: none;" id="hiddenText027">
+                                <br><br><o>Paso 3:</o> Moverse al nodo "c".
+                                <br><br>
+                                <ul>
+                                    <li>Extraemos "b" de la cola y visitamos su vecino no visitado: c.</li>
+                                    <li>Marcamos "c" como visitado y lo añadimos a la cola.</li>
+                                    <li>Lista de visitados: a → b → d → c</li>
+                                </ul>
+                                <br><br> <a href="#" onclick="document.getElementById('hiddenText028').style.display='block'; return false;">SIGUIENTE</a>
+                                <div style="display: none;" id="hiddenText028">
+                                    <br><br><o>Paso 4:</o> Moverse al nodo "d".
+                                    <br><br>
+                                    <ul>
+                                        <li>Extraemos "d" de la cola, pero todos sus vecinos ya han sido visitados.</li>
+                                        <li>Lista de visitados: a → b → d → c</li>
+                                    </ul>
+                                    <br><br> <a href="#" onclick="document.getElementById('hiddenText029').style.display='block'; return false;">SIGUIENTE</a>
+                                    <div style="display: none;" id="hiddenText029">
+                                        <br><br><o>Paso 5:</o> Finalización.
+                                        <br><br>
+                                        <ul>
+                                            <li>La cola está vacía, lo que indica que el recorrido BFS está completo.</li>
+                                            <li>Lista final de visitados: a → b → d → c</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h4>
+
+                <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                <h2>4.7 Árbol de Expansión Mínima</h2>
+                <h4 align="justify">
+                    A continuación veremos un ejemplo de cómo encontrar el árbol de expansión mínima (MST) con el siguiente grafo:
+                    <br><br>
+                    <br><img src="media/img/ejem_11.png" style="width: 300px; height: auto;" alt="">
+                    <br><br>
+                    <a href="#" onclick="document.getElementById('hiddenText030').style.display='block'; return false;">SOLUCIÓN.</a>
+                    <div style="display: none;" id="hiddenText030">
+                        <br><br><o>Paso 1:</o> Seleccionar la arista de menor peso.
+                        <br><br>
+                        <ul>
+                            <li>Seleccionamos la arista con el menor peso, que es (a, b) con peso 1.</li>
+                            <li>Árbol parcial: (a, b)</li>
+                        </ul>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText031').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText031">
+                            <br><br><o>Paso 2:</o> Seleccionar la siguiente arista de menor peso.
+                            <br><br>
+                            <ul>
+                                <li>Seleccionamos la siguiente arista de menor peso, que es (b, c) con peso 2.</li>
+                                <li>Árbol parcial: (a, b), (b, c)</li>
+                            </ul>
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText032').style.display='block'; return false;">SIGUIENTE</a>
+                            <div style="display: none;" id="hiddenText032">
+                                <br><br><o>Paso 3:</o> Continuar seleccionando aristas.
+                                <br><br>
+                                <ul>
+                                    <li>Seleccionamos la siguiente arista de menor peso, que es (c, d) con peso 3.</li>
+                                    <li>Árbol parcial: (a, b), (b, c), (c, d)</li>
+                                </ul>
+                                <br><br> <a href="#" onclick="document.getElementById('hiddenText033').style.display='block'; return false;">SIGUIENTE</a>
+                                <div style="display: none;" id="hiddenText033">
+                                    <br><br><o>Paso 4:</o> Finalización.
+                                    <br><br>
+                                    <ul>
+                                        <li>El árbol de expansión mínima está completo.</li>
+                                        <li>Árbol final: (a, b), (b, c), (c, d)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h4>
+
+                <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                <h2>4.8 Algoritmo de Dijkstra</h2>
+                <h4 align="justify">
+                    A continuación veremos un ejemplo de cómo encontrar el camino más corto utilizando el algoritmo de Dijkstra con el siguiente grafo:
+                    <br><br>
+                    <br><img src="media/img/ejem_12.png" style="width: 300px; height: auto;" alt="">
+                    <br><br>
+                    <a href="#" onclick="document.getElementById('hiddenText034').style.display='block'; return false;">SOLUCIÓN.</a>
+                    <div style="display: none;" id="hiddenText034">
+                        <br><br><o>Paso 1:</o> Inicializar distancias.
+                        <br><br>
+                        <ul>
+                            <li>Inicializamos las distancias desde el nodo de inicio "a" a todos los demás nodos como infinito, excepto la distancia a sí mismo, que es 0.</li>
+                            <li>Distancias: a=0, b=∞, c=∞, d=∞</li>
+                        </ul>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText035').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText035">
+                            <br><br><o>Paso 2:</o> Actualizar distancias.
+                            <br><br>
+                            <ul>
+                                <li>Actualizamos las distancias a los vecinos del nodo "a".</li>
+                                <li>Distancias: a=0, b=1, c=4, d=∞</li>
+                            </ul>
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText036').style.display='block'; return false;">SIGUIENTE</a>
+                            <div style="display: none;" id="hiddenText036">
+                                <br><br><o>Paso 3:</o> Continuar actualizando distancias.
+                                <br><br>
+                                <ul>
+                                    <li>Seleccionamos el nodo con la distancia mínima no visitado, que es "b".</li>
+                                    <li>Actualizamos las distancias a los vecinos del nodo "b".</li>
+                                    <li>Distancias: a=0, b=1, c=3, d=∞</li>
+                                </ul>
+                                <br><br> <a href="#" onclick="document.getElementById('hiddenText037').style.display='block'; return false;">SIGUIENTE</a>
+                                <div style="display: none;" id="hiddenText037">
+                                    <br><br><o>Paso 4:</o> Finalización.
+                                    <br><br>
+                                    <ul>
+                                        <li>Continuamos el proceso hasta que todos los nodos hayan sido visitados.</li>
+                                        <li>Distancias finales: a=0, b=1, c=3, d=4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h4>
+
+                <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                <h2>4.9 Algoritmo de Floyd-Warshall</h2>
+                <h4 align="justify">
+                    A continuación veremos un ejemplo de cómo encontrar el camino más corto entre todos los pares de nodos utilizando el algoritmo de Floyd-Warshall con el siguiente grafo:
+                    <br><br>
+                    <br><img src="media/img/ejem_13.png" style="width: 300px; height: auto;" alt="">
+                    <br><br>
+                    <a href="#" onclick="document.getElementById('hiddenText038').style.display='block'; return false;">SOLUCIÓN.</a>
+                    <div style="display: none;" id="hiddenText038">
+                        <br><br><o>Paso 1:</o> Inicializar la matriz de distancias.
+                        <br><br>
+                        <ul>
+                            <li>Inicializamos la matriz de distancias con los pesos de las aristas y ∞ para las aristas no existentes.</li>
+                            <li>Matriz inicial:</li>
+                            <li>
+                                <pre>
+                                0  3  ∞  7
+                                8  0  2  ∞
+                                5  ∞  0  1
+                                2  ∞  ∞  0
+                                </pre>
+                            </li>
+                        </ul>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText039').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText039">
+                            <br><br><o>Paso 2:</o> Actualizar la matriz de distancias.
+                            <br><br>
+                            <ul>
+                                <li>Actualizamos la matriz de distancias considerando cada nodo como un nodo intermedio.</li>
+                                <li>Matriz actualizada:</li>
+                                <li>
+                                    <pre>
+                                    0  3  5  6
+                                    8  0  2  3
+                                    5  8  0  1
+                                    2  5  7  0
+                                    </pre>
+                                </li>
+                            </ul>
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText040').style.display='block'; return false;">SIGUIENTE</a>
+                            <div style="display: none;" id="hiddenText040">
+                                <br><br><o>Paso 3:</o> Finalización.
+                                <br><br>
+                                <ul>
+                                    <li>La matriz de distancias final muestra las distancias más cortas entre todos los pares de nodos.</li>
+                                    <li>Matriz final:</li>
+                                    <li>
+                                        <pre>
+                                        0  3  5  6
+                                        8  0  2  3
+                                        5  8  0  1
+                                        2  5  7  0
+                                        </pre>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </h4>
+
+                <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                <h2>4.10 Algoritmo de Bellman-Ford</h2>
+                <h4 align="justify">
+                    A continuación veremos un ejemplo de cómo encontrar el camino más corto desde un nodo fuente a todos los demás nodos utilizando el algoritmo de Bellman-Ford con el siguiente grafo:
+                    <br><br>
+                    <br><img src="media/img/ejem_14.png" style="width: 300px; height: auto;" alt="">
+                    <br><br>
+                    <a href="#" onclick="document.getElementById('hiddenText041').style.display='block'; return false;">SOLUCIÓN.</a>
+                    <div style="display: none;" id="hiddenText041">
+                        <br><br><o>Paso 1:</o> Inicializar distancias.
+                        <br><br>
+                        <ul>
+                            <li>Inicializamos las distancias desde el nodo de inicio "a" a todos los demás nodos como infinito, excepto la distancia a sí mismo, que es 0.</li>
+                            <li>Distancias: a=0, b=∞, c=∞, d=∞</li>
+                        </ul>
+                        <br><br> <a href="#" onclick="document.getElementById('hiddenText042').style.display='block'; return false;">SIGUIENTE</a>
+                        <div style="display: none;" id="hiddenText042">
+                            <br><br><o>Paso 2:</o> Relajar las aristas.
+                            <br><br>
+                            <ul>
+                                <li>Relajamos todas las aristas repetidamente.</li>
+                                <li>Distancias: a=0, b=1, c=4, d=∞</li>
+                            </ul>
+                            <br><br> <a href="#" onclick="document.getElementById('hiddenText043').style.display='block'; return false;">SIGUIENTE</a>
+                            <div style="display: none;" id="hiddenText043">
+                                <br><br><o>Paso 3:</o> Continuar relajando aristas.
+                                <br><br>
+                                <ul>
+                                    <li>Continuamos relajando las aristas.</li>
+                                    <li>Distancias: a=0, b=1, c=3, d=∞</li>
+                                </ul>
+                                <br><br> <a href="#" onclick="document.getElementById('hiddenText044').style.display='block'; return false;">SIGUIENTE</a>
+                                <div style="display: none;" id="hiddenText044">
+                                    <br><br><o>Paso 4:</o> Finalización.
+                                    <br><br>
+                                    <ul>
+                                        <li>Después de n-1 iteraciones, las distancias finales son:</li>
+                                        <li>Distancias finales: a=0, b=1, c=3, d=4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h4>
                 </ul>
 			</div>
     </section>

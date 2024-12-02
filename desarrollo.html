@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" </html></html>html></html>style="">
+<html lang="es">
 
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +12,48 @@
 	<link rel="stylesheet" href="media/css/portada.css" type="text/css">
 	<style>
 		h1 {
-			color: blue;
+			color: rgba(255, 255, 255, 0.712);
+			font-family: "Playfair Display", serif;
+			font-optical-sizing: auto;
+			font-weight: normal;
+			font-style: normal;
+			text-align: center;
 		}
 		h2{
-			color: palevioletred;
+			color: rgba(177, 213, 255, 0.781);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 900;
+	  font-style: normal;
 		}
 		h3{
-			color: plum;
+			color: rgba(188, 244, 252, 0.808);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 600;
+	  font-style: normal;
+			
 		}
-		h4 {
-			color: papayawhip;
+		h4{
+			color: rgba(160, 187, 202, 0.712);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 500;
+	  font-style: normal;
 		}
-	</style>
+		h5{
+			color: rgba(202, 183, 253, 0.712);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 400;
+	  font-style: normal;
+		}
+		h6{
+			color: rgba(255,255,255, 0.712);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 300;
+	  font-style: normal;   
+		}
+	   
+	
+		</style>
+	
 </head>
 
 <body style="">
@@ -33,9 +63,15 @@
 	<h2>Teoria de Grafos</h2>
 	<h4>3.1.1 ¿Qué es un Grafo?</h4>
 	<h5>
-		Un grafo es una estructura matemática compuesta por un conjunto de nodos (también conocidos como vértices) y aristas (o arcos) que los conectan. Las aristas establecen conexiones entre pares de nodos. Los grafos son herramientas útiles para modelar relaciones y estructuras que se pueden representar a través de estas conexiones.
+		Un </strong> Grafo </strong>es una estructura matemática que consiste en un conjunto de nodos (o vértices) y un conjunto de aristas (o arcos) que conectan pares de nodos. Las aristas pueden ser dirigidas o no dirigidas, dependiendo de si tienen una dirección específica. Los grafos se utilizan para modelar diversas situaciones en las que es importante representar relaciones entre elementos.
 		<br><br>
-		Entre los ejemplos más comunes se encuentran las redes sociales, las redes informáticas y los circuitos electrónicos.
+
+		Algunos ejemplos de aplicaciones de grafos son:
+		<ul>
+			<li>Redes sociales: Los nodos representan personas y las aristas representan amistades.</li>
+			<li>Redes informáticas: Los nodos son dispositivos y las aristas son conexiones entre ellos.</li>
+			<li>Circuitos electrónicos: Los nodos son componentes y las aristas son conexiones eléctricas.</li>
+		</ul>
 		<br><br>
 	</h5>
 	<div style="text-align: center;">
@@ -43,80 +79,80 @@
 		<h7>Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.: Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</h7>
 	</div>
 	<br><br>
-	<h4>Contexto Historico</h4>
+	<h4>3.1.2 Contexto Histórico</h4>
 	<h5>
-		La teoría de los grafos tiene sus raíces en el siglo XVIII gracias al matemático suizo Leonhard Euler. En 1736, Euler se enfrentó al famoso problema de los siete puentes de Königsberg, intentando averiguar si era posible cruzar cada puente de la ciudad una sola vez. Este problema llevó a la creación de los conceptos básicos de la teoría de grafos.
+		La teoría de grafos tiene sus raíces en el siglo <strong>XVIII</strong> gracias al matemático suizo <strong>Leonhard Euler<strong>.
+		<br>
+		En <strong>1736</strong>, Euler se enfrentó al famoso problema de los siete puentes de Königsberg, intentando averiguar si era posible cruzar cada puente de la ciudad una sola vez. 
+		Este problema llevó a la creación de los conceptos básicos de la teoría de grafos. 
+		<br>
+		Observa la representación gráfica del problema:
 	</h5>
 	<div style="text-align: center;">
 		<img src="media/img/desa_2.png" style="width: 400px; height: auto;" alt="">
 		<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación. [Problema de los 7 puentes]. Página 9.</h7>
 	</div>
-	<br><br>
+	<br>
 	<h5>
 		Con el tiempo, varios matemáticos hicieron aportes importantes a esta teoría:
 		<ul>
-			<li> En 1847, Gustav Kirchhoff utilizó la teoría de grafos para analizar circuitos eléctricos, formulando las leyes de Kirchhoff.</li>
-			<li> En 1852, Francis Guthrie planteó el problema de los cuatro colores, que fue resuelto casi un siglo después, ayudando a definir términos clave en la teoría.</li>
-			<li> En 1857, Arthur Cayley usó grafos para estudiar isómeros químicos.</li>
-			<li> El término "grafo" proviene del inglés "graphic notation", utilizado por primera vez por Edward Frankland y adoptado por Alexander Crum Brown en 1884.</li>
+			<li> En <strong>1847</strong>, Gustav Kirchhoff utilizó la teoría de grafos para analizar circuitos eléctricos, formulando las leyes de Kirchhoff.</li>
+			<li> En <strong>1852</strong>, Francis Guthrie planteó el problema de los cuatro colores, que fue resuelto casi un siglo después, ayudando a definir términos clave en la teoría.</li>
+			<li> En <strong>1857</strong>, Arthur Cayley usó grafos para estudiar isómeros químicos.</li>
+			<li> El término "grafo" proviene del inglés "graphic notation", utilizado por primera vez por Edward Frankland y adoptado por Alexander Crum Brown en <strong>1884</strong>.</li>
 		</ul>
+	<br>
+		Estos avances sentaron las bases para el desarrollo de la teoría de grafos y su aplicación en diversas disciplinas.	
+
 	</h5>
-	<h4>Tipo de Grafos y Propiedades Clave</h4>
+	<h4>3.1.3 Tipo de Grafos y Propiedades Clave</h4>
 	<h5>
-		El documento presente tiene la finalidad de dar a conocer las características de dichos grafos, dichas características se muestran en los diferentes tipos de grafos que existen, tales grafos serían: Dirigidos (Digrafos), No Dirigidos, Ponderados y No Ponderados.
+
+		Los grafos se clasifican en diferentes tipos según sus características y propiedades. Algunas de las clasificaciones más comunes son:
 		<br><br>
-		A su vez los grafos tienen propiedades que son de suma importancia, ya sea para su manipulación y entendimiento, tales propiedades son las siguientes: Grado de un Nodo, Camino, Ciclo, Conectividad.
+		<strong>Grafos Dirigidos (Digrafos):</strong> En estos grafos, las aristas tienen una dirección, es decir, van de un vértice a otro en un solo sentido. Son útiles para modelar situaciones donde las relaciones no son bidireccionales, como en las redes de flujo de tráfico.
+		<br><br>
+		<strong>Grafos No Dirigidos:</strong> En estos grafos, las aristas no tienen dirección, lo que significa que la relación entre los vértices es bidireccional. Se utilizan en situaciones donde las conexiones son mutuas, como en las redes sociales.
+		<br><br>
+		<strong>Grafos Ponderados:</strong> En estos grafos, cada arista tiene un peso asociado que puede representar distancia, costo, tiempo, etc. Son esenciales para problemas de optimización como encontrar el camino más corto.
+		<br><br>
+		<strong>Grafos No Ponderados:</strong> En estos grafos, las aristas no tienen peso. Se utilizan para modelar relaciones simples sin necesidad de cuantificar la conexión.
+		<br><br>
+		A su vez los grafos tienen propiedades que son de suma importancia, ya sea para su manipulación y entendimiento, tales propiedades son las siguientes:
+		<br><br>
+		<strong>Grado de un Nodo:</strong> Es el número de aristas que inciden en un nodo. En grafos dirigidos, se distingue entre grado de entrada y grado de salida.
+		<br><br>
+		<strong>Camino:</strong> Es una secuencia de vértices donde cada par consecutivo está conectado por una arista. Un camino simple no repite vértices.
+		<br><br>
+		<strong>Ciclo:</strong> Es un camino que comienza y termina en el mismo vértice. Un ciclo simple no repite vértices ni aristas.
+		<br><br>
+		<strong>Conectividad:</strong> Indica si existe un camino entre cualquier par de vértices en el grafo. Un grafo es conexo si todos sus vértices están conectados.
 		<br><br>
 	</h5>
-	<h2>Estructuras Discretas</h2>	
-	<h4>3.1.4 Conjuntos</h4>
+
+	Cada uno de estos tipos de grafos y propiedades clave tiene aplicaciones específicas en diversos campos, desde redes informáticas hasta biología computacional. Comprender estas clasificaciones y propiedades es fundamental para el análisis y la manipulación efectiva de grafos en contextos reales.
+	Por ejemplo en redes informáticas, los grafos dirigidos se utilizan para modelar la transferencia de datos, utilizando aristas con direcciones específicas. Los grafos no dirigidos son esenciales para representar conexiones bidireccionales en redes sociales y sistemas de comunicación, mientras que los grafos ponderados son esenciales para encontrar la ruta más eficiente entre dos nodos. 
+	En biología computacional, los grafos se emplean para representar interacciones entre proteínas y genes, lo que permite analizar y predecir comportamientos biológicos complejos.
+	<h4>3.1.4 Aplicaciones de la Teoría de Grafos y Estructuras Discretas</h4>
 	<h5>
-		Un conjunto es una agrupación de elementos. En el ámbito de las estructuras discretas, se analizan operaciones sobre conjuntos, como la unión, intersección y diferencia.
-	</h5>
-	<h4>3.1.5 Relaciones y Funciones</h4>
-	<h5>
+		La teoría de grafos y las estructuras discretas tienen una amplia gama de aplicaciones en diversos campos. Algunas de las aplicaciones más destacadas son:
 		<ul>
-			<li>Relaciones: Se establece una relación entre los elementos de dos conjuntos. Un ejemplo común es la relación de equivalencia.</li>
-			<li>Funciones: Son asignaciones que vinculan elementos de un conjunto con otro. Las funciones pueden ser inyectivas, suprayectivas o biyectivas.</li>
+			<li> <strong>Redes Informáticas:</strong> Se utilizan para modelar conexiones y flujos de datos. Los grafos pueden representar la topología de una red, optimizar rutas de datos y detectar cuellos de botella. Por ejemplo, en el diseño de redes de computadoras, los grafos ayudan a determinar la ruta más eficiente para la transmisión de datos, minimizando la latencia y maximizando el ancho de banda.</li>
+			<li> <strong>Algoritmos de Optimización:</strong> Permiten encontrar el camino más corto o el árbol de expansión mínima, entre otros. Algoritmos como Dijkstra, Kruskal y Prim son fundamentales en este campo. Estos algoritmos se aplican en la planificación de rutas de transporte, la distribución de recursos y la gestión de redes de suministro, donde es crucial encontrar soluciones óptimas para minimizar costos y tiempos.</li>
+			<li> <strong>Bases de Datos:</strong> Ayudan a modelar las relaciones entre diferentes entidades. Los grafos se utilizan en bases de datos orientadas a grafos para consultas eficientes sobre relaciones complejas. Por ejemplo, en redes sociales, las bases de datos de grafos permiten realizar consultas rápidas sobre las conexiones entre usuarios, identificar comunidades y analizar patrones de interacción.</li>
+			<li> <strong>Inteligencia Artificial:</strong> Se emplean para representar conocimiento y facilitar el razonamiento. Los grafos son esenciales en la representación de redes neuronales, planificación y búsqueda de soluciones. En el aprendizaje automático, los grafos se utilizan para modelar relaciones entre datos, mejorar la precisión de los algoritmos de clasificación y predicción, y optimizar la estructura de las redes neuronales.</li>
+			<li> <strong>Biología Computacional:</strong> Los grafos se utilizan para modelar y analizar redes biológicas, como las interacciones entre proteínas y genes. Esto permite a los investigadores comprender mejor los procesos biológicos, identificar posibles dianas terapéuticas y predecir el comportamiento de sistemas biológicos complejos.</li>
+			<li> <strong>Teoría de Redes Sociales:</strong> Los grafos se utilizan para estudiar las interacciones y relaciones entre individuos en una red social. Esto incluye el análisis de la estructura de la red, la identificación de influenciadores clave y la detección de comunidades dentro de la red.</li>
+			<li> <strong>Logística y Transporte:</strong> Los grafos se aplican en la planificación y optimización de rutas de transporte, la gestión de flotas y la distribución de mercancías. Esto ayuda a reducir costos, mejorar la eficiencia y garantizar la entrega oportuna de productos.</li>
+			<li> <strong>Química y Farmacología:</strong> Los grafos se utilizan para modelar estructuras moleculares y reacciones químicas. Esto facilita el diseño de nuevos compuestos químicos y medicamentos, así como el análisis de sus propiedades y comportamientos.</li>
 		</ul>
 	</h5>
-	<h4>3.1.6 Álgebra Booleana</h4>
-	<h5>
-		El álgebra booleana es un sistema matemático que se utiliza para trabajar con valores de verdad (verdadero/falso). Es fundamental en el diseño de circuitos digitales y en la lógica de programación.
-	</h5>
-	<h4>3.1.7 Principio de Inclusión-Exclusión</h4>
-	<h5>
-		Este principio se aplica para determinar el tamaño de la unión de varios conjuntos y es crucial en combinatoria y teoría de probabilidades.
-	</h5>
-	<h4>3.1.8 Aplicaciones de la Teoría de Grafos y Estructuras Discretas</h4>
-	<h5>
-		<ul>
-			<li> Redes Informáticas: Se utilizan para modelar conexiones y flujos de datos.</li>
-			<li> Algoritmos de Optimización: Permiten encontrar el camino más corto o el árbol de expansión mínima, entre otros.</li>
-			<li> Bases de Datos: Ayudan a modelar las relaciones entre diferentes entidades.</li>
-			<li> Inteligencia Artificial: Se emplean para representar conocimiento y facilitar el razonamiento.</li>
-		</ul>
-	</h5>
+
 	<h2>3.2 Conceptos Básicos de Grafos</h2>
-	<h4>3.2.1 Teoría de Grafos</h4>
-	<h5>
-		La teoría de grafos es una disciplina que estudia las relaciones entre objetos mediante estructuras llamadas grafos, formadas por vértices y aristas. Los grafos se pueden representar de diversas maneras, siendo las más comunes la matriz de adyacencia y la lista de adyacencia, cada una con sus ventajas dependiendo del tipo de grafo analizado.
-		<br><br>
-		Las propiedades esenciales de los grafos incluyen su clasificación como bipartitos, planos, densos o dispersos, lo cual es crucial para comprender su estructura y comportamiento en distintos contextos.
-		<br><br>
-		Esta teoría abarca varios algoritmos clave que permiten realizar diversas operaciones y análisis. Entre ellos destacan la búsqueda en profundidad (DFS) y la búsqueda en anchura (BFS) para explorar los vértices de un grafo. Asimismo, el algoritmo de Dijkstra es esencial para encontrar el camino más corto en grafos ponderados, mientras que los algoritmos de Kruskal y Prim son vitales para determinar el Árbol de Expansión Mínima.
-	</h5>
-	<h4>3.2.2 Aplicaciones</h4>
-	<h5>
-		<ul>
-			<li>Redes de Transporte: Se utilizan para modelar y optimizar rutas.</li>
-			<li>Sistemas de Recomendación: Representan las relaciones entre usuarios y productos.</li>
-			<li>Biología Computacional: Facilitan el análisis de redes relacionadas con proteínas y genes.</li>
-			<li>Teoría de Redes Sociales: Se centran en el estudio de las interacciones y relaciones entre individuos.</li>
-		</ul>
-	</h5>
-	<h2>3.3 Vértices, aristas, grados. Tipos de grafos.</h2>
-	<h4>3.3.1 Vértices y Aristas</h4>
+	<br>
+	Para poder comprender como funcionan los grafos, es necesario conocer los conceptos básicos que los conforman. A continuación, se presentan los elementos fundamentales de los grafos y sus propiedades clave.
+	<br><br>
+	<h4>3.2.1 Vértices y Aristas</h4>
 	<h5>
 		En un grafo, los vértices (o nodos) son los elementos que representan las entidades u objetos de interés, mientras que las aristas (o arcos) son las conexiones entre esos vértices.
 	</h5>
@@ -142,7 +178,7 @@
 		<br><br>
 		"Cada arista solo puede unir un par de nodos del conjunto V(G). Una arista que enlaza al nodo u con el nodo v se denota como: a=(u, v)" (Solano, s.f., p. 14).
 	</h5>
-	<h4>3.3.2 Grado de un Vértice</h4>
+	<h4>3.2.2 Grado de un Vértice</h4>
 	<h5>
 		El grado de un vértice es el número de aristas que inciden en él. Esta métrica es fundamental para estudiar la estructura de un grafo.
 	</h5>
@@ -163,7 +199,7 @@
 			<li><strong>Grado de salida:</strong> Es el número de aristas que salen del vértice v.</li>
 		</ul>
 	</h5>
-	<h4>3.3.3 Tipos de Grafos</h4>
+	<h4>3.2.3 Tipos de Grafos</h4>
 	<h5>
 		Los grafos se clasifican en diversos tipos según sus características y propiedades estructurales:
 		<br>
@@ -238,8 +274,8 @@
 	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación. [Grafo dirigido]. Página 31.</h7>
 	</div>
 	<br><br>
-	<h2>3.4 Representaciones: Matriz de adyacencia y lista de adyacencia</h2>
-	<h4>3.4.1 Matriz de adyacencia</h4>
+	<h2>3.3 Representaciones: Matriz de adyacencia y lista de adyacencia</h2>
+	<h4>3.3.1 Matriz de adyacencia</h4>
 	<h5>
 		"Una matriz de adyacencia es una matriz booleana de orden n, donde n indica el número de vértices de G. Tanto los renglones como las columnas de la matriz representan los nodos de la gráfica y su contenido representa la existencia (1) o no (0) de arcos entre los nodos i y j" (Solano, s.f., p. 35).
 		<br><br>
@@ -270,7 +306,7 @@
 	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Teorema 1.3.1: La matriz de adyacencia, p. 9.</h7>
 	</div>
 	<br><br>
-		<h4>3.4.2 Lista de adyacencia</h4>
+		<h4>3.3.2 Lista de adyacencia</h4>
 	<h5>
 		Una lista de adyacencia es una forma de representar grafos que se utiliza comúnmente en teoría de gráficas. En esta representación, cada vértice del grafo tiene una lista asociada que contiene todos los vértices a los que está conectado mediante aristas.
 	</h5>
@@ -284,9 +320,9 @@
 		En un grafo no dirigido, la lista de adyacencia de un vértice v incluye todos los vértices u tales que hay una arista entre v y u.
 	</h5>
 
-	<h4>3.5 Recorridos en grafos</h4>
+	<h4>3.4 Recorridos en grafos</h4>
 
-	<h4>3.5.1. Algoritmos de búsqueda en anchura (BFS)</h4>
+	<h4>3.4.1. Algoritmos de búsqueda en anchura (BFS)</h4>
 	<h5>
 		La idea básica de la búsqueda en anchura es desplegarse a tantos vértices como sea posible antes de penetrar en profundidad dentro de un árbol. Esto significa que visitaremos todos los vértices adyacentes a uno dado antes de cambiar de nivel. Es uno de los algoritmos fundamentales para explorar grafos y tiene aplicaciones en problemas de conectividad, búsqueda de caminos más cortos en grafos no ponderados, y análisis de redes.
 	</h5>
@@ -315,7 +351,7 @@
 		El algoritmo termina cuando la cola está vacía, lo que significa que se han explorado todos los vértices alcanzables desde el vértice inicial.
 	</h5>
 
-	<h4>3.5.2 Algoritmos de búsqueda en profundidad (DFS)</h4>
+	<h4>3.4.2 Algoritmos de búsqueda en profundidad (DFS)</h4>
 	<h5>
 		La idea básica de búsqueda en profundidad es penetrar tan profundamente como sea posible dentro de un árbol antes de desplegarse a otros vértices. Esto se consigue al tomar el nuevo vértice adyacente al último de los posibles vértices anteriores. Este algoritmo es ampliamente utilizado en la teoría de grafos y tiene aplicaciones en la detección de ciclos, el análisis de componentes conexos, y en problemas de recorrido y conectividad en redes.
 	</h5>
@@ -347,9 +383,9 @@
 		El proceso continúa hasta que todos los vértices alcanzables desde el vértice de inicio hayan sido visitados.
 	</h5>
 
-	<h4>3.6 Isomorfismo y Propiedades de Grafos</h4>
+	<h4>3.5 Isomorfismo y Propiedades de Grafos</h4>
 
-	<h4>3.6.1. Isomorfismo de Grafos</h4>
+	<h4>3.5.1. Isomorfismo de Grafos</h4>
 	<h5>
 		Para que dos grafos sean isomorfos, debe de existir una correspondencia uno a uno entre los nodos de los dos grafos y, además, conservan la adyacencia entre los nodos, así como la dirección de las aristas, si estas existen.
 	</h5>
@@ -379,38 +415,18 @@
 		En ese sentido, verificar la correspondencia entre grados puede ser de utilidad. Sin embargo, incluso si coinciden en los grados de sus vértices, ello no implica que sean isomorfos. La única forma de probarlo es afirmar o refutar la existencia de la función biyectiva f: V(G) -> V(G*). Sea n = Card(V(G)) = Card(V(G*))(Emparejar los vértices de un grafo G y G*), Entonces, de acuerdo a lo anterior, se tendrían que examinar a lo más n!(n factorial) posibles funciones.
 	</h5>
 
-	<h2>3.7 Software para manipulación de Grafos</h2>
+	<h2>3.6 Software para manipulación de Grafos</h2>
 
-	<h4>3.7.1 Historia y Concepto del Software Libre (Contexto)</h4>
-	<h5>
-		El software libre se define como aquel cuyo código fuente es accesible y puede ser libremente modificado, utilizado y distribuido por cualquier usuario. Este concepto surgió en la década de 1980, impulsado por Richard Stallman, quien fundó el proyecto GNU con la visión de crear software que promoviera la libertad de los usuarios para personalizar y distribuir programas según sus necesidades. Las cuatro libertades esenciales del software libre son: la libertad de ejecutar el programa con cualquier propósito, estudiar y modificar su funcionamiento, redistribuir copias y mejorar el programa en beneficio de la comunidad (Villalpando Becerra & Pantoja Rangel, 2016, p. 18).
-		<br><br>
-		A diferencia del software propietario, que restringe el acceso al código fuente y limita los derechos de uso, el software libre se asocia con un modelo colaborativo, en el que desarrolladores de todo el mundo contribuyen a su mejora continua. Esta filosofía fomenta la accesibilidad y la personalización del software, promoviendo la innovación en sectores como la educación matemática (Villalpando Becerra & Pantoja Rangel, 2016, p. 19).
-	</h5>
-
-	<h4>3.7.2 Aplicación del Software Libre en la Educación Matemática</h4>
-	<h5>
-		El software libre se ha convertido en una herramienta poderosa en la enseñanza de conceptos complejos en matemáticas discretas, como los grafos y estructuras algebraicas. En entornos educativos, permite que los estudiantes visualicen y manipulen elementos matemáticos de manera dinámica e interactiva, lo que es fundamental para entender estructuras abstractas y facilitar un aprendizaje significativo. Además, al eliminar barreras económicas, el software libre proporciona acceso a herramientas avanzadas, lo cual es especialmente valioso para instituciones con recursos limitados (Villalpando Becerra & Pantoja Rangel, 2016, p. 20).
-	</h5>
-
-	<h4>3.7.3 Herramientas de Software Libre en Matemáticas Discretas</h4>
+	<h4>3.6.1 Herramientas de Software Libre en Matemáticas Discretas</h4>
 	<h5>
 		Entre las herramientas de software libre destacadas en el ámbito de las matemáticas discretas se encuentran:
 		<br><br>
-		<strong>3.7.3.1 Maxima:</strong> Este sistema de álgebra computacional permite realizar cálculos simbólicos y numéricos, facilitando el análisis de estructuras complejas como las matrices de adyacencia en grafos. Maxima es ideal para el desarrollo de habilidades analíticas, promoviendo la comprensión de la relación entre representaciones gráficas y algebraicas (Villalpando Becerra & Pantoja Rangel, 2016, p. 21).
+		<strong>3.6.1.1 Maxima:</strong> Este sistema de álgebra computacional permite realizar cálculos simbólicos y numéricos, facilitando el análisis de estructuras complejas como las matrices de adyacencia en grafos. Maxima es ideal para el desarrollo de habilidades analíticas, promoviendo la comprensión de la relación entre representaciones gráficas y algebraicas (Villalpando Becerra & Pantoja Rangel, 2016, p. 21).
 		<br><br>
-		<strong>3.7.3.2 GeoGebra:</strong> Conocido principalmente por su aplicación en geometría, GeoGebra también permite representar y manipular grafos de manera visual e interactiva. Los estudiantes pueden explorar propiedades estructurales de los grafos, analizar caminos y ciclos, y mejorar su comprensión a través de un aprendizaje práctico y visual (Villalpando Becerra & Pantoja Rangel, 2016, p. 22).
+		<strong>3.6.1.2 GeoGebra:</strong> Conocido principalmente por su aplicación en geometría, GeoGebra también permite representar y manipular grafos de manera visual e interactiva. Los estudiantes pueden explorar propiedades estructurales de los grafos, analizar caminos y ciclos, y mejorar su comprensión a través de un aprendizaje práctico y visual (Villalpando Becerra & Pantoja Rangel, 2016, p. 22).
 		<br><br>
-		<strong>3.7.3.3 Dia:</strong> Herramienta de diagramación que facilita la creación de representaciones visuales de nodos y aristas en grafos, permitiendo a los estudiantes analizar conceptos como conectividad y recorridos. Aunque no se dedica exclusivamente a la teoría de grafos, su flexibilidad la convierte en una herramienta eficaz para este tipo de representaciones (Villalpando Becerra & Pantoja Rangel, 2016, p. 23).
+		<strong>3.6.3 Dia:</strong> Herramienta de diagramación que facilita la creación de representaciones visuales de nodos y aristas en grafos, permitiendo a los estudiantes analizar conceptos como conectividad y recorridos. Aunque no se dedica exclusivamente a la teoría de grafos, su flexibilidad la convierte en una herramienta eficaz para este tipo de representaciones (Villalpando Becerra & Pantoja Rangel, 2016, p. 23).
 	</h5>
-
-	<h4>3.7.4 Beneficios Pedagógicos del Software Libre en la Educación</h4>
-	<h5>
-		El uso del software libre en la educación matemática ofrece beneficios pedagógicos al promover un aprendizaje activo y colaborativo. A través de la manipulación directa de elementos matemáticos, los estudiantes experimentan con las propiedades de los grafos, fortaleciendo su comprensión y sus habilidades en resolución de problemas. Este enfoque favorece la construcción del conocimiento y, al ser de libre acceso, promueve una educación equitativa y accesible (Villalpando Becerra & Pantoja Rangel, 2016, p. 24).
-		<br><br>
-		El software libre en matemáticas discretas constituye una herramienta valiosa que empodera tanto a estudiantes como a docentes, facilitando un aprendizaje interactivo y accesible. A través de herramientas como Maxima, GeoGebra y Dia, los estudiantes desarrollan competencias analíticas y tecnológicas esenciales en su formación matemática, contribuyendo a una educación inclusiva y de calidad (Villalpando Becerra & Pantoja Rangel, 2016, p. 25-26).
-	</h5>
-
 </body>
 
 </html>
