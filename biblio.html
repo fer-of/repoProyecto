@@ -12,30 +12,51 @@
 	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
 	<style>
 		body {
-			font-family: Arial, sans-serif;
-			margin: 20px;
-			line-height: 1.6;
-			background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #5e5c5c6c;
+        }
+        section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(71, 71, 71, 0.603);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+		h5{
+			color: rgba(202, 183, 253, 0.712);
+			font-family: "Roboto", sans-serif;
+	  font-weight: 400;
+	  font-style: normal;
 		}
 		h1 {
-			color: #ffffff;
+			color: rgba(255, 255, 255, 0.712);
+			font-family: "Playfair Display", serif;
+			font-optical-sizing: auto;
+			font-weight: normal;
+			font-style: normal;
 			text-align: center;
-		}
-		h4 {
-			color: #5f02ca91;
-			font-style: italic;
-		}
-		h5 {
-			color: #00000096;
-		}
-		.bibliography-container {
-			background-color: #9aa2b3a1;
-			border-radius: 10px;
-			padding: 20px;
-			margin: 0 auto;
-			width: 80%;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
+		  }
+  
+  h2 {
+	color: rgba(177, 213, 255, 0.781);
+	font-weight: 900;
+  }
+  
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
 		.bibliography {
 			margin-top: 20px;
 			text-align: center;
@@ -53,7 +74,7 @@
 			margin-bottom: 20px;
 		}
 		.url-link {
-			color: #710dabbb;
+			color: #35f2ffbb;
 			text-decoration: none;
 		}
 		.url-link:hover {
@@ -63,24 +84,26 @@
 </head>
 
 <body>
+	<section>
 	<h1>9. Bibliografía</h1>
 	<div class="bibliography-container">
 		<div class="intro">
 			<h5></h5>
 			<h5></h5>
-			<h4>Todas estas bibliografías pertenecen a la biblioteca de la UNAM, tanto en formato físico como en la BIDIUNAM. Algunos otros son de sitios web de acceso libre.</h5>
-			<h5><span style="color: #35026ede;">1.</span> Solano, J. (s.f.). <i>Algoritmos de grafos.</i> Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación.</h5>
-			<h5><span style="color: #35026ede;">2.</span> Claverol, M., Simó, E., & Zaragoza, M. (s.f.). <i>Teoría de grafos.</i> Departamento de Matemática Aplicada IV, EPSEVG - UPC.</h5>
-			<h5><span style="color: #35026ede;">3.</span> Universidad Tecnológica Latinoamericana en Línea (UTEL). (s.f.). <i>Teoría de gráficas.</i> Recuperado de <a class="url-link" href="https://apps.utel.edu.mx/recursos/files/r161r/w24810w/teoria_de_graficas.pdf" target="_blank">https://apps.utel.edu.mx/recursos/files/r161r/w24810w/teoria_de_graficas.pdf</a></h5>
-			<h5><span style="color: #35026ede;">4.</span> Caballero Palomino, M. Á., Migallón Gomis, V., & Penadés Martínez, J. (s.f.). <i>Prácticas de matemática discreta con MaGraDa.</i> Publicaciones de la Universidad de Alicante.</h5>
-			<h5><span style="color: #35026ede;">5.</span> Salas, S., & Godino, J. D. (2016). <i>Potencial educativo de la aritmética mapuche en Chile.</i> En A. M. Rosas Mendoza (Ed.), Avances en matemática educativa. Tecnología y matemáticas (pp. 72-84). Editorial Lectorum.</h5>
-			<h5><span style="color: #35026ede;">6.</span> Cánovas Peña, J. S. (s.f.). <i>Teoría de grafos.</i> Departamento de Matemática Aplicada y Estadística.</h5>
-			<h5><span style="color: #35026ede;">7.</span> Pérez, Aguila, Ricardo. (2013). <i>Una introducción a las matemáticas discretas y teoría de grafos.</i> El Cid Editor. ProQuest Ebook Central, <a class="url-link" href="https://ebookcentral.proquest.com/lib/bibliodgbsp/detail.action?docID=3213116" target="_blank">https://ebookcentral.proquest.com/lib/bibliodgbsp/detail.action?docID=3213116</a></h5>
-			<h5><span style="color: #35026ede;">8.</span> Becerra, J. F. V., & Rangel, R. P. <i>Enseñanza De Las Matemáticas Discretas Utilizando Software Libre.</i> AVANCES EN MATEMÁTICA EDUCATIVA TECNOLOGÍA Y MATEMÁTICAS NO., 8.</h5>
-			<h5><span style="color: #35026ede;">9.</span> Redondo González, M. E. (2023). <i>Matemática Discreta. Teoría de grafos y Aplicaciones a grupos.</i> (Bachelor's thesis).</h5>
-			<h5><span style="color: #35026ede;">10.</span> Kolman, B., Busby, R. C., & Ross, S. (1997). <i>Estructuras de matemáticas discretas para la computación.</i> Pearson Educación.</h5>
+			<h4 style="color: #87CEEB;">Todas estas bibliografías pertenecen a la biblioteca de la UNAM, tanto en formato físico como en la BIDIUNAM. Algunos otros son de sitios web de acceso libre.</h4>
+			<h5><span style="color: #ffffffde;">1.</span> Solano, J. (s.f.). <i>Algoritmos de grafos.</i> Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación.</h5>
+			<h5><span style="color: #ffffffde;">2.</span> Claverol, M., Simó, E., & Zaragoza, M. (s.f.). <i>Teoría de grafos.</i> Departamento de Matemática Aplicada IV, EPSEVG - UPC.</h5>
+			<h5><span style="color: #ffffffde;">3.</span> Universidad Tecnológica Latinoamericana en Línea (UTEL). (s.f.). <i>Teoría de gráficas.</i> Recuperado de <a class="url-link" href="https://apps.utel.edu.mx/recursos/files/r161r/w24810w/teoria_de_graficas.pdf" target="_blank">https://apps.utel.edu.mx/recursos/files/r161r/w24810w/teoria_de_graficas.pdf</a></h5>
+			<h5><span style="color: #ffffffde;">4.</span> Caballero Palomino, M. Á., Migallón Gomis, V., & Penadés Martínez, J. (s.f.). <i>Prácticas de matemática discreta con MaGraDa.</i> Publicaciones de la Universidad de Alicante.</h5>
+			<h5><span style="color: #ffffffde;">5.</span> Salas, S., & Godino, J. D. (2016). <i>Potencial educativo de la aritmética mapuche en Chile.</i> En A. M. Rosas Mendoza (Ed.), Avances en matemática educativa. Tecnología y matemáticas (pp. 72-84). Editorial Lectorum.</h5>
+			<h5><span style="color: #ffffffde;">6.</span> Cánovas Peña, J. S. (s.f.). <i>Teoría de grafos.</i> Departamento de Matemática Aplicada y Estadística.</h5>
+			<h5><span style="color: #ffffffde;">7.</span> Pérez, Aguila, Ricardo. (2013). <i>Una introducción a las matemáticas discretas y teoría de grafos.</i> El Cid Editor. ProQuest Ebook Central, <a class="url-link" href="https://ebookcentral.proquest.com/lib/bibliodgbsp/detail.action?docID=3213116" target="_blank">https://ebookcentral.proquest.com/lib/bibliodgbsp/detail.action?docID=3213116</a></h5>
+			<h5><span style="color: #ffffffde;">8.</span> Becerra, J. F. V., & Rangel, R. P. <i>Enseñanza De Las Matemáticas Discretas Utilizando Software Libre.</i> AVANCES EN MATEMÁTICA EDUCATIVA TECNOLOGÍA Y MATEMÁTICAS NO., 8.</h5>
+			<h5><span style="color: #ffffffde;">9.</span> Redondo González, M. E. (2023). <i>Matemática Discreta. Teoría de grafos y Aplicaciones a grupos.</i> (Bachelor's thesis).</h5>
+			<h5><span style="color: #ffffffde;">10.</span> Kolman, B., Busby, R. C., & Ross, S. (1997). <i>Estructuras de matemáticas discretas para la computación.</i> Pearson Educación.</h5>
 		</div>
 	</div>
+	</section>
 </body>
 
 </html>

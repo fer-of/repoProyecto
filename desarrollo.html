@@ -11,6 +11,14 @@
 	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
 	<link rel="stylesheet" href="media/css/portada.css" type="text/css">
 	<style>
+		section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(71, 71, 71, 0.603);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
 		h1 {
 			color: rgba(255, 255, 255, 0.712);
 			font-family: "Playfair Display", serif;
@@ -50,13 +58,15 @@
 	  font-weight: 300;
 	  font-style: normal;   
 		}
-	   
+		
+		  
 	
 		</style>
 	
 </head>
 
 <body style="">
+	<section>
 	<br><br><br>
 	<h1>3. Desarrollo</h1> <br>
 	<h3>3.1 Introducción a la Teoría de Grafos y Estructuras Discretas.</h3>
@@ -76,7 +86,8 @@
 	</h5>
 	<div style="text-align: center;">
 		<img src="media/img/desa_1.png" style="width: 400px; height: auto;" alt="">
-		<h7>Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.: Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</h7>
+		<h7>Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.: 
+			<br>Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</h7>
 	</div>
 	<br><br>
 	<h4>3.1.2 Contexto Histórico</h4>
@@ -90,7 +101,8 @@
 	</h5>
 	<div style="text-align: center;">
 		<img src="media/img/desa_2.png" style="width: 400px; height: auto;" alt="">
-		<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación. [Problema de los 7 puentes]. Página 9.</h7>
+		<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de 
+			<br>Ingeniería, Departamento de Computación. [Problema de los 7 puentes]. Página 9.</h7>
 	</div>
 	<br>
 	<h5>
@@ -130,9 +142,14 @@
 		<br><br>
 	</h5>
 
-	Cada uno de estos tipos de grafos y propiedades clave tiene aplicaciones específicas en diversos campos, desde redes informáticas hasta biología computacional. Comprender estas clasificaciones y propiedades es fundamental para el análisis y la manipulación efectiva de grafos en contextos reales.
-	Por ejemplo en redes informáticas, los grafos dirigidos se utilizan para modelar la transferencia de datos, utilizando aristas con direcciones específicas. Los grafos no dirigidos son esenciales para representar conexiones bidireccionales en redes sociales y sistemas de comunicación, mientras que los grafos ponderados son esenciales para encontrar la ruta más eficiente entre dos nodos. 
-	En biología computacional, los grafos se emplean para representar interacciones entre proteínas y genes, lo que permite analizar y predecir comportamientos biológicos complejos.
+	<h5>Cada uno de estos tipos de grafos y propiedades clave tiene aplicaciones específicas en diversos campos, desde redes informáticas hasta biología computacional. 
+		<br>
+		Comprender estas clasificaciones y propiedades es fundamental para el análisis y la manipulación efectiva de grafos en contextos reales.
+		<br>
+		Por ejemplo en redes informáticas, los grafos dirigidos se utilizan para modelar la transferencia de datos, utilizando aristas con direcciones específicas. Los grafos no dirigidos son esenciales para representar conexiones bidireccionales en redes sociales y sistemas de comunicación, mientras que los grafos ponderados son esenciales para encontrar la ruta más eficiente entre dos nodos. 
+		<br>
+		En biología computacional, los grafos se emplean para representar interacciones entre proteínas y genes, lo que permite analizar y predecir comportamientos biológicos complejos.
+	</h5>
 	<h4>3.1.4 Aplicaciones de la Teoría de Grafos y Estructuras Discretas</h4>
 	<h5>
 		La teoría de grafos y las estructuras discretas tienen una amplia gama de aplicaciones en diversos campos. Algunas de las aplicaciones más destacadas son:
@@ -150,7 +167,9 @@
 
 	<h2>3.2 Conceptos Básicos de Grafos</h2>
 	<br>
-	Para poder comprender como funcionan los grafos, es necesario conocer los conceptos básicos que los conforman. A continuación, se presentan los elementos fundamentales de los grafos y sus propiedades clave.
+	<h5>
+		Para poder comprender como funcionan los grafos, es necesario conocer los conceptos básicos que los conforman. A continuación, se presentan los elementos fundamentales de los grafos y sus propiedades clave.
+	</h5>
 	<br><br>
 	<h4>3.2.1 Vértices y Aristas</h4>
 	<h5>
@@ -158,7 +177,8 @@
 	</h5>
 	<div style="text-align: center;">
 	<img src="media/img/desa_3.png" style="width: 400px; height: auto;" alt="">
-	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación. [Grafo de distancias entre ciudades]. Página 12.</h7>
+	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de 
+		<br>Ingeniería, Departamento de Computación. [Grafo de distancias entre ciudades]. Página 12.</h7>
 	</div>
 	<br><br>
 	<h5>Para entender a profundidad estos conceptos, es esencial tener en cuenta:</h5>
@@ -185,7 +205,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_4.png" style="width: 400px; height: auto;" alt="">
-	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación. [Grado de dos vértices]. Página 18.</h7>
+	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de 
+		<br>Ingeniería, Departamento de Computación. [Grado de dos vértices]. Página 18.</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -208,7 +229,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_5.png" style="width: 200px; height: auto;" alt="">
-	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.2: Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</h7>
+	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. 
+		<br>Figura 1.2: Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -217,7 +239,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_6.png" style="width: 200px; height: auto;" alt="">
-	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.2: Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</h7>
+	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. 
+		<br>Figura 1.2: Ejemplos de grafo simple, multigrafo y pseudografo, p. 3.</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -226,7 +249,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_7.png" style="width: 200px; height: auto;" alt="">
-	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.3: Ejemplos de grafo completo, p. 4.</h7>
+	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. 
+		<br>Figura 1.3: Ejemplos de grafo completo, p. 4.</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -235,7 +259,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_8.png" style="width: 200px; height: auto;" alt="">
-	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.5: Ejemplos de grafo conexo, p. 5.</h7>
+	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística.
+		<br> Figura 1.5: Ejemplos de grafo conexo, p. 5.</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -244,7 +269,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_9.png" style="width: 200px; height: auto;" alt="">
-	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.5: Ejemplos de grafo no conexo, p. 5</h7>
+	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. 
+	<br>Figura 1.5: Ejemplos de grafo no conexo, p. 5</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -253,7 +279,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_10.png" style="width: 200px; height: auto;" alt="">
-	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.10: Ejemplos árboles, p. 10</h7>
+	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. 
+		<br>Figura 1.10: Ejemplos árboles, p. 10</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -262,7 +289,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_11.png" style="width: 200px; height: auto;" alt="">
-	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Figura 1.12: Ejemplo de grafo ponderado, p. 10.</h7>
+	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. 
+		<br>Figura 1.12: Ejemplo de grafo ponderado, p. 10.</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -271,7 +299,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_12.png" style="width: 300px; height: auto;" alt="">
-	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación. [Grafo dirigido]. Página 31.</h7>
+	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de 
+		<br>Ingeniería, Departamento de Computación. [Grafo dirigido]. Página 31.</h7>
 	</div>
 	<br><br>
 	<h2>3.3 Representaciones: Matriz de adyacencia y lista de adyacencia</h2>
@@ -284,7 +313,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_13.png" style="width: 300px; height: auto;" alt="">
-	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación. [Grafo dirigido y su matriz de adyacencia]. Página 36.</h7>
+	<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de 
+		<br>Ingeniería, Departamento de Computación. [Grafo dirigido y su matriz de adyacencia]. Página 36.</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -303,7 +333,8 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/desa_15.png" style="width: 600px; height: auto;" alt="">
-	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística. Teorema 1.3.1: La matriz de adyacencia, p. 9.</h7>
+	<h7 align="center">Cánovas Peña, J. S. (s. f.). Teoría de grafos. Departamento de Matemática Aplicada y Estadística.
+		<br> Teorema 1.3.1: La matriz de adyacencia, p. 9.</h7>
 	</div>
 	<br><br>
 		<h4>3.3.2 Lista de adyacencia</h4>
@@ -312,7 +343,8 @@
 	</h5>
 	<div style="text-align: center;">
 		<img src="media/img/desa_16.png" style="width: 400px; height: auto;" alt="">
-		<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de Ingeniería, Departamento de Computación. [Grafo dirigido y su lista de adyacencia]. Página 40.
+		<h7 align="center">Solano, J. (2024). Algoritmos de grafos. Universidad Nacional Autónoma de México, Facultad de 
+			<br>Ingeniería, Departamento de Computación. [Grafo dirigido y su lista de adyacencia]. Página 40.
 		</h7>
 	</div>
 	<br><br>
@@ -404,9 +436,11 @@
 	<br><br>
 	<div style="text-align: center;">
 	<img src="media/img/des_18.png" style="width: 500px; height: auto;" alt="">
-	<h7 align="center">Caballero Palomino, M. Á., Migallón Gomis, V., & Penadés Martínez, J. (Año). Prácticas de matemática discreta con MaGraDa [Foto 1]. Universidad de Alicante. p. 54.</h7>
+	<h7 align="center">Caballero Palomino, M. Á., Migallón Gomis, V., & Penadés Martínez, J. (Año). Prácticas de matemática discreta con MaGraDa [Foto 1]. 
+		<br>Universidad de Alicante. p. 54.</h7>
 	<br><br>
-	<h7 align="center">Caballero Palomino, M. Á., Migallón Gomis, V., & Penadés Martínez, J. (Año). Prácticas de matemática discreta con MaGraDa [Foto 2]. Universidad de Alicante. p. 54.</h7>
+	<h7 align="center">Caballero Palomino, M. Á., Migallón Gomis, V., & Penadés Martínez, J. (Año). Prácticas de matemática discreta con MaGraDa [Foto 2]. 
+		<br>Universidad de Alicante. p. 54.</h7>
 	</div>
 	<br><br>
 	<h5>
@@ -427,6 +461,7 @@
 		<br><br>
 		<strong>3.6.3 Dia:</strong> Herramienta de diagramación que facilita la creación de representaciones visuales de nodos y aristas en grafos, permitiendo a los estudiantes analizar conceptos como conectividad y recorridos. Aunque no se dedica exclusivamente a la teoría de grafos, su flexibilidad la convierte en una herramienta eficaz para este tipo de representaciones (Villalpando Becerra & Pantoja Rangel, 2016, p. 23).
 	</h5>
+	</section>
 </body>
 
 </html>
